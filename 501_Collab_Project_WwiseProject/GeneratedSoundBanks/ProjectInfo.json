@@ -1,0 +1,43 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "501_Collab_Project_WwiseProject",
+   "GUID": "{2AB0C3F9-5B51-4E5F-A302-1C61FAE58348}",
+   "Generator": "2025.1.7.9143"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Linux",
+    "GUID": "{95A659F2-F0D5-4EAB-B759-56019193EBCD}",
+    "BasePlatform": "Linux",
+    "BasePlatformGUID": "{BD0BDF13-3125-454F-8BFD-319537169F81}",
+    "Path": "Linux"
+   },
+   {
+    "Name": "Mac",
+    "GUID": "{25F1C77E-7C1E-4361-87D7-4F3307E9DD83}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{16915E86-DCCF-4801-9C76-BC8E6587E20C}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{1BA31A02-3B0E-4B05-9510-32F78074412A}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{DAEB7842-077C-9F3F-FA3C-565D89E6CEA4}"
+ }
+}
