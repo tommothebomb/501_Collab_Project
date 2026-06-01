@@ -1,6 +1,718 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Default Work Unit" ID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="GameSFX" ID="{1470BCB0-2961-4BB3-B958-8A039FC4978B}" ShortID="217117555">
+					<ChildrenList>
+						<Folder Name="Cards" ID="{EF34AC2C-81F3-4E4A-95B5-C0764623151F}" ShortID="116377825"/>
+						<Folder Name="Dice" ID="{3D8BF67E-4876-4E9F-A213-774555B6789D}" ShortID="1024940596">
+							<ChildrenList>
+								<RandomSequenceContainer Name="DiceRand" ID="{ABCDDFA2-0C2E-4B65-B969-11B9741BE30A}" ShortID="934588339">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="02" ID="{F9D9C1DE-9EB0-4FF1-8C85-6A25B9DDB41B}" ShortID="529572511">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-002_01" ID="{108AC45D-D629-4906-A886-08DE06E9B822}">
+													<Language>SFX</Language>
+													<AudioFile>dice-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="33194775"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-002" ID="{C8CE71AF-EA78-4A49-BC61-ED75A2C1B1EF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.10258"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.08581"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.10326"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="941976293"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-002" ID="{C8CE71AF-EA78-4A49-BC61-ED75A2C1B1EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="01" ID="{E7A5BC6D-8CA0-45D3-80B4-DF8FCFECE144}" ShortID="148146137">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-001_01" ID="{40EE7032-E332-43A7-B915-947CB774C7A4}">
+													<Language>SFX</Language>
+													<AudioFile>dice-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81941517"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-001" ID="{E4837B42-197A-429F-AB62-7464C07FC3F8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.05575"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.06049"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.07681"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="159678468"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-001" ID="{E4837B42-197A-429F-AB62-7464C07FC3F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="05" ID="{0A70770B-3881-4527-ABCC-1993E498CE60}" ShortID="983716121">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-005_01" ID="{C343331C-C6F5-469E-B816-E023A4288DFD}">
+													<Language>SFX</Language>
+													<AudioFile>dice-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="777560541"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-005" ID="{1DB58773-CB39-4532-B795-97276CEACC08}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.07759"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.12195"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.38994"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="303700536"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-005" ID="{1DB58773-CB39-4532-B795-97276CEACC08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="04" ID="{C62F45ED-2CF3-43DE-BDA5-1F852F2AA956}" ShortID="116646986">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-004_01" ID="{116307A7-D30F-47C3-8BE7-9F0547340E49}">
+													<Language>SFX</Language>
+													<AudioFile>dice-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="62284341"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-004" ID="{3A4EBAA6-4484-46D3-828A-5E8E094D5AE3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.13831"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.10326"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.16583"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="176980780"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-004" ID="{3A4EBAA6-4484-46D3-828A-5E8E094D5AE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="03" ID="{336C3315-9B46-43FF-99CC-AFE646585308}" ShortID="884834373">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-003_01" ID="{5A01B876-2911-409A-8720-10BF4DD77B87}">
+													<Language>SFX</Language>
+													<AudioFile>dice-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973960587"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-003" ID="{7FCB458D-051C-4BE9-8E70-0C84513AE77D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.05786"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.06872"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.11912"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1043082384"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-003" ID="{7FCB458D-051C-4BE9-8E70-0C84513AE77D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="06" ID="{1B59CF76-F837-454B-B102-D618439288EC}" ShortID="923330544">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-006_01" ID="{EF8D50C1-2D67-423B-AE77-C3EFC7430BA5}">
+													<Language>SFX</Language>
+													<AudioFile>dice-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707408743"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-006" ID="{5D7C4253-8C91-4AF5-BBC6-49D9784506F9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.06865"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.14462"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="817508581"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-006" ID="{5D7C4253-8C91-4AF5-BBC6-49D9784506F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Rolls" ID="{0017A3A2-AA2F-43E0-82F5-C5AC469A45F0}" ShortID="708827451">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="07 Roll" ID="{2F9B2336-1BEE-4635-81CF-C271417FD2C8}" ShortID="30307690">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-001" ID="{718F6760-72B6-4934-95D6-22A2D41B23E6}">
+													<Language>SFX</Language>
+													<AudioFile>dice-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81941517"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-001" ID="{D0B9A1F5-418B-48ED-B30C-6BC7E1E705C9}">
+													<Language>SFX</Language>
+													<AudioFile>dice-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81941517"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-001" ID="{E0DD4236-A3B0-48AD-83BA-457A0AEE31A7}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.41498"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.30239"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="656104411"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-001" ID="{E0DD4236-A3B0-48AD-83BA-457A0AEE31A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="08 Roll" ID="{0BE24E04-4053-4316-B03A-71715CA49650}" ShortID="704407237">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-002" ID="{545DC677-1798-4C76-97A8-70354930693A}">
+													<Language>SFX</Language>
+													<AudioFile>dice-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="33194775"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-002" ID="{12287C44-8EA2-4FF1-BBB7-07B5C0E53927}">
+													<Language>SFX</Language>
+													<AudioFile>dice-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="33194775"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-002" ID="{E5600076-837D-4DBB-9E20-817B520CC72E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1284"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="711270354"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-002" ID="{E5600076-837D-4DBB-9E20-817B520CC72E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="09 Roll" ID="{60DD8AD8-07ED-4D7D-AE64-349D559BE2E4}" ShortID="125481362">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-003" ID="{94633D93-CA9E-450B-8543-C69FB08B7C96}">
+													<Language>SFX</Language>
+													<AudioFile>dice-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973960587"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-003" ID="{B487475A-C13F-4D4E-8785-C4EA5D4ACD31}">
+													<Language>SFX</Language>
+													<AudioFile>dice-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973960587"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-003" ID="{63CF8148-C088-42C7-8CA6-A94F370AB132}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0923"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169343869"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-003" ID="{63CF8148-C088-42C7-8CA6-A94F370AB132}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="10 Roll" ID="{69F59745-BCD8-4C5D-9B85-DF09B9F5E523}" ShortID="870057578">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-004" ID="{2043EDDC-C3E7-44D1-B3FD-3CC7F46D379A}">
+													<Language>SFX</Language>
+													<AudioFile>dice-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="62284341"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-004" ID="{6EE588C3-E6EE-4FD4-B9DF-ED510FF198D9}">
+													<Language>SFX</Language>
+													<AudioFile>dice-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="62284341"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-004" ID="{9ADFCAD7-BAA2-42CA-AFE3-5C702FA6FF23}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.054"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.13226"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.16731"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="108775729"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-004" ID="{9ADFCAD7-BAA2-42CA-AFE3-5C702FA6FF23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="11 Roll" ID="{CF7849F4-E202-42CA-AF86-857C63C1E5CD}" ShortID="279358559">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-005" ID="{619139A7-DA94-4912-9B33-19E1B13B2954}">
+													<Language>SFX</Language>
+													<AudioFile>dice-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="777560541"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-005" ID="{7ABDBAC2-7D60-4EAC-A610-3FC85E69815E}">
+													<Language>SFX</Language>
+													<AudioFile>dice-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="777560541"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-005" ID="{F4F4A0EA-955F-43C9-B74A-FC8655FFEF82}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.52151"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="4075956"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-005" ID="{F4F4A0EA-955F-43C9-B74A-FC8655FFEF82}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="12 Roll" ID="{9798230B-78D7-4E4D-9531-3A5120CC0981}" ShortID="548728553">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-006" ID="{7AB3E61D-664B-4533-BDB1-090B0C9880D7}">
+													<Language>SFX</Language>
+													<AudioFile>dice-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707408743"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-006" ID="{F8EA14FC-C8A6-4F89-916C-42F8216844BC}">
+													<Language>SFX</Language>
+													<AudioFile>dice-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707408743"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-006" ID="{37B9A898-5AF9-4C10-AFC3-0C2C3E31A74B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.16596"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590968220"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-006" ID="{37B9A898-5AF9-4C10-AFC3-0C2C3E31A74B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="13 Roll" ID="{95408300-7AF5-44FE-8600-F1ADCC69FEE7}" ShortID="130905684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-007" ID="{8463D390-E84F-46B1-9148-82C8AD25F13C}">
+													<Language>SFX</Language>
+													<AudioFile>dice-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="815189033"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-007" ID="{444DFDE4-FA32-47A8-B57C-466D4164F252}">
+													<Language>SFX</Language>
+													<AudioFile>dice-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="815189033"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-007" ID="{5B7504AC-7BD2-4FA1-9E7A-659A6DAE19B5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.07287"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="790325799"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-007" ID="{5B7504AC-7BD2-4FA1-9E7A-659A6DAE19B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="14 Roll" ID="{7F555CE0-4EBC-4DAF-8F93-4FB32B59196C}" ShortID="718873575">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-008" ID="{40664F2D-E9E8-4321-95DC-18465F786FC5}">
+													<Language>SFX</Language>
+													<AudioFile>dice-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365253206"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-008" ID="{0990D10B-83D1-4526-A634-3274588F58CD}">
+													<Language>SFX</Language>
+													<AudioFile>dice-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365253206"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-008" ID="{BBE61412-D990-4F8F-BD30-07D6D38EF76B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.13435"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.20174"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.08603"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="302786502"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-008" ID="{BBE61412-D990-4F8F-BD30-07D6D38EF76B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="15 Roll" ID="{CB45D94F-D212-45C9-9BDC-6F54DACAAA30}" ShortID="527020374">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-009" ID="{B3EA2002-857E-47BB-9C96-B3A4D1CA6781}">
+													<Language>SFX</Language>
+													<AudioFile>dice-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249494205"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-009" ID="{A2BC3D59-4CC2-4CDE-A1A5-B95D7D087B6B}">
+													<Language>SFX</Language>
+													<AudioFile>dice-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249494205"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-009" ID="{FA785175-706B-4316-91F2-385F8B74911C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.10679"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.06468"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.03472"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="297918438"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-009" ID="{FA785175-706B-4316-91F2-385F8B74911C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="16 Roll" ID="{4DE90FDF-6579-4123-9DFA-803AE502A0B5}" ShortID="567803320">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-010" ID="{A463589C-80CE-4A6D-92D2-825BCD112233}">
+													<Language>SFX</Language>
+													<AudioFile>dice-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="86174985"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-010" ID="{087747C3-A4AB-4FFA-9CBA-F340A18CD683}">
+													<Language>SFX</Language>
+													<AudioFile>dice-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="86174985"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-010" ID="{93E0058B-E4B6-447C-BA0E-F4F69031B39D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.06818"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.11088"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.05007"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="976148733"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-010" ID="{93E0058B-E4B6-447C-BA0E-F4F69031B39D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="17 Roll" ID="{6F433EC5-E682-4367-8F3D-7EB40EEEC943}" ShortID="242814378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="dice-011" ID="{0CC83BA7-C04C-4CE7-93F8-1C87349C4C93}">
+													<Language>SFX</Language>
+													<AudioFile>dice-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="500714662"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-011" ID="{7F945CE5-2BEA-484B-A180-AF4C99088DBF}">
+													<Language>SFX</Language>
+													<AudioFile>dice-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="500714662"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="dice-011" ID="{8904EFEF-B596-4DDD-BCCF-6BB682FD17D4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.06085"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.20459"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.02289"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>dice-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979710315"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="dice-011" ID="{8904EFEF-B596-4DDD-BCCF-6BB682FD17D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>
