@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class MouseMovement : MonoBehaviour
+{
+    // Libby script
+    [SerializeField] float mouseSense = 1f;
+    [SerializeField] Transform body;
+    float xRotation;
+
+
+    private void LateUpdate()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSense;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSense;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        body.Rotate(Vector3.up * mouseX);
+    }
+}
