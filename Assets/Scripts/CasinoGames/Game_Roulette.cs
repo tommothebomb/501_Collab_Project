@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Game_Roulette : MonoBehaviour
 {
+    [SerializeField] float MaxBet;
 
     [Header("Return to Player % ")]
     [SerializeField] float ColourRTP; //they are all the same length YIPPIE!!!!!!!!!!!!!!!!!!!!!!
@@ -57,28 +58,35 @@ public class Game_Roulette : MonoBehaviour
         Colour, Number, OddOrEven,
     }
 
+    public void BetOnNumber(float Number)
+    {
+        Code(Input.Number, Number, RandomMethod(), MaxBet);
+    }
 
-    [Header("Debug")]
-    [SerializeField] Input debug;
-    [SerializeField] float BetAmount;
+    public void BetOnOddorEven(float Number) //either 1 or 2
+    {
+        Code(Input.OddOrEven, Number, RandomMethod(), MaxBet);
+    }
 
-    [SerializeField] float BetNumber;
-    [SerializeField] KeyCode keyCode; //THIS IS A QUICKER WAY OF TESTING INPUTS DW THIS SINT FOR THE BASE GAME
+    public void BetOnColour(float Number) //either 1 or 2
+    {
+        Code(Input.Colour, Number, RandomMethod(), MaxBet);
+    }
 
 
-
+    //WORK IN PROGRESSES
     /// <summary>
     /// Decides the result of the spin via simulation or animation
     /// </summary>
-    void AnimationMethod()
+    float AnimationMethod()
     {
-
+        return 0;
     }
 
-    void RandomMethod(Input type)
+    float RandomMethod()
     {
         //if the bet type does need the number its fineeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-        Code(type,BetNumber, Random.Range(0, 38), BetAmount);
+        return Random.Range(0, 36);
     }
 
 
@@ -91,19 +99,26 @@ public class Game_Roulette : MonoBehaviour
     /// <param name="BetAmount"></param> the amount of money
     void Code(Input Type,float PlayerBet,float Result,float BetAmount)
     {
+        GlobalManager.instance.Money -= BetAmount; // take away the money needed for the bet
+
         if (Result == 0)
         {
-            //auto fail
+            Debug.Log("0 NO WINNERS");
+            Loss(BetAmount);
         }
-
+        Debug.Log(Result);
         switch (Type)
         {
             case Input.Colour: //If the colour matches the color of the bet number
-                bool numberColour = wheelNumber.TryGetValue(PlayerBet, out numberColour); //gets the colour of the thingy
-                bool ColResult = wheelNumber.TryGetValue(Result, out numberColour);
+                bool numberColour;
+                wheelNumber.TryGetValue(PlayerBet, out numberColour); //gets the colour of the thingy
+                bool ColResult; 
+                wheelNumber.TryGetValue(Result, out ColResult);
+                Debug.Log(numberColour);
+                Debug.Log(ColResult);
                 if (numberColour == ColResult)
                 {
-                    Win(PlayerBet, ColourRTP);
+                    Win(MaxBet, ColourRTP);
                 }
                 else
                 {
@@ -114,7 +129,7 @@ public class Game_Roulette : MonoBehaviour
             case Input.Number:  //direct number
                 if (PlayerBet == Result)
                 {
-                    Win(PlayerBet, NumberRTP);
+                    Win(MaxBet, NumberRTP);
                 }
                 else
                 {
@@ -131,7 +146,7 @@ public class Game_Roulette : MonoBehaviour
                 inputhalef = inputhalef - Mathf.Floor(inputhalef);
                 if (halfed == inputhalef)
                 {
-                    Win(PlayerBet, OddOrERTP);
+                    Win(MaxBet, OddOrERTP);
                 }
                 else
                 {
@@ -141,7 +156,6 @@ public class Game_Roulette : MonoBehaviour
                 break;
 
         }
-
     }
 
 
@@ -150,12 +164,13 @@ public class Game_Roulette : MonoBehaviour
     /// <param name="ReturnToPlayer"></param> the % that the game will return to the player -- the bad ending :(
     void Win(float betAmount,float ReturnToPlayer)
     {
-
+        GlobalManager.instance.Money += betAmount * ReturnToPlayer;
+        Debug.Log("Winner!!!!!");
     }
 
     /// <param name="betAmount"></param> the amount of money the players going to lose -- the good ending
     void Loss(float betAmount)
     {
-
+        Debug.Log("Loss");
     }
 }
