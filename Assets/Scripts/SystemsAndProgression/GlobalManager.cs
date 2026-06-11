@@ -16,6 +16,7 @@ public class GlobalManager : MonoBehaviour
         {
             _money = value;
             UpdateText(value);
+
         }
     } 
 
@@ -27,7 +28,6 @@ public class GlobalManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        Money = Money * 3;
     }
 }
 

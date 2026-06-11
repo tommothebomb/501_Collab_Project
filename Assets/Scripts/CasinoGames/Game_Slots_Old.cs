@@ -76,6 +76,12 @@ public class Game_Slots_Old : MonoBehaviour
 
     void decelerate(float reel)
     {
+
+        if (reelsSpinning <= 1) { return; }
+        //get the last wheel at slow it down
+        //Reels[reelsSpinning - 1];
+
+
         //round to the nearest 60*
         //Reels[reel].rotation
 

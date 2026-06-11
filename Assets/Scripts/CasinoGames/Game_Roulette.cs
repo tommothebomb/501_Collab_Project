@@ -12,7 +12,7 @@ public class Game_Roulette : MonoBehaviour
     [SerializeField] float OddOrERTP; 
 
     // A List of every Number and its accociated Colour
-    public Dictionary<float, bool> wheelNumber = new Dictionary<float, bool> 
+    private Dictionary<float, bool> wheelNumber = new Dictionary<float, bool> 
     {   //FASLE = Red , TRUE == black 
         { 0, false },
         { 1, true },
@@ -139,12 +139,14 @@ public class Game_Roulette : MonoBehaviour
                 break;
             case Input.OddOrEven:
                 //odd or even 
-                float halfed = Result / 2;
+                /*float halfed = Result / 2;
                 halfed = halfed - Mathf.Floor(halfed);
 
+                
+
                 float inputhalef = PlayerBet / 2;
-                inputhalef = inputhalef - Mathf.Floor(inputhalef);
-                if (halfed == inputhalef)
+                inputhalef = inputhalef - Mathf.Floor(inputhalef);*/
+                if (Result % 2 == PlayerBet % 2)
                 {
                     Win(MaxBet, OddOrERTP);
                 }
