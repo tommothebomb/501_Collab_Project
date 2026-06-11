@@ -1,21 +1,21 @@
 using UnityEngine;
 
-public class CasinoGlobal : MonoBehaviour
+public interface ICasinoGlobal 
 {
-    //this script will track casino stuff
 
-
-    float[] MoneyProgressionThreshHolds;// need a new variable name
-    bool[] progression;
-
-
-    void TempName()
-    {
-        if (MoneyProgressionThreshHolds[0] > GlobalManager.instance.Money && progression[0])
-        {
-            //run progression code
-        }
-    }
+    public  void TempName();
+   
 
 
 }
+
+public class LowclassCasino : MonoBehaviour, ICasinoGlobal
+{
+    void ICasinoGlobal.TempName()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    
+}
+
