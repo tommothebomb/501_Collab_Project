@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit, Mathf.Infinity))
+        {
+            // get iinteractible if can and do the thing
+        }
     }
 }

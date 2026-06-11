@@ -2,11 +2,11 @@ using UnityEngine;
 using System;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : HumanoidBase
 {
     // Libby script \\
     float moveSpeed = 6f; // does not need to be exposed in editor as changing it in editor will do nothing
-    [SerializeField] float walkSpeed = 6f;
+    //[SerializeField] float walkSpeed = 6f;
     [SerializeField] float sprintSpeed = 12f;
     [SerializeField] float groundDrag = 5f;
     [SerializeField] Transform groundCheckOrigin;
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void GroundCheck()
     {
-        isGrounded = Physics.CheckSphere(groundCheckOrigin.position, 1, groundMask);
+        isGrounded = Physics.CheckBox(groundCheckOrigin.position, new Vector3(0.5f, 0.5f, 0.5f), Quaternion.identity, groundMask);
 
         if (isGrounded) rb.linearDamping = groundDrag;
         else rb.linearDamping = 0;

@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class IInterractible : MonoBehaviour
+public interface IInterractible
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    // Libby Script \\
+    public Sprite uiTooltipSprite { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void Interact();
+    public void DisplayUIToolTip();
 }
