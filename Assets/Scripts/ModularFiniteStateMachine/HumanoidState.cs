@@ -14,7 +14,5 @@ public class HumanoidState
 
     public virtual void EnterState() { }
     public virtual void ExitState() { }
-    public virtual void FrameUpdate() { }
-    public virtual void PhsycisUpdate() { }
     public virtual void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger) { }
 }

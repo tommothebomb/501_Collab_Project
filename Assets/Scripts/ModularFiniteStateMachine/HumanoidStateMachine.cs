@@ -3,5 +3,19 @@ using UnityEngine;
 public class HumanoidStateMachine
 {
     // Libby Script \\
-    // 7:20 in video
+    public HumanoidState currentState { get; set; }
+
+
+    public void Initialize(HumanoidState startingState)
+    {
+        currentState = startingState;
+        currentState.EnterState();
+    }
+
+    public void ChangeState(HumanoidState newState)
+    {
+        currentState.ExitState();
+        currentState = newState;
+        currentState.EnterState();
+    }
 }
