@@ -957,60 +957,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4396634110274652218, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 4119554148067418844}
-    - targetCorrespondingSourceObject: {fileID: 4396634110274652218, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4119554148067418837}
-    - targetCorrespondingSourceObject: {fileID: 4396634110274652218, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4119554148067418845}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
---- !u!1 &4119554148067418835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4396634110274652218, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
-  m_PrefabInstance: {fileID: 4119554148067418834}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4119554148067418837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4119554148067418835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef1415acfb4efe4cb9a3efebe5a0e0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TestStateMachine
-  player: {fileID: 4119554148067418845}
-  state: 0
---- !u!114 &4119554148067418844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4119554148067418835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eace857b071bad459e45cf9ff7e3526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerState
---- !u!114 &4119554148067418845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4119554148067418835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8002d4093e2467e4b8e8d3b758005884, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HumanoidBase
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

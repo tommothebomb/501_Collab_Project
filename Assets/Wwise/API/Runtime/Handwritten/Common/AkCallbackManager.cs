@@ -452,8 +452,8 @@ public static class AkCallbackManager
 
 							if (AkMonitoringCallbackInfo.errorLevel == AkMonitorErrorLevel.ErrorLevel_Error)
 								WwiseLogger.Error(msg);
-							else
-								WwiseLogger.Log(msg);
+							//else
+								//WwiseLogger.Log(msg);
 						}
 						atLeastOneMonitoringCallback = true;
 #endif

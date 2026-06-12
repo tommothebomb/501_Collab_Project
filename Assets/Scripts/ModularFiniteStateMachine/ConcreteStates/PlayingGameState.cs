@@ -9,18 +9,21 @@ public class PlayingGameState : HumanoidState
         // called as soon as this class is initialized
     }
 
-    public override void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger)
-    {
-        base.AnimationTriggerEvent(trigger);
-    }
-
     public override void EnterState()
     {
-        Debug.Log("now playing game");
+        base.EnterState();
+        humanoid.gamblingBaseInstance.DoEnterLogic();
     }
 
     public override void ExitState()
     {
         base.ExitState();
+        humanoid.gamblingBaseInstance.DoExitLogic();
+    }
+
+    public override void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger)
+    {
+        base.AnimationTriggerEvent(trigger);
+        humanoid.gamblingBaseInstance.DoAnimationLogic(trigger);
     }
 }
