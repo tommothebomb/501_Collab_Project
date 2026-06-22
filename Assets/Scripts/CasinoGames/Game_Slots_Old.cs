@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Concurrent;
 using UnityEngine;
 
 public class Game_Slots_Old : MonoBehaviour
@@ -11,8 +12,10 @@ public class Game_Slots_Old : MonoBehaviour
     float delaytime;
     int reelsSpinning = 0;
     [SerializeField]float exposed; //debug code
-    [SerializeField] float exposed1; //debug code
+    float Endgoal; //debug code
     [SerializeField] float exposed2; //debug code
+    float endFace; //the face that we are aming to land on
+    bool temporary;
     //int reelsSpun = 0; 
 
     enum Phase
@@ -61,8 +64,8 @@ public class Game_Slots_Old : MonoBehaviour
             case Phase.Spinning:
                 if (reelsSpinning < 3)
                 {
-                    float subdelay =  Random.Range(1, 6) ;
-                    delaytime = 3 + subdelay; //add randomised delayed
+                    float subdelay =  Random.Range(60, 360) ;
+                    delaytime = (subdelay /60); //add randomised delayed
                     reelsSpinning++;
                 }
                 else
@@ -87,28 +90,60 @@ public class Game_Slots_Old : MonoBehaviour
 
 
 
-        float Progress = Mathf.Lerp(0, delaytime,timer/delaytime); //this is the progression towards the end
-        exposed = Progress;
+        float Progress = Mathf.InverseLerp(0, delaytime,timer); //this is the progression towards the end
+        //exposed = Progress;
         if (Progress < 0.9f)
         {
-            //slow down
-            float SlowProgress = Mathf.InverseLerp(0, 0.9f, Progress);
-            exposed1 = SlowProgress;
+            
+            float bad = Progress + 0.1f;
+            float P4 = bad * bad * bad * bad;
+            exposed = P4;
+            Reels[reel-1].Rotate(Vector3.right * (speed * (-P4 + 1)) * Time.deltaTime, Space.Self);
+            
+            //Reels[reel-1].Rotate(Vector3.right * speed * Time.deltaTime, Space.Self);
             //just rotate but slow the speed
+
+            temporary = false;
         }
-        else
+        else if (temporary)
         {
             //fix
             float FixProgress = Mathf.InverseLerp(0.9f, 1,Progress);
+            float output = Mathf.Lerp(Reels[reel - 1].localEulerAngles.x, Endgoal, FixProgress);
 
-            float end = Mathf.Floor(Reels[reel - 1].rotation.x / 60) * 60; //get this to right face/angle
+            //Reels[reel - 1].localEulerAngles = new Vector3(output, 0, 0);
+        }
+        else
+        {
+            temporary = true;
 
-            //set the rotation of the reel-1 to the end
-            exposed2 = FixProgress;
+            endFace = Random.Range(1, 6);
         }
     }
 
+
+    void DecelerateV2(int reel)
+    {
+
+        //decide the final face
+
+
+        //slow down and end on that final face
+
+
+        //fix any problems
+
+        //lockin the result and if its the final face end the loop and reward the player
+
+    }
     //something like a corotines
+
+    public void Payout()
+    {
+        //play the special effects
+        //give the player the money 
+    }
+
 
     public void Spin()
     {
