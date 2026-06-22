@@ -2880,21 +2880,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100626744}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 740281078e41cde44bdec69014588258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game_Slots_Old
-  speed: 3600
+  speed: 360
   Reels:
   - {fileID: 2100626752}
   - {fileID: 791401226}
   - {fileID: 2100626749}
   Temp: 0
   timer: 0
-  exposed: 0
-  exposed1: 0
-  exposed2: 0
 --- !u!4 &2100626749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6784333135389665749, guid: fee33bd4f8b24d24f8b0dead113445f0, type: 3}

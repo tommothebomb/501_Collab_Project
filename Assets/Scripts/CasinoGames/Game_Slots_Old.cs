@@ -10,6 +10,10 @@ public class Game_Slots_Old : MonoBehaviour
     [SerializeField] float timer;
     float delaytime;
     int reelsSpinning = 0;
+    [SerializeField]float exposed; //debug code
+    [SerializeField] float exposed1; //debug code
+    [SerializeField] float exposed2; //debug code
+    //int reelsSpun = 0; 
 
     enum Phase
     {
@@ -33,6 +37,7 @@ public class Game_Slots_Old : MonoBehaviour
                 break;
             case Phase.Spinning:
                 Spinning(reelsSpinning);
+                decelerate(reelsSpinning);
                 break;
             case Phase.End:
 
@@ -56,7 +61,6 @@ public class Game_Slots_Old : MonoBehaviour
             case Phase.Spinning:
                 if (reelsSpinning < 3)
                 {
-                    decelerate(reelsSpinning);
                     float subdelay =  Random.Range(1, 6) ;
                     delaytime = 3 + subdelay; //add randomised delayed
                     reelsSpinning++;
@@ -74,20 +78,34 @@ public class Game_Slots_Old : MonoBehaviour
     }
 
 
-    void decelerate(float reel)
+    void decelerate(int reel)
     {
 
-        if (reelsSpinning <= 1) { return; }
+        if (reelsSpinning < 1) { return; }
         //get the last wheel at slow it down
         //Reels[reelsSpinning - 1];
 
 
-        //round to the nearest 60*
-        //Reels[reel].rotation
 
-        //calculate the rotation left in the spin
-        //turn to the closest 60* angel
-        //lerp to that angle instead of fixed rotation
+        float Progress = Mathf.Lerp(0, delaytime,timer/delaytime); //this is the progression towards the end
+        exposed = Progress;
+        if (Progress < 0.9f)
+        {
+            //slow down
+            float SlowProgress = Mathf.InverseLerp(0, 0.9f, Progress);
+            exposed1 = SlowProgress;
+            //just rotate but slow the speed
+        }
+        else
+        {
+            //fix
+            float FixProgress = Mathf.InverseLerp(0.9f, 1,Progress);
+
+            float end = Mathf.Floor(Reels[reel - 1].rotation.x / 60) * 60; //get this to right face/angle
+
+            //set the rotation of the reel-1 to the end
+            exposed2 = FixProgress;
+        }
     }
 
     //something like a corotines
