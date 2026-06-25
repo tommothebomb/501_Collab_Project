@@ -18,7 +18,7 @@ public class PlayerRoamingState : RoamingStateSOBase
 
         playerMovement = player.GetComponent<PlayerMovement>();
         mouseMovement = player.GetComponentInChildren<MouseMovement>();
-        interaction = player.GetComponent<PlayerInteraction>();
+        interaction = player.GetComponentInChildren<PlayerInteraction>();
     }
 
     public override void DoEnterLogic()
