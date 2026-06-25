@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 4922988991246305900}
   - component: {fileID: 5537846802606760718}
   - component: {fileID: 5346302260226270420}
-  - component: {fileID: 2866367893912811091}
   - component: {fileID: 2522041349858518781}
   m_Layer: 6
   m_Name: Player
@@ -213,18 +212,6 @@ MonoBehaviour:
   jumpForce: 5
   jumpCooldown: 0.25
   airMultiplier: 0.8
---- !u!114 &2866367893912811091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4396634110274652218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0c192e318aad34285924e8dce40a96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
 --- !u!114 &2522041349858518781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +240,7 @@ GameObject:
   - component: {fileID: 7351548536666652151}
   - component: {fileID: 3290425317016876543}
   - component: {fileID: 4459081928151295085}
+  - component: {fileID: 7048564167614237893}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -424,3 +412,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MouseMovement
   mouseSense: 15
   body: {fileID: 3117194185763902736}
+--- !u!114 &7048564167614237893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462434303199196762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0c192e318aad34285924e8dce40a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
