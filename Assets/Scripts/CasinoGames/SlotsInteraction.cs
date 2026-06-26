@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class SlotsInteraction : MonoBehaviour
+public class SlotsInteraction : InteractableObjectBase
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    // Libby Script \\
+    [SerializeField] Game_Slots_Old slotsScr;
 
-    // Update is called once per frame
-    void Update()
+
+    public void Interact()
     {
-        
+        slotsScr.Spin();
     }
 }
