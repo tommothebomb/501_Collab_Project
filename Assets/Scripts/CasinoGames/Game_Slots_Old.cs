@@ -1,61 +1,92 @@
 using System.Collections;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Game_Slots_Old : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] float Payment;
 
     [SerializeField] Transform[] Reels = new Transform[3];
-    [SerializeField] Phase Temp;
+    [SerializeField] Phase currentPhase;
     [SerializeField] float timer;
-    float delaytime;
-    int reelsSpinning = 0;
-    [SerializeField]float exposed; //debug code
-    float Endgoal; //debug code
-    [SerializeField] float exposed2; //debug code
-    float endFace; //the face that we are aming to land on
-    bool temporary;
-    //int reelsSpun = 0; 
+    [SerializeField] float delaytime = 5;
+
+    [SerializeField] float[] EndGoal = new float[3];
+
+    float currentRotationValue;
+    float BaseEndGoalRotation { get; } = 3600;//this is where we add the shimmy ahhh shimmy yay
+    float EndGoalRotation;
+
+    [SerializeField] Animation anim;
+
+    [Header("Payout Rewards")]
+    float reward;
+    float SpinCost = 100;
+    Dictionary<float ,float> PayoutOptions = new Dictionary<float, float>() 
+    {
+          { 0  ,0}
+        , { 60 ,1}
+        , { 120,2}
+        , { 180,3}
+        , { 240,1}
+        , { 300,2}
+    };
 
     enum Phase
     {
-        Start,Spinning,End
+        Start,Spinning,Payout,End
     }
 
-    private void Update()
+    void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= delaytime)
-        {
-            timer = 0;
-            delay();
-        }
-
-        switch (Temp)
+        switch (currentPhase)
         {
             case Phase.Start:
+                //PAYMENT
+                GlobalManager.instance.Money -= Payment;
+                anim.Play();
+                //0 = lep           1/4   2/5
+                //1 = A  = 4
+                //2 = clover = 5
+                //3 = pot
+                //4 = A
+                //5 = clover
 
+                EndGoal[0] = Random.Range(0, 6) * 60;
+                EndGoal[1] = Random.Range(0, 6) * 60;
+                EndGoal[2] = Random.Range(0, 6) * 60;
+                currentPhase++;
                 break;
             case Phase.Spinning:
-                Spinning(reelsSpinning);
-                decelerate(reelsSpinning);
+                timer += Time.deltaTime;
+                if (timer > delaytime)
+                {
+                    timer = 0;
+                    currentPhase++;
+                    return;
+                }
+
+
+                SlotsV2(0, timer + 0.3f);
+                SlotsV2(1, timer + 0.15f);
+                SlotsV2(2, timer + 0.05f);
+                break;
+            case Phase.Payout:
+                currentPhase++;
+                Payout();
                 break;
             case Phase.End:
-
                 break;
-
         }
-
-
-
 
     }
 
-    void delay()
+    /*void delay()
     {
-        switch (Temp)
+        /*switch (Temp)
         {
             case Phase.Start:
                 Temp = Phase.Spinning;
@@ -78,10 +109,10 @@ public class Game_Slots_Old : MonoBehaviour
                 break;
 
         }
-    }
+        currentPhase++;
+    }*/
 
-
-    void decelerate(int reel)
+    /*void decelerate(int reel)
     {
 
         if (reelsSpinning < 1) { return; }
@@ -119,43 +150,72 @@ public class Game_Slots_Old : MonoBehaviour
 
             endFace = Random.Range(1, 6);
         }
-    }
+    }*/
 
 
-    void DecelerateV2(int reel)
+    void SlotsV2(int reel,float time)
     {
+        EndGoalRotation = EndGoal[reel] + BaseEndGoalRotation;
 
+        float meow = Mathf.Lerp(currentRotationValue, EndGoalRotation, time /delaytime);
         //decide the final face
 
-
-        //slow down and end on that final face
-
-
-        //fix any problems
-
-        //lockin the result and if its the final face end the loop and reward the player
-
+        Reels[reel].localEulerAngles = new Vector3(meow,0,0);
+   
     }
     //something like a corotines
 
     public void Payout()
     {
-        //play the special effects
-        //give the player the money 
+        float output1 = 0;
+        float output2 = 0;
+        float output3 = 0;
+        PayoutOptions.TryGetValue(EndGoal[0], out output1);
+        PayoutOptions.TryGetValue(EndGoal[1], out output2);
+        PayoutOptions.TryGetValue(EndGoal[2], out output3);
+
+        if (output1 == output2 && output1 == output3)
+        {
+            Debug.Log("WINNER");
+
+            switch (output1) //avg 11% win rate
+            {
+                case 0: //0.005
+                    Debug.Log("leprocorny joke");   //16/24 return?
+                    GlobalManager.instance.Money += 24;
+                    break;
+                case 1: //0.08
+                    Debug.Log("one of them"); // 8-9x return
+                    GlobalManager.instance.Money += 8;
+                    break;
+                case 2: //0.08 //8-9 return
+                    Debug.Log("Clover?");
+                    GlobalManager.instance.Money += 8;
+                    break;
+                case 3://0.005 // 16/24 return
+                    Debug.Log("POT OF GREED, I DRAW 2");
+                    GlobalManager.instance.Money += 24;
+
+                    break;
+                default:
+                    Debug.Log("DEFAULT I FUCKED YUPPPP");
+                    break;
+            }
+            //currentPhase = Phase.Start;
+        }
+        else
+        {
+            Debug.Log("Loser");
+            //currentPhase = Phase.Start;
+        }
     }
 
-
-    public void Spin()
-    {
-        Temp = Phase.Spinning;
-    }
-
-    public void Spinning(int reelcount)
+   /* public void Spinning(int reelcount)
     {
         for (int i = reelcount; i < Reels.Length; i++)
         {
             Reels[i].Rotate(Vector3.right * speed * Time.deltaTime, Space.Self);
         }
-    }
+    }*/
 
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface ICasinoGlobal 
+/*public interface ICasinoGlobal 
 {
 
     public  void TempName();
@@ -17,5 +17,5 @@ public class LowclassCasino : MonoBehaviour, ICasinoGlobal
     }
 
     
-}
+}*/
 
