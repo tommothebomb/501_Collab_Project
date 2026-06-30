@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 4620017543603642637}
   - component: {fileID: 3017429491796847500}
   m_Layer: 0
-  m_Name: MenuSlot
+  m_Name: FLLMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

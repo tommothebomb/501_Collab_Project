@@ -1,13 +1,21 @@
-using System;
 using UnityEngine;
 
 public class ObjectSpawn : MonoBehaviour
 {
+    [Header("// TIME VALUES //")]
     [SerializeField] float waitingTime = 5f;
     [SerializeField] float timer;
-    
-    [SerializeField] GameObject menuSlot;
 
+    [Header("// PREFAB COUNT //")]
+    [SerializeField] int prefabCount;
+
+    [Header("// PREFAB REFERENCES //")]
+    [SerializeField] GameObject[] prefab;
+
+    void Start()
+    {
+        timer = waitingTime;
+    }
     void Update()
     {
         timer += Time.deltaTime;
@@ -19,8 +27,16 @@ public class ObjectSpawn : MonoBehaviour
         }
     }
 
+    void FixedUpdate()
+    {
+    
+    }
+
     void SpawnObject()
     {
-        Instantiate(menuSlot, transform.position, Quaternion.identity);
+
+        int i = Random.Range(0, prefabCount);
+
+        Instantiate(prefab[i], transform.position, Quaternion.identity);
     }
 }

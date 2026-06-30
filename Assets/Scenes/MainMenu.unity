@@ -176,8 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Project Lead\nProgramming\nMusic & SFX Composition\nAudio Engineer\nConcept
-    Art\n3D Artist & UI Engineer\n Level Design\nEnvironment Design\nNarrative Design\nDan\n"
+  m_text: "Project Lead & Programming\nProgramming\nMusic & SFX Composition\nAudio
+    Engineer\nConcept & Character Art\n3D Artist & UI Engineer\n Level Design\nEnvironment
+    Design\nNarrative Design\nDan\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6764484ba17fde642aebda75d93b1b5c, type: 2}
   m_sharedMaterial: {fileID: 7391759254859779428, guid: 6764484ba17fde642aebda75d93b1b5c, type: 2}
@@ -502,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -636,7 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -788,7 +789,7 @@ GameObject:
   - component: {fileID: 160975591}
   - component: {fileID: 160975590}
   - component: {fileID: 160975589}
-  - component: {fileID: 160975588}
+  - component: {fileID: 160975592}
   m_Layer: 0
   m_Name: SpawnPoint (1)
   m_TagString: Untagged
@@ -796,21 +797,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &160975588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160975587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f45f6ebb5c841a45b91884772efc04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawn
-  waitingTime: 5
-  timer: 0
-  menuSlot: {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
 --- !u!23 &160975589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -877,12 +863,32 @@ Transform:
   m_GameObject: {fileID: 160975587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1011.60815, y: 7.65998, z: -3901.4521}
+  m_LocalPosition: {x: -1011.49, y: 7.65998, z: -3898.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1477904239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160975592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160975587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f45f6ebb5c841a45b91884772efc04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawn
+  waitingTime: 5
+  timer: 0
+  prefabCount: 4
+  prefab:
+  - {fileID: 8373155120234092738, guid: 9d4121549c462034db802b62a090b65f, type: 3}
+  - {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
+  - {fileID: 5529498649520709435, guid: 490b79bbeb1d8dc458dd2c9a91a703a6, type: 3}
+  - {fileID: 3684657762247157317, guid: 614446936f9890248a4e821f6a8b97b8, type: 3}
 --- !u!1 &206388142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1987,7 +1993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2341,7 +2347,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawn
   waitingTime: 5
   timer: 0
-  menuSlot: {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
+  prefabCount: 4
+  prefab:
+  - {fileID: 8373155120234092738, guid: 9d4121549c462034db802b62a090b65f, type: 3}
+  - {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
+  - {fileID: 5529498649520709435, guid: 490b79bbeb1d8dc458dd2c9a91a703a6, type: 3}
+  - {fileID: 3684657762247157317, guid: 614446936f9890248a4e821f6a8b97b8, type: 3}
 --- !u!23 &1017451654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2408,7 +2419,7 @@ Transform:
   m_GameObject: {fileID: 1017451652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1016.60815, y: 7.65998, z: -3901.4521}
+  m_LocalPosition: {x: -1016.49, y: 7.65998, z: -3898.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2538,7 +2549,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 80.879944, z: 0, w: 0}
+  m_margin: {x: -300.10742, y: 80.879944, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2742,7 +2753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3303,7 +3314,7 @@ GameObject:
   - component: {fileID: 1469413864}
   - component: {fileID: 1469413863}
   - component: {fileID: 1469413862}
-  - component: {fileID: 1469413861}
+  - component: {fileID: 1469413865}
   m_Layer: 0
   m_Name: SpawnPoint (2)
   m_TagString: Untagged
@@ -3311,21 +3322,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1469413861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469413860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f45f6ebb5c841a45b91884772efc04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawn
-  waitingTime: 5
-  timer: 0
-  menuSlot: {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
 --- !u!23 &1469413862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3392,12 +3388,32 @@ Transform:
   m_GameObject: {fileID: 1469413860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1021.60815, y: 7.65998, z: -3901.4521}
+  m_LocalPosition: {x: -1021.49, y: 7.65998, z: -3898.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1477904239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469413865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469413860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f45f6ebb5c841a45b91884772efc04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawn
+  waitingTime: 5
+  timer: 0
+  prefabCount: 4
+  prefab:
+  - {fileID: 8373155120234092738, guid: 9d4121549c462034db802b62a090b65f, type: 3}
+  - {fileID: 7251486447484366962, guid: fc024f5b4b49bed46bd9c2deb25b8841, type: 3}
+  - {fileID: 5529498649520709435, guid: 490b79bbeb1d8dc458dd2c9a91a703a6, type: 3}
+  - {fileID: 3684657762247157317, guid: 614446936f9890248a4e821f6a8b97b8, type: 3}
 --- !u!1 &1477904238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3816,7 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
