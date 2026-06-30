@@ -190,6 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8504395558420014017}
   - component: {fileID: 7516783928218777566}
+  - component: {fileID: 4858251672106714661}
   m_Layer: 0
   m_Name: MSEMenu
   m_TagString: Untagged
@@ -226,6 +227,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveDown
   speed: -0.01
+--- !u!114 &4858251672106714661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529498649520709435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5be1edb745bcb14fb67cc8bdec2717c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyAfterTime
 --- !u!1 &6587288213167334012
 GameObject:
   m_ObjectHideFlags: 0

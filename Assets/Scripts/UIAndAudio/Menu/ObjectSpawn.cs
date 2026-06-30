@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class ObjectSpawn : MonoBehaviour
 {
+    // this script is for the prefab spawning of the background items
+    // it takes an array of game objects and randomises which one to spawn
+
     [Header("// TIME VALUES //")]
     [SerializeField] float waitingTime = 5f;
     [SerializeField] float timer;
@@ -14,29 +17,23 @@ public class ObjectSpawn : MonoBehaviour
 
     void Start()
     {
-        timer = waitingTime;
+        timer = waitingTime; // timer is set to waiting time at start so the objects spawn right away
     }
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer >= waitingTime)
+        if (timer >= waitingTime) // if the timer is equal to the waiting time
         {
-            SpawnObject();
+            SpawnObject(); // function is called
             timer = 0;
         }
     }
 
-    void FixedUpdate()
-    {
-    
-    }
-
     void SpawnObject()
     {
+        int i = Random.Range(0, prefabCount); // randomises which prefab will spawn from an array
 
-        int i = Random.Range(0, prefabCount);
-
-        Instantiate(prefab[i], transform.position, Quaternion.identity);
+        Instantiate(prefab[i], transform.position, Quaternion.identity); // this spawns the prefab
     }
 }
