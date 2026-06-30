@@ -3,12 +3,18 @@ using UnityEngine;
 public class RotateAround : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
-    [SerializeField] float xRotation;
-    [SerializeField] float yRotation;
-    [SerializeField] float zRotation;
-
+    float randomx;
+    float randomy;
+    float randomz;
+    
+    void Start()
+    {
+        randomx = Random.Range(-10f, 10f);
+        randomy = Random.Range(-10f, 10f);
+        randomz = Random.Range(-10f, 10f);
+    }
     void Update()
     {
-        transform.Rotate(new Vector3(xRotation, yRotation, zRotation) * speed * Time.deltaTime);    
+        transform.Rotate(new Vector3(randomx, randomy, randomz) * speed * Time.deltaTime);    
     }
 }
