@@ -8,6 +8,6 @@ public class SlotsInteraction : InteractableObjectBase
 
     public void Interact()
     {
-        slotsScr.Spin();
+        //slotsScr.Spin();
     }
 }

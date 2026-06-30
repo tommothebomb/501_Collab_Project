@@ -5,7 +5,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
-public class Game_Slots_Old : MonoBehaviour
+public class Game_Slots_Old : InteractableObjectBase, IInterractible
 {
     [SerializeField] float Payment;
 
@@ -210,12 +210,11 @@ public class Game_Slots_Old : MonoBehaviour
         }
     }
 
-   /* public void Spinning(int reelcount)
+    public void Interact()
     {
-        for (int i = reelcount; i < Reels.Length; i++)
+        if (currentPhase == Phase.End)
         {
-            Reels[i].Rotate(Vector3.right * speed * Time.deltaTime, Space.Self);
+            currentPhase = Phase.Start;
         }
-    }*/
-
+    }
 }
