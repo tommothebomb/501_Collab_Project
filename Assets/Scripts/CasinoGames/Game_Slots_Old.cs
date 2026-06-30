@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Game_Slots_Old : InteractableObjectBase, IInterractible
 {
+    //Haiii\\
     [SerializeField] float Payment;
 
     [SerializeField] Transform[] Reels = new Transform[3];
