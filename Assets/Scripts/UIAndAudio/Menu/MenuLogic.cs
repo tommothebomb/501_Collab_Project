@@ -7,6 +7,8 @@ public class MenuLogic : MonoBehaviour
     // it controls the buttons and other stuff
 
     [SerializeField] Animator animator;
+    [SerializeField] GameObject spawnPoints;
+    [SerializeField] GameObject secret;
     
     public void StartGame()
     {
@@ -31,5 +33,11 @@ public class MenuLogic : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit(); // quits the game (only works in .exe)
+    }
+
+    public void Secret()
+    {
+        spawnPoints.SetActive(false);
+        secret.SetActive(true);
     }
 }
