@@ -3,6 +3,8 @@ public class PlayerInteraction : MonoBehaviour
 {
     // Libby Script \\
     [SerializeField] Transform playerT;
+    [SerializeField] LayerMask mask;
+    IInterractible currentHit;
     IInterractible lastHit;
     bool tooltipShown = false;
     InputSystem_Actions inputActs;
@@ -17,33 +19,52 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {        
-        Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 6, Color.blue);
+        Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
 
         RaycastHit hit;
-        if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 6))
+        if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 5, mask))
         {
             if (hit.transform.TryGetComponent(out IInterractible interactible))
             {
-                Debug.Log("hit interractable");
+                currentHit = interactible;
+                if (lastHit != null && currentHit != lastHit)
+                {
+                    lastHit.HideUIToolTip();
+                    tooltipShown = false;
+                }
                 if (!tooltipShown)
                 {
-                    lastHit = interactible;
-                    lastHit.DisplayUIToolTip();
+                    currentHit = interactible;
+                    currentHit.CheckToDisplayUIToolTip();
                     tooltipShown = true;
                 }
+                lastHit = currentHit;
+            }
+            else
+            {
+                // make sure ui turns off if player looks at different interractible object
+                if (currentHit == null) return;
+                currentHit.HideUIToolTip();
+                lastHit.HideUIToolTip();
+                tooltipShown = false;
+                currentHit = null;
+                lastHit = null;
             }
         }
         else
         {
-            if (lastHit == null) return;
+            // make sure ui turns off if player looks away from any colliders
+            if (currentHit == null) return;
+            currentHit.HideUIToolTip();
             lastHit.HideUIToolTip();
             tooltipShown = false;
+            currentHit = null;
             lastHit = null;
         }
     }
 
     void CheckCanInteract()
     {
-        if (lastHit != null) lastHit.Interact();
+        if (currentHit != null) currentHit.Interact();
     }
 }

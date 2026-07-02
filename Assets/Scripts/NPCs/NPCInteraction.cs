@@ -3,7 +3,7 @@ using UnityEngine;
 public class NPCInteraction : InteractableObjectBase
 {
     // Libby Script \\
-    public void Interact()
+    public override void Interact()
     {
         Debug.Log("interact with npc");
     }
