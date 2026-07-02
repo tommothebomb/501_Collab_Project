@@ -3,7 +3,7 @@ using UnityEngine;
 public class InteractableObjectBase : MonoBehaviour, IInterractible
 {
     // Libby Script \\
-    [SerializeField] GameObject uiTooltipObj; // set this to whichever tooltip image its meant to use (these can be found in inspector under 'tooltips')
+    public GameObject uiTooltipObj; // set this to whichever tooltip image its meant to use (these can be found in inspector under 'tooltips')
     [SerializeField] Transform spawnPos; // set to pos of wherever you want the tooltip to show, usually just set as object transform
 
 
