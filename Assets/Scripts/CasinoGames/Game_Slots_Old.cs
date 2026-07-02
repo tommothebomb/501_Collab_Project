@@ -14,6 +14,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
     [SerializeField] Phase currentPhase;
     [SerializeField] float timer;
     [SerializeField] float delaytime = 5;
+    bool canInterractWith = true;
 
     [SerializeField] float[] EndGoal = new float[3];
 
@@ -80,6 +81,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
                 Payout();
                 break;
             case Phase.End:
+                canInterractWith = true;
                 break;
         }
 
@@ -211,11 +213,18 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
         }
     }
 
-    public void Interact()
+    public override void Interact()
     {
         if (currentPhase == Phase.End)
         {
+            HideUIToolTip();
             currentPhase = Phase.Start;
+            canInterractWith = false;
         }
+    }
+
+    public override void CheckToDisplayUIToolTip()
+    {
+        if (canInterractWith) DisplayUIToolTip();
     }
 }

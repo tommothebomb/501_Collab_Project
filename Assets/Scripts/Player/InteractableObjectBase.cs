@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InteractableObjectBase : MonoBehaviour
+public class InteractableObjectBase : MonoBehaviour, IInterractible
 {
     // Libby Script \\
     [SerializeField] GameObject uiTooltipPrefab; // prefab for this is currently an elephant image
@@ -13,6 +13,10 @@ public class InteractableObjectBase : MonoBehaviour
         uiTooltipPrefab.SetActive(false);
     }
 
+    public virtual void CheckToDisplayUIToolTip()
+    {
+        // implemented in derrived class IF NEEDED
+    }
     public void DisplayUIToolTip()
     {
         if (uiTooltipPrefab.activeSelf) return;
@@ -22,5 +26,10 @@ public class InteractableObjectBase : MonoBehaviour
     {
         if (!uiTooltipPrefab.activeSelf) return;
         uiTooltipPrefab.SetActive(false);
+    }
+
+    public virtual void Interact()
+    {
+        // MUST be implemented in derrived class
     }
 }

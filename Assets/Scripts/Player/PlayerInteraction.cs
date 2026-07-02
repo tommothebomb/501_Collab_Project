@@ -3,6 +3,8 @@ public class PlayerInteraction : MonoBehaviour
 {
     // Libby Script \\
     [SerializeField] Transform playerT;
+    [SerializeField] GameObject uiPrefab;
+    [SerializeField] LayerMask mask;
     IInterractible currentHit;
     IInterractible lastHit;
     bool tooltipShown = false;
@@ -18,32 +20,42 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {        
-        //Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 6, Color.blue);
+        //Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
 
         RaycastHit hit;
-        if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 6))
+        if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 5, mask))
         {
             if (hit.transform.TryGetComponent(out IInterractible interactible))
             {
                 currentHit = interactible;
-                if (currentHit != lastHit)
+                if (lastHit != null && currentHit != lastHit)
                 {
                     lastHit.HideUIToolTip();
                     tooltipShown = false;
-                    lastHit = currentHit;
                 }
                 if (!tooltipShown)
                 {
                     currentHit = interactible;
-                    currentHit.DisplayUIToolTip();
+                    currentHit.CheckToDisplayUIToolTip();
                     tooltipShown = true;
                 }
+                lastHit = currentHit;
+            }
+            else
+            {
+                if (currentHit == null) return;
+                currentHit.HideUIToolTip();
+                lastHit.HideUIToolTip();
+                tooltipShown = false;
+                currentHit = null;
+                lastHit = null;
             }
         }
         else
         {
             if (currentHit == null) return;
             currentHit.HideUIToolTip();
+            lastHit.HideUIToolTip();
             tooltipShown = false;
             currentHit = null;
             lastHit = null;

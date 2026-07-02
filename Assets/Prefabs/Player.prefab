@@ -150,7 +150,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4396634110274652218}
-  m_Material: {fileID: 13400000, guid: 7bb124d0da115dd43b7e3fd1c5678eb4, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -564,3 +564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   playerT: {fileID: 3117194185763902736}
+  mask:
+    serializedVersion: 2
+    m_Bits: 1

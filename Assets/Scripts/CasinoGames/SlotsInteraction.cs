@@ -6,7 +6,7 @@ public class SlotsInteraction : InteractableObjectBase
     [SerializeField] Game_Slots_Old slotsScr;
 
 
-    public void Interact()
+    public override void Interact()
     {
         //slotsScr.Spin();
     }
