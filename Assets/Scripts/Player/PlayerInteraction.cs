@@ -3,7 +3,6 @@ public class PlayerInteraction : MonoBehaviour
 {
     // Libby Script \\
     [SerializeField] Transform playerT;
-    [SerializeField] GameObject uiPrefab;
     [SerializeField] LayerMask mask;
     IInterractible currentHit;
     IInterractible lastHit;
@@ -20,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {        
-        //Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
+        Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
 
         RaycastHit hit;
         if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 5, mask))
@@ -43,6 +42,7 @@ public class PlayerInteraction : MonoBehaviour
             }
             else
             {
+                // make sure ui turns off if player looks at different interractible object
                 if (currentHit == null) return;
                 currentHit.HideUIToolTip();
                 lastHit.HideUIToolTip();
@@ -53,6 +53,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
+            // make sure ui turns off if player looks away from any colliders
             if (currentHit == null) return;
             currentHit.HideUIToolTip();
             lastHit.HideUIToolTip();

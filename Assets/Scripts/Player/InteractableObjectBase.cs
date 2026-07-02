@@ -3,14 +3,14 @@ using UnityEngine;
 public class InteractableObjectBase : MonoBehaviour, IInterractible
 {
     // Libby Script \\
-    [SerializeField] GameObject uiTooltipPrefab; // prefab for this is currently an elephant image
+    [SerializeField] GameObject uiTooltipObj; // set this to whichever tooltip image its meant to use (these can be found in inspector under 'tooltips')
     [SerializeField] Transform spawnPos; // set to pos of wherever you want the tooltip to show, usually just set as object transform
 
 
     void Start()
     {
-        uiTooltipPrefab = Instantiate(uiTooltipPrefab, spawnPos.position, spawnPos.rotation);
-        uiTooltipPrefab.SetActive(false);
+        /*uiTooltipPrefab = Instantiate(uiTooltipPrefab, spawnPos.position, spawnPos.rotation);
+        uiTooltipPrefab.SetActive(false);*/
     }
 
     public virtual void CheckToDisplayUIToolTip()
@@ -19,13 +19,14 @@ public class InteractableObjectBase : MonoBehaviour, IInterractible
     }
     public void DisplayUIToolTip()
     {
-        if (uiTooltipPrefab.activeSelf) return;
-        uiTooltipPrefab.SetActive(true);
+        if (uiTooltipObj.activeSelf) return;
+        uiTooltipObj.transform.position = spawnPos.transform.position;
+        uiTooltipObj.SetActive(true);
     }
     public void HideUIToolTip()
     {
-        if (!uiTooltipPrefab.activeSelf) return;
-        uiTooltipPrefab.SetActive(false);
+        if (!uiTooltipObj.activeSelf) return;
+        uiTooltipObj.SetActive(false);
     }
 
     public virtual void Interact()

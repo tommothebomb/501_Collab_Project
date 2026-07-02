@@ -46,9 +46,8 @@ GameObject:
   - component: {fileID: 4922988991246305900}
   - component: {fileID: 5537846802606760718}
   - component: {fileID: 5346302260226270420}
-  - component: {fileID: 2522041349858518781}
   m_Layer: 6
-  m_Name: Player
+  m_Name: -Player-
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,20 +211,6 @@ MonoBehaviour:
   jumpForce: 5
   jumpCooldown: 0.25
   airMultiplier: 0.8
---- !u!114 &2522041349858518781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4396634110274652218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef1415acfb4efe4cb9a3efebe5a0e0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TestStateMachine
-  player: {fileID: 2553151499768618156}
-  state: 0
 --- !u!1 &4859803378363599166
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0c192e318aad34285924e8dce40a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  playerT: {fileID: 3117194185763902736}
+  playerT: {fileID: 8375812019569969136}
   mask:
     serializedVersion: 2
     m_Bits: 1
