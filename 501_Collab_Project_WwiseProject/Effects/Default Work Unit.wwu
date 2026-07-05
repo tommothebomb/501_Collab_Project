@@ -18,6 +18,7 @@
 						<Property Name="LFEGain" Type="Real32" Value="24"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Pitch_Shifter" ID="{9F6A75D5-150B-45D1-AFF4-01A21DD01DB2}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
