@@ -415,7 +415,7 @@
 														<MediaID ID="986720433"/>
 													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="DiceShake-001" ID="{4F40D172-985F-447D-91E8-6172606BFACB}">
+												<AudioFileSource Name="DiceShake-001_01" ID="{4F40D172-985F-447D-91E8-6172606BFACB}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0713"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.14248"/>
@@ -430,7 +430,7 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="DiceShake-001" ID="{4F40D172-985F-447D-91E8-6172606BFACB}" Platform="Linked"/>
+												<ActiveSource Name="DiceShake-001_01" ID="{4F40D172-985F-447D-91E8-6172606BFACB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="DiceShake-002" ID="{A63190C8-EB39-4D06-919E-D406A96A3DF1}" ShortID="1049153438">
@@ -463,7 +463,7 @@
 														<MediaID ID="399237094"/>
 													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="DiceShake-002" ID="{609F999E-7BE6-4C0F-8E7F-D58B3D8E0B32}">
+												<AudioFileSource Name="DiceShake-002_01" ID="{609F999E-7BE6-4C0F-8E7F-D58B3D8E0B32}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.07932"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.09893"/>
@@ -478,7 +478,7 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="DiceShake-002" ID="{609F999E-7BE6-4C0F-8E7F-D58B3D8E0B32}" Platform="Linked"/>
+												<ActiveSource Name="DiceShake-002_01" ID="{609F999E-7BE6-4C0F-8E7F-D58B3D8E0B32}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -728,6 +728,1271 @@
 										<ActiveSource Name="untitled" ID="{D466833E-BABB-49B7-84E5-796C3A08F519}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Folder Name="Geezer" ID="{BF1F2A16-69FE-4BF7-B4D8-41F287424145}" ShortID="545310694">
+									<ChildrenList>
+										<Sound Name="Geezer0-09_000" ID="{56740CAF-B41A-4E82-A66B-6F745A0F2B82}" ShortID="781720765">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-001" ID="{45E5CD1B-B6D6-4783-9B8A-51869650AA25}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="98207390"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-001" ID="{45E5CD1B-B6D6-4783-9B8A-51869650AA25}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Geezer0-10_214" ID="{FCB86304-2EF5-47C4-89B4-597A665FDBCC}" ShortID="509929330">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-002" ID="{81DB1C6C-8E98-45E3-856A-FBC250DF83AB}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="752674598"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-002" ID="{81DB1C6C-8E98-45E3-856A-FBC250DF83AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Geezer0-11_500" ID="{4EA1CDB2-E3A9-4AA5-B014-BF0D384C0CA2}" ShortID="573236150">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-003" ID="{5A4A1C38-355C-4067-B248-F75D26D6BF78}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="174274522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-003" ID="{5A4A1C38-355C-4067-B248-F75D26D6BF78}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Geezer0-13_500" ID="{BC775383-9F7B-4572-86C1-B456BBE64841}" ShortID="542182716">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-004" ID="{568DC823-5C9E-4C52-A15E-5F8E28B387BE}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="74728829"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-004" ID="{568DC823-5C9E-4C52-A15E-5F8E28B387BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Geezer0-14_500" ID="{055C0BAC-F06A-413E-8D04-09694363C186}" ShortID="87907883">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-005" ID="{5952AC5C-F12E-4259-A26D-3FF45F621F9D}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="837680767"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-005" ID="{5952AC5C-F12E-4259-A26D-3FF45F621F9D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Regular Guy" ID="{CFE6EA5A-0C25-4E30-B0B4-169AD3D2DED6}" ShortID="808533798">
+									<ChildrenList>
+										<Sound Name="Regular Guy0-16_000" ID="{5683D158-74B4-42D6-ADB3-272465E52E88}" ShortID="629858112">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-007" ID="{2AB37004-021F-4DD9-9B29-3D3A34B802BD}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149566734"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-007" ID="{2AB37004-021F-4DD9-9B29-3D3A34B802BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Regular Guy0-18_000" ID="{84C61F7F-F03D-4A46-A2F1-F665DC314FA4}" ShortID="405568843">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-008" ID="{AF321752-720D-43B9-8A5B-59878E8F4251}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="669870219"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-008" ID="{AF321752-720D-43B9-8A5B-59878E8F4251}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Regular Guy0-20_500" ID="{A037DE15-BC05-4759-B5F4-689466AAA703}" ShortID="716593193">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-009" ID="{CDA5481C-BE84-4187-A206-D003878F95F3}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="383890732"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-009" ID="{CDA5481C-BE84-4187-A206-D003878F95F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Regular Guy0-23_000" ID="{FADC01B1-C43C-470D-BC57-A1E93B9D74F1}" ShortID="729106420">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-010" ID="{834AAD4E-7438-4748-9595-E151E30CAB64}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="725208820"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-010" ID="{834AAD4E-7438-4748-9595-E151E30CAB64}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Regular Guy0-24_500" ID="{7ECB5323-97D0-4832-9BFE-1F3D1CCA5FB4}" ShortID="645999118">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-011" ID="{0BC8185B-5B2A-491E-B6A5-EA355ACEB666}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1049001441"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-011" ID="{0BC8185B-5B2A-491E-B6A5-EA355ACEB666}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Farmer" ID="{8B9664DD-5795-4464-B105-7A083AEF0DC8}" ShortID="790779115">
+									<ChildrenList>
+										<Sound Name="Farmer0-27_000" ID="{345814AA-CF73-4851-8955-46573D027E84}" ShortID="93962265">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-012" ID="{C9597322-A8D1-43AB-A67C-03FD05CDFAD7}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-012.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="878299629"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-012" ID="{C9597322-A8D1-43AB-A67C-03FD05CDFAD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Farmer0-29_000" ID="{9126C279-2DFD-42A3-9880-931545FB145E}" ShortID="883489466">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-013" ID="{3F090F7A-1E8B-4ACC-9EED-34592053D03E}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-013.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="460994830"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-013" ID="{3F090F7A-1E8B-4ACC-9EED-34592053D03E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Farmer0-32_000" ID="{7A856265-42A2-4C9B-86AC-60572374EEDA}" ShortID="436718792">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-014" ID="{980C0D59-0921-48CC-9011-E0DCBE24B0A0}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-014.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="795899879"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-014" ID="{980C0D59-0921-48CC-9011-E0DCBE24B0A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Farmer0-34_500" ID="{3232B745-022B-44CF-A595-E7B5CC28656F}" ShortID="880624941">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-015" ID="{FD0B3765-D862-4DC8-8210-4CBD0D795866}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-015.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="953007744"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-015" ID="{FD0B3765-D862-4DC8-8210-4CBD0D795866}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Farmer0-38_500" ID="{46CDA192-C906-4D5A-93E4-E0CF02A57935}" ShortID="678914366">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-016" ID="{1C00FDB0-F261-47E4-B956-0D6F7795EA47}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-016.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1062582967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-016" ID="{1C00FDB0-F261-47E4-B956-0D6F7795EA47}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Douche" ID="{7E147F21-36A3-4B0C-B523-0109D2DC95D5}" ShortID="1035909737">
+									<ChildrenList>
+										<Sound Name="Douche0-40_500" ID="{1BB5E1A4-F726-4AD9-80CE-A6CE2B4D5184}" ShortID="1041310965">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-017" ID="{E8534B5B-847C-4728-9EE7-451160440C0C}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-017.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="579006181"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-017" ID="{E8534B5B-847C-4728-9EE7-451160440C0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Douche0-43_500" ID="{8B806072-48EE-436B-87DB-8588B549B023}" ShortID="174377388">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-018" ID="{E1BF9172-148F-4C92-9AC6-3C5DFCE07AA8}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-018.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="972246811"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-018" ID="{E1BF9172-148F-4C92-9AC6-3C5DFCE07AA8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Douche0-46_000" ID="{99E9772E-8A91-4473-A15E-7CD1E30FEA21}" ShortID="42664912">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-019" ID="{A5CA908E-4E40-401A-B56D-21F0B92494B6}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-019.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="649120144"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-019" ID="{A5CA908E-4E40-401A-B56D-21F0B92494B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Douche0-47_000" ID="{0B6A66DA-1710-4951-A3B5-B60B6B8E0CC1}" ShortID="807044669">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-020" ID="{C2F20862-9F9D-40F3-B729-D0162C108A02}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-020.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059337340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-020" ID="{C2F20862-9F9D-40F3-B729-D0162C108A02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Douche0-50_500" ID="{615F2429-ACDA-4C77-A18C-A71888BAD969}" ShortID="792273704">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-021" ID="{4918C65A-8B1D-44EC-B556-59A6FEF980C0}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-021.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="65542308"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-021" ID="{4918C65A-8B1D-44EC-B556-59A6FEF980C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Idk" ID="{7660DF4E-9DB0-4D5F-85A2-E387BCE4EEC3}" ShortID="191761908">
+									<ChildrenList>
+										<Sound Name="Idk0-53_000" ID="{34560F5B-2B5E-443A-A7A1-483B15108392}" ShortID="658945139">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-022" ID="{2E96056E-D7B8-4844-9C40-769D3294CF4E}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-022.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313407036"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-022" ID="{2E96056E-D7B8-4844-9C40-769D3294CF4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Idk0-56_000" ID="{F47AA8FB-CB68-4E65-8F52-9BDC0AEDBFBD}" ShortID="677835861">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-023" ID="{81F00140-C103-49FC-88A8-1B6F1D2EB12C}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1007722772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-023" ID="{81F00140-C103-49FC-88A8-1B6F1D2EB12C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Idk1-00_500" ID="{EB80B1C5-2840-4F07-AA36-08AC31FC912E}" ShortID="243275089">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-024" ID="{4848BE3D-9F1B-44E2-BE49-14461078342E}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-024.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="787751396"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-024" ID="{4848BE3D-9F1B-44E2-BE49-14461078342E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Smoker" ID="{4A783219-7867-4663-B669-5AA0C94B8101}" ShortID="729415898">
+									<ChildrenList>
+										<Sound Name="Smoker1-02_500" ID="{1BAC9514-C87C-4D8B-A64B-2A61461287FB}" ShortID="76164036">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-025" ID="{60D5E530-871B-4766-B36A-6AB4FDC1BA4F}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-025.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="197840068"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-025" ID="{60D5E530-871B-4766-B36A-6AB4FDC1BA4F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoker1-05_000" ID="{A7CD3FF8-2CAB-418B-83BB-DB8690855580}" ShortID="812692522">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-026" ID="{8859542D-4DD1-4575-8590-78DE1077D2CC}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-026.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="669916531"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-026" ID="{8859542D-4DD1-4575-8590-78DE1077D2CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoker1-06_500" ID="{BC844ED6-BA5F-4D98-98A4-69469D94D5D8}" ShortID="722487953">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-027" ID="{8A2BA488-DE60-4475-B434-E1B705A5A1F4}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-027.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="114111115"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-027" ID="{8A2BA488-DE60-4475-B434-E1B705A5A1F4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoker1-10_500" ID="{42DAFCEF-D8C0-404D-9620-FA5E143A15D7}" ShortID="849175793">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-028" ID="{77CA2500-1AA0-45D6-B5D0-574164407CDA}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-028.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="279104164"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-028" ID="{77CA2500-1AA0-45D6-B5D0-574164407CDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoker1-14_500" ID="{8BF60EB3-C43C-4985-A42F-055B4DB54904}" ShortID="402575812">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-029" ID="{554AEF46-EFBD-455E-A0A8-569BAC4F1B70}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-029.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="817897953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-029" ID="{554AEF46-EFBD-455E-A0A8-569BAC4F1B70}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Smoker1-18_500" ID="{411770B0-9A0E-4B8C-9245-4E0399589CF6}" ShortID="783087343">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-030" ID="{30C4F03B-5C5E-4D9B-A052-79CDA32B49C7}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-030.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="880650506"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-030" ID="{30C4F03B-5C5E-4D9B-A052-79CDA32B49C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Loser" ID="{9C3EEFD5-8AC8-4B17-9522-8F27FE072F5E}" ShortID="415914435">
+									<ChildrenList>
+										<Sound Name="Loser1-21_500" ID="{E9328E9E-F121-4EDE-B363-020005514C43}" ShortID="977555539">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-031" ID="{B003F115-002A-479C-AF61-7E8927B897C6}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="807119791"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-031" ID="{B003F115-002A-479C-AF61-7E8927B897C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Loser1-26_500" ID="{3E46479C-5384-47B6-A422-27FD3282BD3F}" ShortID="313825294">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-032" ID="{F6A2BF4C-4F81-42C4-B956-E1B0FBB06300}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-032.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="850977825"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-032" ID="{F6A2BF4C-4F81-42C4-B956-E1B0FBB06300}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Loser1-29_500" ID="{671A18AB-9231-4CFB-A250-3ECB965BA25B}" ShortID="195740298">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-033" ID="{C1A09631-E42F-4666-8232-C5A61537EC75}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-033.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="460184777"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-033" ID="{C1A09631-E42F-4666-8232-C5A61537EC75}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Loser1-35_500" ID="{CCF8987E-FD9E-40C2-BE98-31F858B1C4FF}" ShortID="580801954">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-034" ID="{BBABA60E-1AB9-4762-8F72-D5BCE69FECB3}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-034.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="444372985"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-034" ID="{BBABA60E-1AB9-4762-8F72-D5BCE69FECB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Loser1-39_000" ID="{242B3AB9-69DA-4AEE-8391-56D2197CC012}" ShortID="729391881">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-035" ID="{A6BDC574-325B-4B37-8116-8BE8C30A2459}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-035.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="181502551"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-035" ID="{A6BDC574-325B-4B37-8116-8BE8C30A2459}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Zesty Rich Guy" ID="{2D1432B5-3037-47EC-9F7F-1BE5CFD76D8B}" ShortID="1004040055">
+									<ChildrenList>
+										<Sound Name="Zesty Rich Guy1-45_000" ID="{9E5D80D8-6C05-466B-9966-B7EFA2045D19}" ShortID="915377857">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-036" ID="{D4888FC5-A607-40C6-9627-77E61AA41F0A}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-036.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="404187990"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-036" ID="{D4888FC5-A607-40C6-9627-77E61AA41F0A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Zesty Rich Guy1-48_500" ID="{935F48C5-736B-4A3E-9666-65C4DA0F6FA7}" ShortID="373205842">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-037" ID="{0953CAE2-34B9-40E5-A2D6-007FE47A61ED}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-037.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="307350902"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-037" ID="{0953CAE2-34B9-40E5-A2D6-007FE47A61ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Zesty Rich Guy1-51_000" ID="{9E62E396-7F7B-4642-A1E2-1F663D6002B4}" ShortID="904127492">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-038" ID="{2061B734-F643-476B-B812-4DC2EAB96061}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-038.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823807799"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-038" ID="{2061B734-F643-476B-B812-4DC2EAB96061}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Zesty Rich Guy1-54_000" ID="{BF45A254-E96A-4B5A-B19E-40C579E97B79}" ShortID="355199754">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-039" ID="{27865084-1822-457E-A75A-F30DD2ABEC21}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-039.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="739915709"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-039" ID="{27865084-1822-457E-A75A-F30DD2ABEC21}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Zesty Rich Guy1-56_000" ID="{ABA9ED3B-58F0-46C0-950E-CC2C3EF97C94}" ShortID="504490888">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-040" ID="{2C177538-B6A1-46E6-99EB-570EEFE8F1A5}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-040.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="192997628"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-040" ID="{2C177538-B6A1-46E6-99EB-570EEFE8F1A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Big Lad" ID="{F8A8FF0B-E40C-4DF1-A55F-110958E0827A}" ShortID="361517941">
+									<ChildrenList>
+										<Sound Name="Big Lad1-59_500" ID="{AC643778-4CBC-4CA2-AF74-B567C5CCF1AF}" ShortID="396442506">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-041" ID="{B3654868-BB9E-49F8-A6F2-4D2E9B5EAB33}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-041.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="586071865"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-041" ID="{B3654868-BB9E-49F8-A6F2-4D2E9B5EAB33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Big Lad2-02_000" ID="{012C4552-9FFC-4690-B993-695AA10AEF65}" ShortID="497724452">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-042" ID="{B010555D-057A-4452-BCEF-75D248AC6013}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-042.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1025526754"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-042" ID="{B010555D-057A-4452-BCEF-75D248AC6013}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Big Lad2-04_000" ID="{E058F947-F1DE-436A-BC4B-698E87A36390}" ShortID="479189218">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-043" ID="{3317D54A-6BF1-4272-BC74-860A29089338}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-043.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059816810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-043" ID="{3317D54A-6BF1-4272-BC74-860A29089338}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Big Lad2-06_500" ID="{57CAE1C9-C0DA-4E65-9D49-304A08CD51F1}" ShortID="422593420">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-044" ID="{39781065-0707-43A4-8070-2077869CE898}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-044.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409133506"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-044" ID="{39781065-0707-43A4-8070-2077869CE898}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Big Lad2-10_000" ID="{EA58EF7B-8752-4AEB-9763-FC2307137C80}" ShortID="746945790">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-045" ID="{8A3E5BA0-CC06-43E7-93F2-799583464A8D}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-045.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="431682857"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-045" ID="{8A3E5BA0-CC06-43E7-93F2-799583464A8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Polka" ID="{2AD5486F-81F2-4016-BB11-EFBB7D973DB8}" ShortID="36088726">
+									<ChildrenList>
+										<Sound Name="Polka2-12_000" ID="{E7E07D65-B015-46AA-A70B-12208C80C1AC}" ShortID="309778621">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-046" ID="{3631A4BA-4FDE-4E7B-9309-D75AE45E6D1C}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-046.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="920357531"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-046" ID="{3631A4BA-4FDE-4E7B-9309-D75AE45E6D1C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Polka2-13_000" ID="{4B98FE17-E486-4788-AEE7-724E76331B01}" ShortID="484505175">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-047" ID="{EB709CB4-B30D-4082-A9B3-83BEB6BE41F1}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-047.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1061312869"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-047" ID="{EB709CB4-B30D-4082-A9B3-83BEB6BE41F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Polka2-14_500" ID="{205139AC-AA2A-4ABD-974F-B95C30533E77}" ShortID="413962954">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-048" ID="{B4505854-D2DF-42B3-BA11-5CF241C3BAD3}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-048.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="697623604"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-048" ID="{B4505854-D2DF-42B3-BA11-5CF241C3BAD3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Polka2-16_220" ID="{27A8E992-C0AD-43A4-A02B-258379AFF4B1}" ShortID="565455938">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-049" ID="{F5392A54-437F-4704-A33D-7D1913A7402B}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-049.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="239804848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-049" ID="{F5392A54-437F-4704-A33D-7D1913A7402B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Polka22-19_000" ID="{6879F779-1D15-49A5-89CE-20418B471602}" ShortID="1007520097">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NPC Lines-050" ID="{941E7426-90A6-4166-8B21-35FB424A8B71}">
+													<Language>English(US)</Language>
+													<AudioFile>NPC Lines-050.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="521225638"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NPC Lines-050" ID="{941E7426-90A6-4166-8B21-35FB424A8B71}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
