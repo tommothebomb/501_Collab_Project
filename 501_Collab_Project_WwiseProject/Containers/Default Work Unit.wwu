@@ -566,6 +566,117 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Slot Machine" ID="{C3496836-72A3-4264-A356-08EEE857FFA8}" ShortID="356074709">
+							<ChildrenList>
+								<RandomSequenceContainer Name="slot spin container" ID="{930D5986-A63C-4688-9D24-877EC4E101E5}" ShortID="1020702915">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Slot Spin-001" ID="{6E39FA29-6394-4EB2-948C-1996777ED5EB}" ShortID="1072996794">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-001" ID="{A54FC088-1A4E-478F-8498-1C7DF157E40E}">
+													<Language>SFX</Language>
+													<AudioFile>slot machine-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1007684741"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-001" ID="{A54FC088-1A4E-478F-8498-1C7DF157E40E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Spin-002" ID="{EDD3619C-0CF4-441E-9785-948533DB95ED}" ShortID="379364750">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-002" ID="{6020E3C9-F6AA-458C-82AB-A825C32BAC22}">
+													<Language>SFX</Language>
+													<AudioFile>slot machine-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="348867920"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-002" ID="{6020E3C9-F6AA-458C-82AB-A825C32BAC22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Spin-003" ID="{D5CA6764-C962-44DE-9454-0C71557D3477}" ShortID="738916488">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-003" ID="{F752E832-2219-4540-A095-2FCED941F557}">
+													<Language>SFX</Language>
+													<AudioFile>slot machine-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861407229"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-003" ID="{F752E832-2219-4540-A095-2FCED941F557}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Slot Win Base" ID="{06A1D257-17B3-4CED-9364-2A1CF0669186}" ShortID="391263008">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="winSFX_SlotMachine-001" ID="{EA321D16-C740-4398-A6CC-B72C7AFF01CC}">
+											<Language>SFX</Language>
+											<AudioFile>winSFX_SlotMachine-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="390269259"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="winSFX_SlotMachine-002" ID="{FC13CBA2-7CB1-4678-975B-BD87D32BC623}">
+											<Language>SFX</Language>
+											<AudioFile>winSFX_SlotMachine-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="939967480"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="winSFX_SlotMachine-002" ID="{FC13CBA2-7CB1-4678-975B-BD87D32BC623}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Voice Lines" ID="{7D348B82-6146-4868-8E3C-9A4102161FF1}" ShortID="291944206">
@@ -3297,72 +3408,6 @@
 										</Folder>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Bets OpenClose" ID="{50640D7D-4358-4826-9D8D-53AA78DD2CCE}" ShortID="970366084">
-									<ChildrenList>
-										<RandomSequenceContainer Name="Bets OpenClose" ID="{A437CEC8-1561-47E5-8316-D1A54AFA0B51}" ShortID="255229982">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Bets OpenClose Bets Open" ID="{0B5CECAF-5F37-4808-A86E-5F5F0DDE95B3}" ShortID="504205244">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FuckShitCunt-001" ID="{856566E9-3B8E-43F2-A1E0-1C7C69FEFE3E}">
-															<Language>English(US)</Language>
-															<AudioFile>FuckShitCunt-001.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="360136687"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FuckShitCunt-001" ID="{856566E9-3B8E-43F2-A1E0-1C7C69FEFE3E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Bets OpenClose Bets Closed" ID="{CA47A943-236E-4E36-AB84-EA7E50878741}" ShortID="382524977">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FuckShitCunt-002" ID="{03D0FFEF-C452-4A60-98CB-78A4839EAB96}">
-															<Language>English(US)</Language>
-															<AudioFile>FuckShitCunt-002.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="161582773"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FuckShitCunt-002" ID="{03D0FFEF-C452-4A60-98CB-78A4839EAB96}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</Folder>
 								<Folder Name="Dealer" ID="{1B2F8016-3D72-4802-8ED3-8FB94D3A8732}" ShortID="518004857">
 									<ChildrenList>
 										<Folder Name="Suits" ID="{0C4852A5-C0CD-4BF7-961C-0FCC8C5D02A1}" ShortID="953981538">
@@ -4223,6 +4268,60 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="FuckShitCunt-027" ID="{1BD49CC6-647C-43E8-BF3A-8AAA889B3692}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Bets OpenClose" ID="{50640D7D-4358-4826-9D8D-53AA78DD2CCE}" ShortID="970366084">
+											<ChildrenList>
+												<Sound Name="Bets OpenClose Bets Open" ID="{0B5CECAF-5F37-4808-A86E-5F5F0DDE95B3}" ShortID="504205244">
+													<PropertyList>
+														<Property Name="IsVoice" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FuckShitCunt-001" ID="{856566E9-3B8E-43F2-A1E0-1C7C69FEFE3E}">
+															<Language>English(US)</Language>
+															<AudioFile>FuckShitCunt-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="360136687"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FuckShitCunt-001" ID="{856566E9-3B8E-43F2-A1E0-1C7C69FEFE3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Bets OpenClose Bets Closed" ID="{CA47A943-236E-4E36-AB84-EA7E50878741}" ShortID="382524977">
+													<PropertyList>
+														<Property Name="IsVoice" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FuckShitCunt-002" ID="{03D0FFEF-C452-4A60-98CB-78A4839EAB96}">
+															<Language>English(US)</Language>
+															<AudioFile>FuckShitCunt-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="161582773"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FuckShitCunt-002" ID="{03D0FFEF-C452-4A60-98CB-78A4839EAB96}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
