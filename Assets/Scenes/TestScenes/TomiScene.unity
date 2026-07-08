@@ -7987,7 +7987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027c723c2e545124db1be9f3c0586b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 0
+  speed: 1
   Holder: {fileID: 731722838}
   Scaler: {fileID: 417762258}
   BaseScale: {x: 0, y: 0, z: 0}
