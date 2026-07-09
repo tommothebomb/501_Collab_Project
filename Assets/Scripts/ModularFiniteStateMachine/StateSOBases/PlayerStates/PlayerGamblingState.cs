@@ -21,6 +21,11 @@ public class PlayerGamblingState : GamblingStateSOBase
         base.DoExitLogic();
     }
 
+    public override void DoFrameUpdateLogic()
+    {
+        base.DoFrameUpdateLogic();
+    }
+
     public override void ResetValues()
     {
         base.ResetValues();

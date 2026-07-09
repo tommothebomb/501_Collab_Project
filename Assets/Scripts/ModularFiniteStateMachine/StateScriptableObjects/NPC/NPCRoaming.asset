@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92db7820aa4c90b49927fed53f6e38fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 65c1e757c9297c54ba1994d14f12f4a8, type: 3}
   m_Name: NPCRoaming
-  m_EditorClassIdentifier: Assembly-CSharp::NPCRoamingState
+  m_EditorClassIdentifier: Assembly-CSharp::NPCGameMasterRoamingState

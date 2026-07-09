@@ -36,6 +36,11 @@ public class PlayerRoamingState : RoamingStateSOBase
         interaction.enabled = false;
     }
 
+    public override void DoFrameUpdateLogic()
+    {
+        base.DoFrameUpdateLogic();
+    }
+
     public override void ResetValues()
     {
         base.ResetValues();

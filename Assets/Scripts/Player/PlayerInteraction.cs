@@ -19,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {        
-        Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
+        //Debug.DrawRay(playerT.position, transform.TransformDirection(Vector3.forward) * 5, Color.blue);
 
         RaycastHit hit;
         if (Physics.Raycast(playerT.position, transform.TransformDirection(Vector3.forward), out hit, 5, mask))
@@ -30,12 +30,14 @@ public class PlayerInteraction : MonoBehaviour
                 if (lastHit != null && currentHit != lastHit)
                 {
                     lastHit.HideUIToolTip();
+                    Debug.Log("hide tooltips");
                     tooltipShown = false;
                 }
                 if (!tooltipShown)
                 {
                     currentHit = interactible;
                     currentHit.CheckToDisplayUIToolTip();
+                    Debug.Log("show tooltips");
                     tooltipShown = true;
                 }
                 lastHit = currentHit;

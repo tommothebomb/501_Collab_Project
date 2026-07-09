@@ -18,4 +18,9 @@ public class HumanoidStateMachine
         currentState = newState;
         currentState.EnterState();
     }
+
+    public void Update()
+    {
+        currentState.FrameUpdate();
+    }
 }

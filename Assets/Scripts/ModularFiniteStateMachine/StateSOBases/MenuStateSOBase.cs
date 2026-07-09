@@ -15,6 +15,7 @@ public class MenuStateSOBase : ScriptableObject
 
     public virtual void DoEnterLogic() { }
     public virtual void DoExitLogic() { ResetValues(); }
+    public virtual void DoFrameUpdateLogic() { }
     public virtual void DoAnimationLogic(HumanoidBase.AnimationTriggers trigger) { }
     public virtual void ResetValues() { }
 }

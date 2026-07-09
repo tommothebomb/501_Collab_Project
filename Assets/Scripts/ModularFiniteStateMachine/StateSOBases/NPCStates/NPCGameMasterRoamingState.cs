@@ -1,11 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerInMenu", menuName = "State Machine/In Menu/Player In Menu")]
-public class PlayerInMenuState : MenuStateSOBase
+[CreateAssetMenu(fileName = "NPCRoaming", menuName = "State Machine/Roaming/NPC Roaming")]
+public class NPCGameMasterRoamingState : RoamingStateSOBase
 {
     // Libby Script \\
-    // add canvas enable and disable logic in a seperate script
-    InputSystem_Actions inputActs;
+    // What will do in this state:
+    // random timeframe chosen in enter logic will decide how long will do each action
+    // actions are loiter, walk around, play games
+    // Connections to other states:
+    // when choose to play game will swap to gambling state once get to a machine
 
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
@@ -15,19 +18,12 @@ public class PlayerInMenuState : MenuStateSOBase
 
     public override void DoEnterLogic()
     {
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
-
-        inputActs = new InputSystem_Actions();
-        inputActs.UI.Enable();
+        base.DoEnterLogic();
     }
 
     public override void DoExitLogic()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        inputActs.UI.Disable();
+        base.DoExitLogic();
     }
 
     public override void DoFrameUpdateLogic()

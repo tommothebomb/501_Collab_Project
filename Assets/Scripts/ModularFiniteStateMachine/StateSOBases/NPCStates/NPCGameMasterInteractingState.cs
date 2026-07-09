@@ -1,14 +1,15 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NPCInteracting", menuName = "State Machine/In Menu/NPC Interacting")]
-public class NPCInteractingState : MenuStateSOBase
+public class NPCGameMasterInteractingState : MenuStateSOBase
 {
     // Libby Script \\
     // What will do in this state:
-    // player will stand still and face player
-    // activate dialogue system and play lines
+    // play dialogue before player plays game
+    // asks player if wants to play
     // Connections to other states:
-    // return to roaming when dialogue stops
+    // if player selects yes swap to gambling state
+    // if player selects no swap to roaming state
 
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
@@ -19,20 +20,18 @@ public class NPCInteractingState : MenuStateSOBase
     public override void DoEnterLogic()
     {
         // make npc look at player
-        // activate dialogue canvas
-        Debug.Log("interacting");
+        // activate dialogue script for this object
         base.DoEnterLogic();
     }
 
     public override void DoExitLogic()
     {
-        // deactivate dialogue canvas
+        // deactivate dialogue script for this gameobject
         base.DoExitLogic();
     }
 
     public override void DoFrameUpdateLogic()
     {
-        // dialogue system logic
         base.DoFrameUpdateLogic();
     }
 
@@ -45,3 +44,4 @@ public class NPCInteractingState : MenuStateSOBase
         base.DoAnimationLogic(trigger);
     }
 }
+
