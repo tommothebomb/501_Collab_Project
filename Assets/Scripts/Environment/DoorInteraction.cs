@@ -4,7 +4,8 @@ using UnityEngine.UI;
 public class DoorInterractions : InteractableObjectBase, IInterractible
 {
     // Libby Script \\
-    public void Interact()
+
+    public override void Interact()
     {
         Debug.Log("door open animation");
     }
