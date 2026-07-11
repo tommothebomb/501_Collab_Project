@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2969981116",
+    "Type": "Event",
+    "GUID": "{9E388745-95BF-4244-B2BB-078A24AC9023}",
+    "Language": "SFX",
+    "Hash": "{A5E7B1B2-0A17-32DE-A1A5-09D164075948}",
+    "ObjectPath": "Stop_attract_Western",
+    "ShortName": "Stop_attract_Western",
+    "Path": "Event/Stop_attract_Western.bnk",
+    "Events": [
+     {
+      "Id": "2969981116",
+      "Name": "Stop_attract_Western",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_Western",
+      "GUID": "{9E388745-95BF-4244-B2BB-078A24AC9023}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E5F70ECA-39DD-B723-46C7-8C3004E38490}"
+ }
+}

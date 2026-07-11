@@ -1,6 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EE195E60-B046-4381-95C5-4321113BE421}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{EE195E60-B046-4381-95C5-4321113BE421}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EE195E60-B046-4381-95C5-4321113BE421}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Slots" ID="{85444CE9-AE17-4D0C-A388-D3D8A2717E7E}" ShortID="397739799">
+					<ChildrenList>
+						<Event Name="Play_Slot_Stop" ID="{FB3048F7-4674-420A-B453-3B89DDF2A9D7}">
+							<ChildrenList>
+								<Action Name="" ID="{4B770A28-1731-454C-9D2F-0274CFCFB083}" ShortID="632699305">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slot Stop" ID="{C34DDD94-B3C8-4529-867C-A088013AD5CD}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Slot_Win_Base" ID="{C9D30CE8-02FB-4C70-926D-3715757032F1}">
+							<ChildrenList>
+								<Action Name="" ID="{03CDA8E0-C8C8-4577-86EA-E5310E0EE7B5}" ShortID="34824740">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slot Win Base" ID="{06A1D257-17B3-4CED-9364-2A1CF0669186}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_slot_spin_container" ID="{07AB0C95-AAFC-4423-9004-67A44EBBBF94}">
+							<ChildrenList>
+								<Action Name="" ID="{282385CD-6C3B-4802-BDCE-29810111EDA6}" ShortID="430840319">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="slot spin container" ID="{930D5986-A63C-4688-9D24-877EC4E101E5}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Spin_Cycle" ID="{D479A95D-E68A-429A-A4D9-3180E58C56C6}">
+							<ChildrenList>
+								<Action Name="" ID="{234F7B57-80AF-404A-B5CF-FC2A0C68E8FF}" ShortID="677765691">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spin Cycle" ID="{AAA2F77B-85EF-4441-93B6-F33F819F3A1E}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Spin_Cycle" ID="{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}">
+							<ChildrenList>
+								<Action Name="" ID="{D7EF65FB-003E-4B00-8BCB-F8474F094B7C}" ShortID="470780325">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spin Cycle" ID="{AAA2F77B-85EF-4441-93B6-F33F819F3A1E}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Attractions" ID="{26D54ED5-7ECE-4880-8C16-E1D2FE34B1E5}" ShortID="629904792">
+							<ChildrenList>
+								<Event Name="Play_attract_SnakeEyes" ID="{E7EC3575-75DB-4083-AAA9-1A5A93025567}">
+									<ChildrenList>
+										<Action Name="" ID="{3A418779-0F0D-406A-A9D2-07CE69417BFE}" ShortID="263797469">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_attract_xmarks" ID="{DE62DF80-2838-4D3F-A129-E14B1899BBEC}">
+									<ChildrenList>
+										<Action Name="" ID="{88560775-8311-4770-87A6-3D725BA1CA5D}" ShortID="1000926944">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_attract_Western" ID="{239C2151-E67A-447D-A378-5B8BE646D123}">
+									<ChildrenList>
+										<Action Name="" ID="{251DBF82-F2B1-430B-A300-56FC33BBE0CA}" ShortID="16359659">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_attract_FourLeafLuckalt" ID="{C52AA46E-E097-43FD-8359-F611D7901693}">
+									<ChildrenList>
+										<Action Name="" ID="{1463CD36-3BC4-48B7-A9B5-AE6F2DCA89B0}" ShortID="880929487">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_attract_Western" ID="{9E388745-95BF-4244-B2BB-078A24AC9023}">
+									<ChildrenList>
+										<Action Name="" ID="{D996093A-EE5F-4029-8240-E8CEA5D0C308}" ShortID="233439729">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_attract_SnakeEyes" ID="{3C6F98AA-F29C-4777-B2D5-6F7466144426}">
+									<ChildrenList>
+										<Action Name="" ID="{15F8B3D6-A8E2-4F5C-AFF4-C9B286C26856}" ShortID="545869598">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_attract_FourLeafLuckalt" ID="{ADD6545D-365F-40D8-B2B7-E63C62DA28A3}">
+									<ChildrenList>
+										<Action Name="" ID="{7175913B-924D-4D36-B16D-BC510A90F060}" ShortID="305275119">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_attract_xmarks" ID="{959D64FC-147D-4683-99A7-46BDCA96FCA4}">
+									<ChildrenList>
+										<Action Name="" ID="{235C27D9-24D5-46CD-85CA-90B11C95D441}" ShortID="424009688">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Stop" ID="{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}">
+					<ChildrenList>
+						<Action Name="" ID="{3247D4A3-7B04-4F0B-98C6-2B98D36497AD}" ShortID="74698940">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3D626FC2-0779-497B-88A8-65F2C99A3B71}" ShortID="174965590">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0DCC6027-75CE-4304-A008-16792A5D2830}" ShortID="673910761">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{83B75D2A-F1E5-4AED-88DB-8C21D1EBCD37}" ShortID="20349082">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

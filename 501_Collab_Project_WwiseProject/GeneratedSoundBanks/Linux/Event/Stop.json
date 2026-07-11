@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "788884573",
+    "Type": "Event",
+    "GUID": "{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}",
+    "Language": "SFX",
+    "Hash": "{B170CCE2-AD8F-ADB7-3009-59CD6C7E8412}",
+    "ObjectPath": "Stop",
+    "ShortName": "Stop",
+    "Path": "Event/Stop.bnk",
+    "Events": [
+     {
+      "Id": "788884573",
+      "Name": "Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop",
+      "GUID": "{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{024798BD-47CA-0FAB-0B74-621E91C4540A}"
+ }
+}

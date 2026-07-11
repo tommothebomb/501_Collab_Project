@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1665187052",
+    "Type": "Event",
+    "GUID": "{959D64FC-147D-4683-99A7-46BDCA96FCA4}",
+    "Language": "SFX",
+    "Hash": "{2DAA4F91-F014-5344-EF86-DF2BC58F38A5}",
+    "ObjectPath": "Stop_attract_xmarks",
+    "ShortName": "Stop_attract_xmarks",
+    "Path": "Event/Stop_attract_xmarks.bnk",
+    "Events": [
+     {
+      "Id": "1665187052",
+      "Name": "Stop_attract_xmarks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_xmarks",
+      "GUID": "{959D64FC-147D-4683-99A7-46BDCA96FCA4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{727B95A9-015F-4089-6461-C6D6192CF079}"
+ }
+}

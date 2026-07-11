@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2852958513",
+    "Type": "Event",
+    "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
+    "Language": "SFX",
+    "Hash": "{88FCACBF-45DB-A32B-E915-6ACC924B7AEB}",
+    "ObjectPath": "Play_Spin_Cycle",
+    "ShortName": "Play_Spin_Cycle",
+    "Path": "Event/Play_Spin_Cycle.bnk",
+    "Media": [
+     {
+      "Id": "128454229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "slotCycle.wav",
+      "Path": "Media/128454229.wem",
+      "CachePath": "C9/{C998DC31-2613-3007-AC3B-ECC2EEE63F7F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2852958513",
+      "Name": "Play_Spin_Cycle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Spin_Cycle",
+      "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "128454229"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6D160CE1-3AD5-9F25-EC07-7F49FEB000BD}"
+ }
+}

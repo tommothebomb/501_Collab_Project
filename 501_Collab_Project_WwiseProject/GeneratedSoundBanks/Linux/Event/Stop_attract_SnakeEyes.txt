@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3634297912	Stop_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Stop_attract_SnakeEyes	
+

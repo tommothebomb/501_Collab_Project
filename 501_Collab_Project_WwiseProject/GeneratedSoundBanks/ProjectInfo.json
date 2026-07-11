@@ -3,7 +3,7 @@
   "Project": {
    "Name": "501_Collab_Project_WwiseProject",
    "GUID": "{2AB0C3F9-5B51-4E5F-A302-1C61FAE58348}",
-   "Generator": "2025.1.7.9143"
+   "Generator": "2025.1.8.9170"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -38,6 +38,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{DAEB7842-077C-9F3F-FA3C-565D89E6CEA4}"
+  "FileHash": "{476396CD-5D87-82CC-F2D9-A3D0D0A584F2}"
  }
 }

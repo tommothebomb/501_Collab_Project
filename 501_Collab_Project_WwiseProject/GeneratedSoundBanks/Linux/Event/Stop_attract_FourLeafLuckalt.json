@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3510522014",
+    "Type": "Event",
+    "GUID": "{ADD6545D-365F-40D8-B2B7-E63C62DA28A3}",
+    "Language": "SFX",
+    "Hash": "{358F5DB6-1BDB-9218-3362-73E8EF3ACAE4}",
+    "ObjectPath": "Stop_attract_FourLeafLuckalt",
+    "ShortName": "Stop_attract_FourLeafLuckalt",
+    "Path": "Event/Stop_attract_FourLeafLuckalt.bnk",
+    "Events": [
+     {
+      "Id": "3510522014",
+      "Name": "Stop_attract_FourLeafLuckalt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_FourLeafLuckalt",
+      "GUID": "{ADD6545D-365F-40D8-B2B7-E63C62DA28A3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{54566C2C-E080-3893-5BF1-81B50147405A}"
+ }
+}
