@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "504588419",
+    "Type": "Event",
+    "GUID": "{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}",
+    "Language": "SFX",
+    "Hash": "{624168C3-4ACD-37C2-56ED-CB345B1D5811}",
+    "ObjectPath": "Stop_Spin_Cycle",
+    "ShortName": "Stop_Spin_Cycle",
+    "Path": "Event/Stop_Spin_Cycle.bnk",
+    "Events": [
+     {
+      "Id": "504588419",
+      "Name": "Stop_Spin_Cycle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop_Spin_Cycle",
+      "GUID": "{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EC33D63F-37DD-0F26-61AD-B363B9A5EA11}"
+ }
+}

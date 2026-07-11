@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1665187052	Stop_attract_xmarks			\Default Work Unit\Slots\Attractions\Stop_attract_xmarks	
+

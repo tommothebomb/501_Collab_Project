@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using AK.Wwise.Editor;
 
 public class Game_Slots_Old : InteractableObjectBase, IInterractible
 {
@@ -17,6 +18,16 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
     bool canInterractWith = true;
 
     [SerializeField] float[] EndGoal = new float[3];
+
+    public AK.Wwise.Event PlayCycle;
+    public AK.Wwise.Event StopCycle;
+    public AK.Wwise.Event Win;
+    public AK.Wwise.Event start;
+    public AK.Wwise.Event BarrelStop;
+    public AK.Wwise.Event attractionSound;
+    public AK.Wwise.Event attractionSoundStop;
+    public float randTime;
+    public float attractTimer;
 
     float currentRotationValue;
     float BaseEndGoalRotation { get; } = 3600;//this is where we add the shimmy ahhh shimmy yay
@@ -42,11 +53,17 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
         Start,Spinning,Payout,End
     }
 
+    private void Start()
+    {
+        randTime = Random.Range(15f, 100f);
+    }
+
     void Update()
     {
         switch (currentPhase)
         {
             case Phase.Start:
+                start.Post(this.gameObject);
                 //PAYMENT
                 GlobalManager.instance.Money -= Payment;
                 anim.Play();
@@ -83,6 +100,22 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
             case Phase.End:
                 canInterractWith = true;
                 break;
+        }
+
+        if (canInterractWith)
+        {
+            attractTimer += Time.deltaTime;
+            if (attractTimer >= randTime)
+            {
+                attractTimer = 0;
+                randTime = Random.Range(15f, 50f);
+                anim.Play("Attract");
+            }
+
+        }
+        else
+        {
+            attractionSoundStop.Post(this.gameObject);
         }
 
     }
@@ -158,13 +191,18 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
 
     void SlotsV2(int reel,float time)
     {
+        PlayCycle.Post(Reels[reel].gameObject);
         EndGoalRotation = EndGoal[reel] + BaseEndGoalRotation;
 
         float meow = Mathf.Lerp(currentRotationValue, EndGoalRotation, time /delaytime);
         //decide the final face
 
         Reels[reel].localEulerAngles = new Vector3(meow,0,0);
-   
+        if (time > delaytime)
+        {
+            StopCycle.Post(Reels[reel].gameObject);
+            BarrelStop.Post(Reels[reel].gameObject);
+        }
     }
     //something like a corotines
 
@@ -179,6 +217,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
 
         if (output1 == output2 && output1 == output3)
         {
+            Win.Post(this.gameObject);
             Debug.Log("WINNER");
 
             switch (output1) //avg 11% win rate
@@ -226,5 +265,14 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
     public override void CheckToDisplayUIToolTip()
     {
         if (canInterractWith) DisplayUIToolTip();
+    }
+
+    public void PlayAttraction()
+    {
+        attractionSound.Post(this.gameObject);
+    }
+    public void ResetAnim()
+    {
+        anim.Play("idle");
     }
 }

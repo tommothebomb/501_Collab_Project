@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2702863590",
+    "Type": "Event",
+    "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
+    "Language": "SFX",
+    "Hash": "{A5C844D5-3421-C639-FA32-4FADA3270AF6}",
+    "ObjectPath": "Play_attract_xmarks",
+    "ShortName": "Play_attract_xmarks",
+    "Path": "Event/Play_attract_xmarks.bnk",
+    "Media": [
+     {
+      "Id": "635112411",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "attract_xmarks.wav",
+      "Path": "Media/635112411.wem",
+      "CachePath": "8D/{8DA4F014-7B87-A86A-4553-B1CD04C804E6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2702863590",
+      "Name": "Play_attract_xmarks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_xmarks",
+      "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
+      "MaxAttenuation": "15",
+      "DurationType": "OneShot",
+      "DurationMin": "21.333334",
+      "DurationMax": "21.333334",
+      "MediaRefs": [
+       {
+        "Id": "635112411"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{56F846F9-DE6E-687D-BFED-11DFF522DD19}"
+ }
+}

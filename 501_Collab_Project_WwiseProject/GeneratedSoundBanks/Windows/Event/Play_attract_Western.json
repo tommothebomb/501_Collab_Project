@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "917334326",
+    "Type": "Event",
+    "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
+    "Language": "SFX",
+    "Hash": "{FC303159-6D0B-8EA4-AB65-5E08B8931140}",
+    "ObjectPath": "Play_attract_Western",
+    "ShortName": "Play_attract_Western",
+    "Path": "Event/Play_attract_Western.bnk",
+    "Media": [
+     {
+      "Id": "813455346",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "attract_Western.wav",
+      "Path": "Media/813455346.wem",
+      "CachePath": "61/{61B052EB-3ECB-C022-8F47-3C96D1B66B18}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "917334326",
+      "Name": "Play_attract_Western",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_Western",
+      "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
+      "MaxAttenuation": "15",
+      "DurationType": "OneShot",
+      "DurationMin": "31.993063",
+      "DurationMax": "31.993063",
+      "MediaRefs": [
+       {
+        "Id": "813455346"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{579A97ED-8FE1-365A-219C-173040B9064D}"
+ }
+}

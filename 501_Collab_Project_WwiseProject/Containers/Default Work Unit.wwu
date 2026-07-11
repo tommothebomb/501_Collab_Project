@@ -569,7 +569,20 @@
 						<Folder Name="Slot Machine" ID="{C3496836-72A3-4264-A356-08EEE857FFA8}" ShortID="356074709">
 							<ChildrenList>
 								<RandomSequenceContainer Name="slot spin container" ID="{930D5986-A63C-4688-9D24-877EC4E101E5}" ShortID="1020702915">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
 										</Reference>
@@ -589,6 +602,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="slot machine-001" ID="{A54FC088-1A4E-478F-8498-1C7DF157E40E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.34357"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.24295"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.118"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.84408"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>slot machine-001.wav</AudioFile>
 													<MediaIDList>
@@ -611,6 +631,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="slot machine-002" ID="{6020E3C9-F6AA-458C-82AB-A825C32BAC22}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.24988"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.28114"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.21865"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.78877"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>slot machine-002.wav</AudioFile>
 													<MediaIDList>
@@ -633,6 +660,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="slot machine-003" ID="{F752E832-2219-4540-A095-2FCED941F557}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.28462"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.27424"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.13188"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.72606"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>slot machine-003.wav</AudioFile>
 													<MediaIDList>
@@ -648,6 +682,9 @@
 								</RandomSequenceContainer>
 								<Sound Name="Slot Win Base" ID="{06A1D257-17B3-4CED-9364-2A1CF0669186}" ShortID="391263008">
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
 										</Reference>
@@ -675,6 +712,508 @@
 										<ActiveSource Name="winSFX_SlotMachine-002" ID="{FC13CBA2-7CB1-4678-975B-BD87D32BC623}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Slot Stop" ID="{C34DDD94-B3C8-4529-867C-A088013AD5CD}" ShortID="941205723">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Slot Machine SFX-001" ID="{6385DFA9-25CB-4FAB-A62B-AD46C7C043D9}" ShortID="636886275">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-005" ID="{A584D179-2786-45F0-B0A5-3919A3DA9478}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.01846"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.09515"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.05782"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.32496"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="104126226"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-005" ID="{A584D179-2786-45F0-B0A5-3919A3DA9478}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-002" ID="{18A984A2-02CD-4B36-A3F0-358C9A49B6CD}" ShortID="467103146">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-006" ID="{A0EA3326-3080-4FF3-BBD8-CE46A960D615}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.03486"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.12222"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.09786"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="381998484"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-006" ID="{A0EA3326-3080-4FF3-BBD8-CE46A960D615}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-003" ID="{7AB1606C-EF79-4ABD-AF5F-7BD0A85BF482}" ShortID="153547132">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-007" ID="{733ADB7F-86E0-4D30-BE76-44229BEA19F1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.1204"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.09342"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.22181"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.53251"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="672356513"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-007" ID="{733ADB7F-86E0-4D30-BE76-44229BEA19F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-004" ID="{C9390C7F-2931-4C6B-B7A8-5332A0D392D4}" ShortID="54006291">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-009" ID="{274EB40D-F233-4452-A1E1-388C173A5880}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0211"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.149"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.02628"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003987524"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-009" ID="{274EB40D-F233-4452-A1E1-388C173A5880}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-005" ID="{BC1DA06F-233F-46F8-9A0C-4F85B368F7E7}" ShortID="254510483">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-010" ID="{5DF45E45-A87A-4D79-803F-A04A779566DC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.03524"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.17302"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.10348"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657574222"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-010" ID="{5DF45E45-A87A-4D79-803F-A04A779566DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-006" ID="{29C2AE2E-8702-4A3C-97BB-651E32DC8183}" ShortID="749867847">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-011" ID="{232D57FE-0B0A-4FDA-A5B9-6F351326A6A9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.04362"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1479"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0464"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="480015837"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-011" ID="{232D57FE-0B0A-4FDA-A5B9-6F351326A6A9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-007" ID="{FC0BAEE6-E5EA-4460-B403-9FCF306D0067}" ShortID="787029280">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-013" ID="{AC500DCF-E49B-40A5-AAF9-E7819605A316}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.20107"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-013.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="585689114"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-013" ID="{AC500DCF-E49B-40A5-AAF9-E7819605A316}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-008" ID="{3ECDD6A6-87B9-4A0E-9D26-30718FBF3F4F}" ShortID="858253459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-014" ID="{A0AC7DCB-3816-40B3-B4A8-EDAAABC44642}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.27403"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-014.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="791351491"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-014" ID="{A0AC7DCB-3816-40B3-B4A8-EDAAABC44642}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Slot Machine SFX-009" ID="{36073470-3F47-4DC0-B530-D0441C5C0655}" ShortID="398467178">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slot machine-015" ID="{25832AB7-FFE8-4EF0-9DC6-A68656BA401C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.18058"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.25275"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>slot machine-015.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="24347595"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slot machine-015" ID="{25832AB7-FFE8-4EF0-9DC6-A68656BA401C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Spin Cycle" ID="{AAA2F77B-85EF-4441-93B6-F33F819F3A1E}" ShortID="201875995">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="slotCycle" ID="{5572BDDA-4900-4E80-8B9C-E7814A0ECFD5}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>slotCycle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="128454229"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="slotCycle" ID="{5572BDDA-4900-4E80-8B9C-E7814A0ECFD5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="Attractions" ID="{72A5BB8A-018C-4C0B-AE05-5B7D66C2B00B}" ShortID="733166843">
+									<ChildrenList>
+										<Sound Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" ShortID="1004822127">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="attract_FourLeafLuckalt" ID="{D2122A8C-92CA-4709-BB5E-010B4C6BE4B6}">
+													<Language>SFX</Language>
+													<AudioFile>attract_FourLeafLuckalt.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="595200575"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="attract_FourLeafLuckalt" ID="{D2122A8C-92CA-4709-BB5E-010B4C6BE4B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" ShortID="1030370710">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="attract_SnakeEyes" ID="{6A90180F-7618-4998-9F52-BD8CE1135CC2}">
+													<Language>SFX</Language>
+													<AudioFile>attract_SnakeEyes.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996559230"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="attract_SnakeEyes" ID="{6A90180F-7618-4998-9F52-BD8CE1135CC2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" ShortID="642581283">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="attract_Western" ID="{DD21966C-C8A0-4B4B-B375-977E468CFFAE}">
+													<Language>SFX</Language>
+													<AudioFile>attract_Western.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="813455346"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="attract_Western" ID="{DD21966C-C8A0-4B4B-B375-977E468CFFAE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" ShortID="680975064">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="attract_xmarks" ID="{07A3202B-504F-4348-BD09-43BD6A0A598E}">
+													<Language>SFX</Language>
+													<AudioFile>attract_xmarks.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="635112411"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="attract_xmarks" ID="{07A3202B-504F-4348-BD09-43BD6A0A598E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
