@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Guitar_Distortion" ID="{F50C6AD1-DD5E-4C14-980A-D20407DB445B}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+						<Property Name="DistortionTone" Type="Real32" Value="100"/>
+						<Property Name="DistortionType" Type="int32" Value="1"/>
+						<Property Name="PreEQBand1Gain" Type="Real32" Value="48"/>
+						<Property Name="Rectification" Type="Real32" Value="50"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Gain" ID="{3A6DFF05-E4E1-480E-8E13-E73C79F158A6}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="23.5"/>
+						<Property Name="LFEGain" Type="Real32" Value="24"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Pitch_Shifter" ID="{9F6A75D5-150B-45D1-AFF4-01A21DD01DB2}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
