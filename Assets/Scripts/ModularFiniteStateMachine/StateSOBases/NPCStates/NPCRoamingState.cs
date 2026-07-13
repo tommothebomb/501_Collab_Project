@@ -54,7 +54,7 @@ public class NPCRoamingState : RoamingStateSOBase
 
         if (loitring)
         {
-            // play random voicelines
+            // play idle anim?
         }
 
         base.DoFrameUpdateLogic();
@@ -70,5 +70,9 @@ public class NPCRoamingState : RoamingStateSOBase
         float rz = Random.Range(navmeshBounds.min.z, navmeshBounds.max.z);
         randomPoint = new Vector3(rx, thisNPC.position.y, rz);
         agent.SetDestination(randomPoint);
+    }
+    public override void DoAnimationLogic(HumanoidBase.AnimationTriggers trigger)
+    {
+        base.DoAnimationLogic(trigger);
     }
 }

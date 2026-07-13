@@ -37,7 +37,7 @@ public class NPCGamblingState : GamblingStateSOBase
         currentStandPoint = spl.emptyStandPoints[randomPoint];
         spl.emptyStandPoints.RemoveAt(randomPoint); // remove from empty points list so other npcs cant take same spot
         agent.SetDestination(currentStandPoint.position);
-        timeSpentAtGame = Random.Range(10, 60); // CHANGE BACK TO 10, 60
+        timeSpentAtGame = Random.Range(10, 60);
         base.DoEnterLogic();
     }
 

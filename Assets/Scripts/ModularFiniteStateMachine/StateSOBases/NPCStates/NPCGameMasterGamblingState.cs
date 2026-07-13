@@ -5,9 +5,9 @@ public class NPCGameMasterGamblingState : GamblingStateSOBase
 {
     // Libby Script \\
     // What will do in this state:
-    // will run the game for the player, which game depends on the table is at
+    // run the game the npc is at
     // Connections to other states:
-    // when player leaves table will go back to roaming
+    // swap back to roaming after player leaves
 
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
@@ -30,10 +30,6 @@ public class NPCGameMasterGamblingState : GamblingStateSOBase
         base.DoFrameUpdateLogic();
     }
 
-    public override void ResetValues()
-    {
-        base.ResetValues();
-    }
     public override void DoAnimationLogic(HumanoidBase.AnimationTriggers trigger)
     {
         base.DoAnimationLogic(trigger);

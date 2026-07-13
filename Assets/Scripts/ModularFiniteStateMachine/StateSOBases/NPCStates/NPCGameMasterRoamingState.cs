@@ -5,10 +5,9 @@ public class NPCGameMasterRoamingState : RoamingStateSOBase
 {
     // Libby Script \\
     // What will do in this state:
-    // random timeframe chosen in enter logic will decide how long will do each action
-    // actions are loiter, walk around, play games
+    // play idle animation
     // Connections to other states:
-    // when choose to play game will swap to gambling state once get to a machine
+    // swap to interacting state when player interacts
 
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
@@ -28,12 +27,8 @@ public class NPCGameMasterRoamingState : RoamingStateSOBase
 
     public override void DoFrameUpdateLogic()
     {
+        // play idle anim
         base.DoFrameUpdateLogic();
-    }
-
-    public override void ResetValues()
-    {
-        base.ResetValues();
     }
     public override void DoAnimationLogic(HumanoidBase.AnimationTriggers trigger)
     {

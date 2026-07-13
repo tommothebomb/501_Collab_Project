@@ -10,20 +10,17 @@ public class NPCInteractingState : MenuStateSOBase
     // Connections to other states:
     // return to roaming when dialogue stops
     Transform thisNPC;
-    HumanoidBase thisBase;
     Transform playerTransform;
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
     {
         base.Initialize(gameObject, humanoid);
         thisNPC = gameObject.transform;
-        thisBase = thisNPC.GetComponent<HumanoidBase>();
         playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     public override void DoEnterLogic()
     {
-        Debug.Log("interacting");
         Vector3 targetLook = playerTransform.position;
         targetLook.y = thisNPC.position.y;
         thisNPC.LookAt(targetLook);
@@ -33,14 +30,13 @@ public class NPCInteractingState : MenuStateSOBase
 
     public override void DoExitLogic()
     {
-        thisBase.stateMachine.ChangeState(thisBase.roamingState);
         // deactivate dialogue canvas
         base.DoExitLogic();
     }
 
     public override void DoFrameUpdateLogic()
     {
-        // dialogue system logic
+        // dialogue system logic?
         base.DoFrameUpdateLogic();
     }
 

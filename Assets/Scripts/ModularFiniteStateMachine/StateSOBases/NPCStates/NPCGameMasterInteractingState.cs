@@ -10,16 +10,22 @@ public class NPCGameMasterInteractingState : MenuStateSOBase
     // Connections to other states:
     // if player selects yes swap to gambling state
     // if player selects no swap to roaming state
+    Transform thisNPC;
+    Transform playerTransform;
 
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
     {
         base.Initialize(gameObject, humanoid);
+        thisNPC = gameObject.transform;
+        playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     public override void DoEnterLogic()
     {
-        // make npc look at player
+        Vector3 targetLook = playerTransform.position;
+        targetLook.y = thisNPC.position.y;
+        thisNPC.LookAt(targetLook);
         // activate dialogue script for this object
         base.DoEnterLogic();
     }
