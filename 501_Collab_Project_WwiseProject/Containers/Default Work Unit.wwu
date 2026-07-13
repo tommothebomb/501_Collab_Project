@@ -1085,6 +1085,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="attract_FourLeafLuckalt" ID="{D2122A8C-92CA-4709-BB5E-010B4C6BE4B6}">
+													<PropertyList>
+														<Property Name="TrimEnd" Type="Real64" Value="17.33333"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>attract_FourLeafLuckalt.wav</AudioFile>
 													<MediaIDList>
