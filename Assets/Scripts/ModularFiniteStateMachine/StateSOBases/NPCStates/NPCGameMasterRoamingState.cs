@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCRoaming", menuName = "State Machine/Roaming/NPC Roaming")]
+[CreateAssetMenu(fileName = "NPCGMRoaming", menuName = "State Machine/Roaming/NPC GM Roaming")]
 public class NPCGameMasterRoamingState : RoamingStateSOBase
 {
     // Libby Script \\

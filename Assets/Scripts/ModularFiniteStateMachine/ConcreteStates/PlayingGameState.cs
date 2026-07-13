@@ -21,6 +21,11 @@ public class PlayingGameState : HumanoidState
         humanoid.gamblingBaseInstance.DoExitLogic();
     }
 
+    public override void FrameUpdate()
+    {
+        humanoid.gamblingBaseInstance.DoFrameUpdateLogic();
+    }
+
     public override void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger)
     {
         base.AnimationTriggerEvent(trigger);

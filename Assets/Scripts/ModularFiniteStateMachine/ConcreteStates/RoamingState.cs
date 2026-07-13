@@ -21,6 +21,11 @@ public class RoamingState : HumanoidState
         humanoid.romaingBaseInstance.DoExitLogic();
     }
 
+    public override void FrameUpdate()
+    {
+        humanoid.romaingBaseInstance.DoFrameUpdateLogic();
+    }
+
     public override void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger)
     {
         base.AnimationTriggerEvent(trigger);

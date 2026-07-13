@@ -131,18 +131,6 @@ MonoBehaviour:
   roamingBase: {fileID: 11400000, guid: e42531d20f64f6649b8a61ca59f807da, type: 2}
   gamblingBase: {fileID: 11400000, guid: 3671be6b62d942647a657a52e30d76fb, type: 2}
   menuBase: {fileID: 11400000, guid: 5513fc91c21cbd040a8add5d4a94b7bb, type: 2}
-  generalVoiceLines:
-  - {fileID: 8300000, guid: 2a68b9066b64c604faeb4c15e1d2f7d0, type: 3}
-  - {fileID: 8300000, guid: 1fb61f5c440609947aeb23a133eb4f14, type: 3}
-  - {fileID: 8300000, guid: 3e195a1b9415f2b47876322f587af1f8, type: 3}
-  gamblingVoiceLines:
-  - {fileID: 8300000, guid: 2a470e4c02a4de34da13be43220ac649, type: 3}
-  - {fileID: 8300000, guid: 5fae38e60c40f7345a09ae41d5fc0763, type: 3}
-  - {fileID: 8300000, guid: 57de8db37903c1145bdefaf8d71b79a1, type: 3}
-  - {fileID: 8300000, guid: bb3df1eb582183e4ebd68d604d451148, type: 3}
-  - {fileID: 8300000, guid: dce3a905474f9c2449b234b0686e2719, type: 3}
-  emptyStandPoints: []
-  fullStandPoints: []
 --- !u!195 &3158802357875847833
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -150,7 +138,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4871796822710901271}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2.5
   m_Speed: 3.5

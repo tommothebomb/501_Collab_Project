@@ -13,9 +13,8 @@ public class PlayerRoamingState : RoamingStateSOBase
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
     {
         base.Initialize(gameObject, humanoid);
-        // i think this is suppopsed to go here?
-        player = GameObject.FindWithTag("Player");
 
+        player = gameObject;
         playerMovement = player.GetComponent<PlayerMovement>();
         mouseMovement = player.GetComponentInChildren<MouseMovement>();
         interaction = player.GetComponentInChildren<PlayerInteraction>();
@@ -23,7 +22,6 @@ public class PlayerRoamingState : RoamingStateSOBase
 
     public override void DoEnterLogic()
     {
-        //Debug.Log("entered roaming");
         playerMovement.enabled = true;
         mouseMovement.enabled = true;
         interaction.enabled = true;

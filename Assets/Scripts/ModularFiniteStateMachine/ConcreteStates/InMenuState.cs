@@ -21,6 +21,10 @@ public class InMenuState : HumanoidState
         humanoid.menuBaseInstance.DoExitLogic();
     }
 
+    public override void FrameUpdate()
+    {
+        humanoid.menuBaseInstance.DoFrameUpdateLogic();
+    }
     public override void AnimationTriggerEvent(HumanoidBase.AnimationTriggers trigger)
     {
         base.AnimationTriggerEvent(trigger);

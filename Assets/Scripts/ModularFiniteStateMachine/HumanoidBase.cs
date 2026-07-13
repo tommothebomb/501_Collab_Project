@@ -45,6 +45,11 @@ public class HumanoidBase : MonoBehaviour
         stateMachine.Initialize(roamingState);
     }
 
+    private void Update()
+    {
+        stateMachine.currentState.FrameUpdate();
+    }
+
     public virtual void AnimationTriggerEvent(AnimationTriggers trigger)
     {
         // will be useable from the animator

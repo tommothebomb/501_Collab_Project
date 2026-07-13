@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCInteracting", menuName = "State Machine/In Menu/NPC Interacting")]
+[CreateAssetMenu(fileName = "NPCGMInteracting", menuName = "State Machine/In Menu/NPC GM Interacting")]
 public class NPCGameMasterInteractingState : MenuStateSOBase
 {
     // Libby Script \\

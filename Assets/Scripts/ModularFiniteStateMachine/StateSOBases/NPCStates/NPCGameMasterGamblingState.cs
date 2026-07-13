@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NPCGambling", menuName = "State Machine/Gambling/NPC Gambling")]
+[CreateAssetMenu(fileName = "NPCGMGambling", menuName = "State Machine/Gambling/NPC GM Gambling")]
 public class NPCGameMasterGamblingState : GamblingStateSOBase
 {
     // Libby Script \\
