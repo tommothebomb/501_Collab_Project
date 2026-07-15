@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9523bc2a20fd7384b8812a7f147a83de
+guid: 3ab53db80c270fc44b3d8c113efc1c99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phone UI 3_0
+      name: App icons (7)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 870
-        height: 1502
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198d2765413b3ba41aa1c205e3cc263f
-      internalID: 765257530
+      spriteID: f8e7fb617da0c174093310b21554a77d
+      internalID: -789060139
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 12d470f51c7e5c346ae94b76742c9b55
+    spriteID: bc5de1c504ccd1e47a33f3ecec5e6dd6
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      phone UI 3_0: 765257530
+      App icons (7)_0: -789060139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
