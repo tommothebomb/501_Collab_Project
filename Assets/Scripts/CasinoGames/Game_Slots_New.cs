@@ -3,11 +3,13 @@ using Unity.VisualScripting;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class Game_Slots_New : MonoBehaviour
 {
     //each collum will have these values
     [SerializeField] float speed;
+    [SerializeField] float HiddenSpeed;
     [SerializeField] float SpinTime;
     [SerializeField] GameObject Holder;
     public RectTransform Scaler;
@@ -16,17 +18,15 @@ public class Game_Slots_New : MonoBehaviour
     float timer;
     int Loops;//how many loops we will do before moving on
     int CurrentLoop;
+    [SerializeField]int FinalLaps;
 
     public Sprite[] Icons;
     //Winlines
     class WinLines
     {
+        public Tiles Tile = Tiles.Wild;
         //add the typeing // if typing = null it hasnt been set yet
-        public bool[] row0 = new bool[5];
-        public bool[] row1 = new bool[5];
-        public bool[] row2 = new bool[5];
-        public bool[] row3 = new bool[5];
-        public bool[] row4 = new bool[5];
+        public bool[] row0 = new bool[25];
     }
     public class Tile
     {
@@ -44,20 +44,11 @@ public class Game_Slots_New : MonoBehaviour
      */
     WinLines TopRow = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
-        row0 = new bool[5] { true, true, true, true, true },
-        row1 = new bool[5] { false, false, false, false ,false },
-        row2 = new bool[5] { false, false, false, false ,false },
-        row3 = new bool[5] { false, false, false, false ,false },
-        row4 = new bool[5] { false, false, false, false ,false },
-    };
-
-    WinLines AnotherRow = new WinLines
-    {
-        row0 = new bool[5] { false, false, false, false, false },
-        row1 = new bool[5] { true, true, true, true, true },
-        row2 = new bool[5] { false, false, false, false, false },
-        row3 = new bool[5] { false, false, false, false, false },
-        row4 = new bool[5] { false, false, false, false, false },
+        row0 = new bool[] {true,  false, false, false ,true ,
+                           false, true,  false, true  ,false ,
+                           false, false, true , false ,false ,
+                           false, false, false, false ,false ,
+                           false, false, false, false ,false },
     };
     //HOW WIN LINES WORK
     //if the bool is true it will check that space,
@@ -149,7 +140,8 @@ public class Game_Slots_New : MonoBehaviour
             case State.Start:
                 //start
                 //set values
-                Loops = Random.Range(500, 1000);
+                HiddenSpeed = speed;
+                Loops = Random.Range(50, 100);
                 state++;
                 break;
             case State.Spin:
@@ -157,6 +149,7 @@ public class Game_Slots_New : MonoBehaviour
                 Spin();
                 break;
             case State.Payout:
+                Payout();
                 break;
             case State.BonusGame:
                 break;
@@ -175,9 +168,9 @@ public class Game_Slots_New : MonoBehaviour
     void Spin()
     {
 
-        timer += (speed - ((float)CurrentLoop/(float)Loops)) * Time.deltaTime;
+        timer += (HiddenSpeed - (float)CurrentLoop/(float)Loops) * Time.deltaTime;
         //effect the speed by the remaning amount of loops
-        Debug.Log(((float)CurrentLoop / (float)Loops));
+        //Debug.Log(((float)CurrentLoop / (float)Loops));
 
         if (timer > SpinTime)
         {
@@ -205,20 +198,77 @@ public class Game_Slots_New : MonoBehaviour
         if (CurrentLoop >= Loops)
         {
             //move to payout
-            state++;
+            if (HiddenSpeed > 0)
+            {
+                HiddenSpeed -= (1 / (float)FinalLaps);
+            }
+            else
+            {
+                float P = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, 0);
+                Scaler.sizeDelta = new Vector2(BaseScale.x, P);
+
+                state++;
+            }
         }
     }
 
     void Payout()
     {
+        float BonusGameCount;
         //check for paylines
 
         //check for atleast 3 bonus tiles
-            //if atleast 3 , state = Staate.Bonusgame, else go to endStep and pass the turn  (funny little magic refrance for you)
+        //if atleast 3 , state = Staate.Bonusgame, else go to endStep and pass the turn  (funny little magic refrance for you)
         //give money
 
-        
+        Debug.Log("PayoutTime");
 
+        WinLines[] RemaningWinlines = new WinLines[1]
+        {
+            TopRow,
+        };
+        //add all the winlines here
+
+        List<Transform> Rows = new  List<Transform>
+        {
+            Holder.transform.GetChild(4), Holder.transform.GetChild(3), Holder.transform.GetChild(2), Holder.transform.GetChild(1), Holder.transform.GetChild(0)
+        };
+
+        int PayoutAmount;
+
+        for (int C = 0; C < Rows[0].childCount ;C++)
+        {
+            
+
+            for (int Row = 0; Row < Rows.Count; Row++)
+            {
+                Tiles currentTile = Rows[Row].GetChild(C).GetComponent<Game_Slot_TileData>().Tile;
+
+                //WinLine
+                for (int WL = 0; WL < RemaningWinlines.Length; WL++)
+                {
+
+                    
+                    WinLines currentWinLine = RemaningWinlines[WL];
+                    if (currentWinLine.row0[(Row * 5) + C])
+                    {
+
+                        if (currentTile == Tiles.Wild) { }
+                        else if (currentTile == currentWinLine.Tile || currentWinLine.Tile == Tiles.Wild)
+                        {
+                            currentWinLine.Tile = currentTile;
+                        }
+                        else
+                        {
+                            //DISCARD WINLINE
+                            Rows[Row].GetChild(C).gameObject.SetActive(false);
+                        }
+
+
+                    }
+                }
+            }
+        }
     }
 }
 
