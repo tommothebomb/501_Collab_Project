@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: de4735cf5de384e4484cfa2b681e2bb5, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7762,7 +7762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 100
   HiddenSpeed: 0
-  SpinTime: 1
+  SpinTime: 0.1
   Holder: {fileID: 731722838}
   Scaler: {fileID: 417762258}
   BaseScale: {x: 0, y: 0, z: 0}
@@ -7778,6 +7778,17 @@ MonoBehaviour:
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  PayoutRewards:
+  - PayoutTier: 64000000e803000010270000
+  - PayoutTier: 14000000c8000000d0070000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
+  - PayoutTier: 0a0000006400000064000000
   state: 0
 --- !u!4 &1784047098
 Transform:

@@ -28,6 +28,15 @@ public class Game_Slots_New : MonoBehaviour
         //add the typeing // if typing = null it hasnt been set yet
         public bool[] row0 = new bool[25];
     }
+
+    [SerializeField] Payouts[] PayoutRewards;
+    [System.Serializable]
+    public class Payouts
+    {
+        public int[] PayoutTier = new int[3];
+    }
+
+
     public class Tile
     {
         public Tiles Type;
@@ -43,15 +52,6 @@ public class Game_Slots_New : MonoBehaviour
      * [0][0][0]
      */
 
-    WinLines Base = new WinLines
-    {
-        row0 = new bool[] { false, false, false, false  ,false ,
-                            false, false, false, false  ,false ,
-                            false, false, false, false  ,false ,
-                            false, false, false, false  ,false ,
-                            false, false, false, false  ,false },
-    };
-
     WinLines TopTri = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
         row0 = new bool[] {true,  false, false, false ,true ,
@@ -60,7 +60,6 @@ public class Game_Slots_New : MonoBehaviour
                            false, false, false, false ,false ,
                            false, false, false, false ,false },
     };
-
     WinLines BottomTri = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
@@ -69,7 +68,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, true, false, true  ,false ,
                             true, false, false, false  ,true },
     };
-
     WinLines TopDiag = new WinLines
     {
         row0 = new bool[] { true, false, false, false  ,false ,
@@ -78,7 +76,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, true  ,false ,
                             false, false, false, false  ,true },
     };
-
     WinLines BottomDiag = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,true ,
@@ -87,8 +84,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, true, false, false  ,false ,
                             true, false, false, false  ,false },
     };
-
-
     WinLines FirstLine = new WinLines
     {
         row0 = new bool[] { true , true  , true , true   ,true ,
@@ -97,7 +92,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, false  ,false ,
                             false, false, false, false  ,false },
     };
-
     WinLines SecondLine = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
@@ -106,7 +100,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, false  ,false ,
                             false, false, false, false  ,false },
     };
-
     WinLines ThirdLine = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
@@ -115,7 +108,6 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, false  ,false ,
                             false, false, false, false  ,false },
     };
-
     WinLines ForthLine = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
@@ -124,7 +116,6 @@ public class Game_Slots_New : MonoBehaviour
                             true , true  , true , true   ,true ,
                             false, false, false, false  ,false },
     };
-
     WinLines FithLine = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
@@ -320,7 +311,7 @@ public class Game_Slots_New : MonoBehaviour
             Holder.transform.GetChild(4), Holder.transform.GetChild(3), Holder.transform.GetChild(2), Holder.transform.GetChild(1), Holder.transform.GetChild(0)
         };
 
-        int PayoutAmount;
+        int PayoutAmount = 0;
 
         for (int C = 0; C < Rows[0].childCount ;C++)
         {
@@ -355,13 +346,26 @@ public class Game_Slots_New : MonoBehaviour
                             //Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.white;
                             RemaningWinlines.RemoveAt(WL);
                             WL--;
-                        }
 
+                            if (C >= 3)
+                            {
+                                PayoutAmount += PayoutRewards[(int)currentTile].PayoutTier[C - 2];
+                            }
+                        }
 
                     }
                 }
             }
         }
+
+        foreach(WinLines lines in RemaningWinlines)
+        {
+            PayoutAmount += PayoutRewards[(int)lines.Tile].PayoutTier[2];
+        }
+
+        GlobalManager.instance.Money += PayoutAmount;
+        Debug.Log(PayoutAmount);
+        //add money
     }
 
     List<WinLines> GenrateWinlineList()
