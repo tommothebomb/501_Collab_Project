@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AA9B59CD-6800-F7B1-396F-F16C34D65E65}",
+    "Hash": "{F0853383-7348-04F2-A5DE-22F9E34F8692}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -59,9 +59,25 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
       "GUID": "{CD47621C-FD6E-4B5F-8AD1-A41CA0B9272D}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "168988604",
+      "Name": "Slot_Test_Group",
+      "ObjectPath": "\\States\\Default Work Unit\\Slot_Test_Group",
+      "GUID": "{DBD3B52F-C8EC-4678-AC14-3D562C160300}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Slot_Test_Group\\None",
+        "GUID": "{C5C0F54A-BC14-4A08-8A1E-D7D0FB88147C}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{5E5F6B43-77BF-A419-0644-66B151B3364C}"
+  "FileHash": "{17B6B26D-9AA7-9902-F969-553F4490079A}"
  }
 }

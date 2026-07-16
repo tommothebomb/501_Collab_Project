@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{FB3048F7-4674-420A-B453-3B89DDF2A9D7}",
     "Language": "SFX",
-    "Hash": "{1674812C-EAA0-D0E9-8462-F4A8609C4093}",
+    "Hash": "{3B5DEC10-B9F8-DD3E-7A82-DF9953C52170}",
     "ObjectPath": "Play_Slot_Stop",
     "ShortName": "Play_Slot_Stop",
     "Path": "Event/Play_Slot_Stop.bnk",
@@ -103,7 +103,7 @@
       "Name": "Play_Slot_Stop",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Stop",
       "GUID": "{FB3048F7-4674-420A-B453-3B89DDF2A9D7}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "0.26110673",
       "DurationMax": "0.58511144",
@@ -140,6 +140,6 @@
     ]
    }
   ],
-  "FileHash": "{B237DB0B-A10F-E9AF-5012-540B7F49B3B7}"
+  "FileHash": "{E15F1A8E-A294-BE8D-ECE3-B76743F04E47}"
  }
 }

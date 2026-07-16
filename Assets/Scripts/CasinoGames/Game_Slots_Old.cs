@@ -109,7 +109,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
             if (attractTimer >= randTime)
             {
                 attractTimer = 0;
-                randTime = Random.Range(15f, 50f);
+                randTime = Random.Range(30f, 100f);
                 anim.Play("Attract");
             }
 

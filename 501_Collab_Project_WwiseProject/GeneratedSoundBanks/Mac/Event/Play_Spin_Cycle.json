@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
     "Language": "SFX",
-    "Hash": "{88FCACBF-45DB-A32B-E915-6ACC924B7AEB}",
+    "Hash": "{F074E46D-64EC-D402-59A6-42BE953A6D24}",
     "ObjectPath": "Play_Spin_Cycle",
     "ShortName": "Play_Spin_Cycle",
     "Path": "Event/Play_Spin_Cycle.bnk",
@@ -31,7 +31,7 @@
       "Name": "Play_Spin_Cycle",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Spin_Cycle",
       "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -42,6 +42,6 @@
     ]
    }
   ],
-  "FileHash": "{972B72A9-36B8-EB68-4523-B75D8556483C}"
+  "FileHash": "{C9ABCA17-1BB7-FEB8-646F-647530BF12F9}"
  }
 }
