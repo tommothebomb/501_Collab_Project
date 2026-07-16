@@ -19,7 +19,7 @@ public class InteractableObjectBase : MonoBehaviour, IInterractible
     }
     public void DisplayUIToolTip()
     {
-        if (uiTooltipObj.activeSelf) return;
+        //if (uiTooltipObj.activeSelf) return;
         uiTooltipObj.transform.position = spawnPos.transform.position;
         uiTooltipObj.SetActive(true);
     }

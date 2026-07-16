@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AI;
 
 [CreateAssetMenu(fileName = "NPCInteracting", menuName = "State Machine/In Menu/NPC Interacting")]
 public class NPCInteractingState : MenuStateSOBase
@@ -13,32 +14,35 @@ public class NPCInteractingState : MenuStateSOBase
     Transform thisNPC;
     HumanoidBase thisBase;
     Transform playerTransform;
+    NavMeshAgent agent;
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
     {
         base.Initialize(gameObject, humanoid);
         thisNPC = gameObject.transform;
         thisBase = thisNPC.GetComponent<HumanoidBase>();
+        agent = thisNPC.GetComponent<NavMeshAgent>();
         playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     public override void DoEnterLogic()
     {
         // activate dialogue canvas
+        agent.enabled = false;
         ReturnToRoaming();
         base.DoEnterLogic();
     }
 
     async void ReturnToRoaming()
     {
-        Debug.Log("called function");
+        Debug.Log("dialogue play");
         await Task.Delay(3000);
-        Debug.Log("waited 5 seconds");
         thisBase.stateMachine.ChangeState(thisBase.roamingState);
     }
 
     public override void DoExitLogic()
     {
+        agent.enabled = true;
         // deactivate dialogue canvas
         base.DoExitLogic();
     }
