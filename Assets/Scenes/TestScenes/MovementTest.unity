@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 14858e4e09ee69f49b1d4574b2732e06, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 14858e4e09ee69f49b1d4574b2732e06, type: 3}
       propertyPath: m_Name
       value: Chud1
@@ -518,6 +522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: a44a5177bff2f7443adb5c50f1859ad6, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: a44a5177bff2f7443adb5c50f1859ad6, type: 3}
       propertyPath: m_Name
       value: Drunk2
@@ -719,6 +727,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: e2f465c7a6f6d4544939737d2edd90b7, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: e2f465c7a6f6d4544939737d2edd90b7, type: 3}
       propertyPath: m_Name
       value: FemaleDealer
@@ -874,6 +886,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 6d6ab68b70a65124f9978e86c39d8d3c, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 6d6ab68b70a65124f9978e86c39d8d3c, type: 3}
       propertyPath: m_Name
       value: Female3
@@ -1228,6 +1244,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 71c45aa61ead8304cbf8619a364a1285, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 71c45aa61ead8304cbf8619a364a1285, type: 3}
       propertyPath: m_Name
       value: Drunk1
@@ -1395,6 +1415,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 24012611474b35e4ba10015cb0caf394, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 24012611474b35e4ba10015cb0caf394, type: 3}
       propertyPath: m_Name
       value: MaleDealer
@@ -2181,6 +2205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 68eb8bd92045e3040812a88b3b32a46a, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 68eb8bd92045e3040812a88b3b32a46a, type: 3}
       propertyPath: m_Name
       value: Female4
@@ -2448,6 +2476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 9ec91191c513e8b4db64131e6b1f3c05, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 9ec91191c513e8b4db64131e6b1f3c05, type: 3}
       propertyPath: m_Name
       value: Female5
@@ -3382,6 +3414,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 70b2e3580d8fbeb4991f912a890552c8, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 70b2e3580d8fbeb4991f912a890552c8, type: 3}
       propertyPath: m_Name
       value: Female1
@@ -3444,6 +3480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: be56d51af7295644a96deddccbea9efe, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: be56d51af7295644a96deddccbea9efe, type: 3}
       propertyPath: m_Name
       value: Chud2
@@ -3506,6 +3546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: a645018bc6d5389429640bf5f19ce7d0, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: a645018bc6d5389429640bf5f19ce7d0, type: 3}
       propertyPath: m_Name
       value: SecurityGuard
@@ -3568,6 +3612,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 20abed2ff20ecd94fabcd0107868b65b, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: 20abed2ff20ecd94fabcd0107868b65b, type: 3}
       propertyPath: m_Name
       value: Drunk3
@@ -4618,6 +4666,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: ede2f360d588b1f48946a4c1f5738dfc, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: ede2f360d588b1f48946a4c1f5738dfc, type: 3}
       propertyPath: m_Name
       value: Chud3
@@ -5062,6 +5114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1778848580}
     m_Modifications:
+    - target: {fileID: 856535546348416776, guid: db6d3067d7bb56c4db9b1a09da03603d, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
     - target: {fileID: 4871796822710901271, guid: db6d3067d7bb56c4db9b1a09da03603d, type: 3}
       propertyPath: m_Name
       value: Female2
