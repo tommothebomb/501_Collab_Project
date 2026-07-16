@@ -5,12 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Game_Slots_New : MonoBehaviour
-{
+public class Game_Slots_New : InteractableObjectBase, IInterractible
+{ 
     //each collum will have these values
     [SerializeField] float speed;
     [SerializeField] float HiddenSpeed;
     [SerializeField] float SpinTime;
+    bool caninteractwith = true;
     [SerializeField] GameObject Holder;
     public RectTransform Scaler;
     public Vector3 BaseScale;
@@ -52,7 +53,7 @@ public class Game_Slots_New : MonoBehaviour
      * [0][0][0]
      */
 
-    WinLines TopTri = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
+    WinLines TopTri     = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
         row0 = new bool[] {true,  false, false, false ,true ,
                            false, true,  false, true  ,false ,
@@ -60,7 +61,7 @@ public class Game_Slots_New : MonoBehaviour
                            false, false, false, false ,false ,
                            false, false, false, false ,false },
     };
-    WinLines BottomTri = new WinLines
+    WinLines BottomTri  = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
                             false, false, false, false  ,false ,
@@ -68,7 +69,7 @@ public class Game_Slots_New : MonoBehaviour
                             false, true, false, true  ,false ,
                             true, false, false, false  ,true },
     };
-    WinLines TopDiag = new WinLines
+    WinLines TopDiag    = new WinLines
     {
         row0 = new bool[] { true, false, false, false  ,false ,
                             false, true, false, false  ,false ,
@@ -84,7 +85,7 @@ public class Game_Slots_New : MonoBehaviour
                             false, true, false, false  ,false ,
                             true, false, false, false  ,false },
     };
-    WinLines FirstLine = new WinLines
+    WinLines FirstLine  = new WinLines
     {
         row0 = new bool[] { true , true  , true , true   ,true ,
                             false, false, false, false  ,false ,
@@ -100,7 +101,7 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, false  ,false ,
                             false, false, false, false  ,false },
     };
-    WinLines ThirdLine = new WinLines
+    WinLines ThirdLine  = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
                             false, false, false, false  ,false ,
@@ -108,7 +109,7 @@ public class Game_Slots_New : MonoBehaviour
                             false, false, false, false  ,false ,
                             false, false, false, false  ,false },
     };
-    WinLines ForthLine = new WinLines
+    WinLines ForthLine  = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
                             false, false, false, false  ,false ,
@@ -116,7 +117,7 @@ public class Game_Slots_New : MonoBehaviour
                             true , true  , true , true   ,true ,
                             false, false, false, false  ,false },
     };
-    WinLines FithLine = new WinLines
+    WinLines FithLine   = new WinLines
     {
         row0 = new bool[] { false, false, false, false  ,false ,
                             false, false, false, false  ,false ,
@@ -131,6 +132,9 @@ public class Game_Slots_New : MonoBehaviour
     //if all places have been chacked and some winlines remain they will payout with their RTP%/Reward Multipleier
 
     //IF 3 specials are hit we enter the sepcial game and thats gonna be fun
+
+
+    
 
 
     public enum Tiles
@@ -201,6 +205,28 @@ public class Game_Slots_New : MonoBehaviour
         }
     }
 
+    public override void Interact()
+    {
+        if (state == State.End)
+        {
+            HideUIToolTip();
+            state = State.Start;
+            caninteractwith = false;
+        }
+    }
+
+    public override void CheckToDisplayUIToolTip()
+    {
+        if (caninteractwith) DisplayUIToolTip();
+    }
+   
+
+    public void PlayAttraction()
+    {
+        //caninteractwith.Post(this.gameObject);
+    }
+
+
 
     private void Start()
     {
@@ -218,6 +244,8 @@ public class Game_Slots_New : MonoBehaviour
                 Loops = Random.Range(50, 100);
                 CurrentLoop = 0;
                 state++;
+                caninteractwith = false;
+
                 break;
             case State.Spin:
                 // Just move the size thingy asmany times as we want
@@ -227,12 +255,16 @@ public class Game_Slots_New : MonoBehaviour
                 state++;
                 state++;
                 Payout();
+
+                caninteractwith = true;
+                PlayerInteraction.instance.tooltipShown = false;
+                PlayerInteraction.instance.lastHit = null;
+
                 break;
             case State.BonusGame:
                 break;
             //check for paylines and all that Jazz
             case State.End:
-                state = State.Start;
                 break;
             default:
                 //do nothing until reset
