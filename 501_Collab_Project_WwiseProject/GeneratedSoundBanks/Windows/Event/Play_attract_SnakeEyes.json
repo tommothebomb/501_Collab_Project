@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E7EC3575-75DB-4083-AAA9-1A5A93025567}",
     "Language": "SFX",
-    "Hash": "{5DC3C941-63A5-CBFB-97C0-ED8F8D7D3E0B}",
+    "Hash": "{73B2FEAA-23D6-495C-FEFF-64B8C0DDB281}",
     "ObjectPath": "Play_attract_SnakeEyes",
     "ShortName": "Play_attract_SnakeEyes",
     "Path": "Event/Play_attract_SnakeEyes.bnk",
@@ -25,13 +25,25 @@
       "CachePath": "8B/{8B44359C-FEC0-80C4-3F73-4920A202B7CE}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3935818673",
+       "Name": "Slot_Paramteric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
+       "GUID": "{A20E2809-19C1-43CE-85C8-32731B8298F6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "4097516578",
       "Name": "Play_attract_SnakeEyes",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_SnakeEyes",
       "GUID": "{E7EC3575-75DB-4083-AAA9-1A5A93025567}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "10.666667",
       "DurationMax": "10.666667",
@@ -39,11 +51,18 @@
        {
         "Id": "996559230"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{E54ACED5-AA11-8A1D-EAC6-D1DC3BFC2FCA}"
+  "FileHash": "{B542288B-F3DA-8B83-D265-AF4939E531D1}"
  }
 }

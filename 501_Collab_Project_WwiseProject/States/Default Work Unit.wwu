@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{784E31A1-77BE-45CA-845B-93AC2308DC48}" SchemaVersion="133">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{784E31A1-77BE-45CA-845B-93AC2308DC48}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{784E31A1-77BE-45CA-845B-93AC2308DC48}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Slot_Test_Group" ID="{DBD3B52F-C8EC-4678-AC14-3D562C160300}">
+					<ChildrenList>
+						<State Name="None" ID="{C5C0F54A-BC14-4A08-8A1E-D7D0FB88147C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

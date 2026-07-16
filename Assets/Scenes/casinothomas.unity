@@ -305,6 +305,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1328677838500653428, guid: 1ec19e6cfb920a14da403f310844677f, type: 3}
   m_PrefabInstance: {fileID: 14476330}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &15845125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7799354185915359766, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
+  m_PrefabInstance: {fileID: 314703627}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &16349408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1824,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8353558162042877360, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3626,6 +3635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 6255033816076464900, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 8159188143168446938, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_Name
       value: midnight snake eyes Variant (4)
@@ -4645,6 +4658,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442634584922388921, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1803591973}
+    - target: {fileID: 4582833961933840876, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1803591973}
     - target: {fileID: 5402637295517307156, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8539
@@ -4688,6 +4709,10 @@ PrefabInstance:
     - target: {fileID: 7799354185915359766, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
       propertyPath: m_Name
       value: -ToolTips-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799354185915359766, guid: bc2916f583ca17f4aa21cfb5fdad0f2e, type: 3}
+      propertyPath: m_TagString
+      value: ToolTip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4938,6 +4963,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 6255033816076464900, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 8159188143168446938, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_Name
       value: midnight snake eyes Variant (1)
@@ -5061,6 +5090,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 4478450291352646515, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 5106360149028240148, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
       propertyPath: m_Name
       value: four leaf luck Variant (3)
@@ -9258,6 +9291,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8353558162042877360, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12166,6 +12203,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 4478450291352646515, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 5106360149028240148, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
       propertyPath: m_Name
       value: four leaf luck Variant (1)
@@ -12567,6 +12608,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 4478450291352646515, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 5106360149028240148, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
       propertyPath: m_Name
       value: four leaf luck Variant (2)
@@ -14519,6 +14564,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 6255033816076464900, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 8159188143168446938, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_Name
       value: midnight snake eyes Variant (2)
@@ -16750,6 +16799,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 6255033816076464900, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 8159188143168446938, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_Name
       value: midnight snake eyes Variant (3)
@@ -16982,6 +17035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8353558162042877360, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21953,6 +22010,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8353558162042877360, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23391,6 +23452,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797070400}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &1803591973 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5958870851378000669, guid: a9c6cd54a8a1ba243901307059b30b12, type: 3}
+  m_PrefabInstance: {fileID: 169040799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1820731978
 GameObject:
   m_ObjectHideFlags: 0
@@ -27036,6 +27102,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1561002806}
     m_Modifications:
+    - target: {fileID: 4478450291352646515, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 15845125}
     - target: {fileID: 5106360149028240148, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
       propertyPath: m_Name
       value: four leaf luck Variant

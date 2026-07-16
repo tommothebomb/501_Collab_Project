@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C52AA46E-E097-43FD-8359-F611D7901693}",
     "Language": "SFX",
-    "Hash": "{56149A02-E583-F9B6-D388-1CEEBB75F21F}",
+    "Hash": "{905AD03C-0AED-2A8A-3FDA-551B37BDCEEE}",
     "ObjectPath": "Play_attract_FourLeafLuckalt",
     "ShortName": "Play_attract_FourLeafLuckalt",
     "Path": "Event/Play_attract_FourLeafLuckalt.bnk",
@@ -22,28 +22,47 @@
       "Location": "Loose",
       "ShortName": "attract_FourLeafLuckalt.wav",
       "Path": "Media/595200575.wem",
-      "CachePath": "A0/{A019B1ED-572E-62D9-CDF0-0AC5F67E035C}.wem"
+      "CachePath": "C9/{C9769E54-9DEF-5271-7B6F-CFF26DE9E09E}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3935818673",
+       "Name": "Slot_Paramteric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
+       "GUID": "{A20E2809-19C1-43CE-85C8-32731B8298F6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "149938048",
       "Name": "Play_attract_FourLeafLuckalt",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_FourLeafLuckalt",
       "GUID": "{C52AA46E-E097-43FD-8359-F611D7901693}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
-      "DurationMin": "17.333334",
-      "DurationMax": "17.333334",
+      "DurationMin": "17.33333",
+      "DurationMax": "17.33333",
       "MediaRefs": [
        {
         "Id": "595200575"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{19798029-3D25-B0AC-4CFA-1087F0ACF022}"
+  "FileHash": "{D0580AB2-4F37-6BD8-6276-B04BCA187467}"
  }
 }

@@ -140,7 +140,7 @@
 				</Attenuation>
 				<Attenuation Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" ShortID="63437317">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="15"/>
+						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -156,7 +156,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>15</XPos>
+											<XPos>25</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -183,7 +183,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>15</XPos>
+											<XPos>25</XPos>
 											<YPos>46</YPos>
 											<Flags>37</Flags>
 										</Point>
