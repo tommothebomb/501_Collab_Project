@@ -2517,6 +2517,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258150344}
   m_Mesh: {fileID: 6348410160124587153, guid: af642158b0b363e459221dc3a5c0694a, type: 3}
+--- !u!1001 &1265567262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 856535546348416776, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: uiTooltipObj
+      value: 
+      objectReference: {fileID: 548100322}
+    - target: {fileID: 4871796822710901271, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_Name
+      value: MrsCowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242615725446608852, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242615725446608852, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242615725446608852, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_Color.r
+      value: 0.98188317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650365120643463179, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19342ae167cedbb4f9ab13ccb1418ecf, type: 3}
 --- !u!1 &1322623909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6982,6 +7059,7 @@ SceneRoots:
   - {fileID: 548100321}
   - {fileID: 169668828}
   - {fileID: 2932894979211416271}
+  - {fileID: 1265567262}
   - {fileID: 152860447}
   - {fileID: 1745776118}
   - {fileID: 1058258659}
