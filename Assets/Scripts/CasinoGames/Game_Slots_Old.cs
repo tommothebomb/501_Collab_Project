@@ -56,7 +56,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
     private void Start()
     {
         randTime = Random.Range(15f, 100f);
-        uiTooltipObj = GameObject.FindGameObjectWithTag("ToolTip");
+        uiTooltipObj = GameObject.FindGameObjectWithTag("ToolTip").transform.GetChild(0).gameObject;
     }
 
     void Update()
