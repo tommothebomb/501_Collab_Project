@@ -6,7 +6,9 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class Game_Slots_New : InteractableObjectBase, IInterractible
-{ 
+{
+    [SerializeField] int CostToPlay;
+
     //each collum will have these values
     [SerializeField] float speed;
     [SerializeField] float HiddenSpeed;
@@ -53,6 +55,7 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
      * [0][0][0]
      */
 
+    #region Win Line base sets
     WinLines TopTri     = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
         row0 = new bool[] {true,  false, false, false ,true ,
@@ -125,23 +128,14 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
                             false, false, false, false  ,false ,
                             true , true  , true , true   ,true},
     };
-    //HOW WIN LINES WORK
-    //if the bool is true it will check that space,
-    //once that space is checked for the first time and define its type
-    //it will then check all of true spaces untill it finds a one that dosnt match and then that winline is discarded
-    //if all places have been chacked and some winlines remain they will payout with their RTP%/Reward Multipleier
-
-    //IF 3 specials are hit we enter the sepcial game and thats gonna be fun
-
-
-    
-
+    #endregion
 
     public enum Tiles
     {
         Special,Wild,HighS,MidS,LowS,Ace,King,Queen,Jack,Ten
     }
 
+    #region RNG and Tile Rng
     /// <summary>
     /// a result of the enum with weighted probabaltys
     /// </summary>
@@ -204,7 +198,9 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
                 return Tiles.Ten;
         }
     }
+    #endregion
 
+    #region Interaction functions
     public override void Interact()
     {
         if (state == State.End)
@@ -220,6 +216,7 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
         if (caninteractwith) DisplayUIToolTip();
     }
    
+    #endregion
 
     public void PlayAttraction()
     {
@@ -227,10 +224,10 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
     }
 
 
-
     private void Start()
     {
         BaseScale = Scaler.sizeDelta;
+        uiTooltipObj = GameObject.FindGameObjectWithTag("ToolTip").transform.GetChild(0).gameObject;
     }
 
     private void Update()
@@ -246,36 +243,35 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
                 state++;
                 caninteractwith = false;
 
+                GlobalManager.instance.Money -= CostToPlay;
+
                 break;
             case State.Spin:
-                // Just move the size thingy asmany times as we want
                 Spin();
                 break;
             case State.Payout:
-                state++;
-                state++;
+                state+=2;// +2 to skip the bonus game
                 Payout();
+
 
                 caninteractwith = true;
                 PlayerInteraction.instance.tooltipShown = false;
                 PlayerInteraction.instance.lastHit = null;
 
                 break;
-            case State.BonusGame:
-                break;
-            //check for paylines and all that Jazz
-            case State.End:
-                break;
+            case State.BonusGame: //Scrapped
+            case State.End: //idle State
             default:
                 //do nothing until reset
                 break;
 
         }
     }
-
-    //PLACEHOLDER CLASS BUT THIS WILL REPEISENT A SINGLE COLLUM OF VALUES THAT WAAAAAAAA
   
-
+    /// <summary>
+    /// moves the tiles by scaling the scaler object up to a maximum size,
+    /// once the maximum scale is reached it moves the bottom row to the top and give that row a set of new tiles
+    /// </summary>
     void Spin()
     {
 
@@ -291,21 +287,19 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
             //Child = tile // Held = Row
             foreach (Transform child in held)
             {
-                Tiles newtile = ValueToTile(WeightedRng(Random.Range(0, 100)));
-                child.GetComponent<Game_Slot_TileData>().Tile = newtile;
-                child.GetComponent<Image>().sprite = Icons[(int)newtile];
+                Tiles newtile = ValueToTile(WeightedRng(Random.Range(0, 100)));     //SET THE NEW TILES VALUE
+                child.GetComponent<Game_Slot_TileData>().Tile = newtile;            //SET THE VALUE IN THE TILE DATE
+                child.GetComponent<Image>().sprite = Icons[(int)newtile];           //UPDATE THE SPRITE TO THE CORRSPONDING SPRITE
             }
             timer = 0;
             CurrentLoop++;
         }
-            //mWAIT IM USING UI ELEMENETS
-            //we ping pong the scaler grouping to move them, once it get to smallest size we add a new cube/move the bottom cube to the top and re randomise it
-            //we can then get the child objects of the gird and the last 5ish (mins the very last one beacuse that should be offscreen to make the move smoother)
-            //that then give the collum
-            //we win!!! amaze amaze amaze!!!
-            float pingpong = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, timer / SpinTime);
-            Scaler.sizeDelta = new Vector2(BaseScale.x, pingpong);
 
+        //lerping the scales this is how we move the tiles 
+        float pingpong = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, timer / SpinTime);
+        Scaler.sizeDelta = new Vector2(BaseScale.x, pingpong);
+
+        //if it has reached the exxpected amount of loops start slowing down
         if (CurrentLoop >= Loops)
         {
             //move to payout
@@ -315,28 +309,24 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
             }
             else
             {
+                //reset the base scale object so the rows are alligend normaly
                 float P = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, 0);
                 Scaler.sizeDelta = new Vector2(BaseScale.x, P);
 
-                state++;
+                state++;//Move to next State -> Payout
             }
         }
     }
 
+    /// <summary>
+    ///checks the tile
+    /// </summary>
+    /// Win lines are the lines that payout
+    /// a line much reach a length of 3 before paying out any amount
     void Payout()
     {
-        float BonusGameCount;
-        //check for paylines
-
-        //check for atleast 3 bonus tiles
-        //if atleast 3 , state = Staate.Bonusgame, else go to endStep and pass the turn  (funny little magic refrance for you)
-        //give money
-
-        Debug.Log("PayoutTime");
-
         List<WinLines> RemaningWinlines = GenrateWinlineList();
         //add all the winlines here
-
 
         List<Transform> Rows = new List<Transform>
         {
@@ -345,41 +335,31 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
 
         int PayoutAmount = 0;
 
-        for (int C = 0; C < Rows[0].childCount ;C++)
+        for (int C = 0; C < Rows[0].childCount ;C++) //for each colloum 
         {
-            
-
-            for (int Row = 0; Row < Rows.Count; Row++)
+            for (int Row = 0; Row < Rows.Count; Row++) //for each row
             {
-                Tiles currentTile = Rows[Row].GetChild(C).GetComponent<Game_Slot_TileData>().Tile;
+                Tiles currentTile = Rows[Row].GetChild(C).GetComponent<Game_Slot_TileData>().Tile;  //getting the colloum loop of the rows
 
                 //WinLine
-                for (int WL = 0; WL < RemaningWinlines.Count; WL++)
+                for (int WL = 0; WL < RemaningWinlines.Count; WL++) //loop through all the winlines remaning on this cycle
                 {
-
-                    
-                    WinLines currentWinLine = RemaningWinlines[WL];
-
-                    Debug.Log((Row * 5) + C);
-                    Debug.Log(RemaningWinlines.Count);
-
-                    if (currentWinLine.row0[(Row * 5) + C])
+                    WinLines currentWinLine = RemaningWinlines[WL]; // get the data of this winline
+                    if (currentWinLine.row0[(Row * 5) + C]) // row * 5 + c = curret tile we are checking in the winline bool
                     {
 
-                        if (currentTile == Tiles.Wild) { }
-                        else if (currentTile == currentWinLine.Tile || currentWinLine.Tile == Tiles.Wild)
+                        if (currentTile == Tiles.Wild) { }                                                 //if its wild we just ignore it beacuse it will allways succeseed
+                        else if (currentTile == currentWinLine.Tile || currentWinLine.Tile == Tiles.Wild)  //if the currentwinline is wild that means this winline hasnt had a value set, and make sures the current tile matches the winlines set tile
                         {
-                            currentWinLine.Tile = currentTile;
-                            Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.green;
+                            currentWinLine.Tile = currentTile; //set the value this winline will have to mantain to win
+                            //Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.green; //debuging display to show how far winlines make it
                         }
-                        else
+                        else //if it dont match what the winline is set, this winline officaly ends 
                         {
-                            //DISCARD WINLINE
-                            //Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.white;
-                            RemaningWinlines.RemoveAt(WL);
+                            RemaningWinlines.RemoveAt(WL); //remove the failed winlines from the loop ,, most winlined will fail on the second row
                             WL--;
 
-                            if (C >= 3)
+                            if (C >= 3) //if the winline makes it far enough payout dpending on the colloum  (line of 3,4,5 payout)
                             {
                                 PayoutAmount += PayoutRewards[(int)currentTile].PayoutTier[C - 2];
                             }
@@ -392,14 +372,13 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
 
         foreach(WinLines lines in RemaningWinlines)
         {
-            PayoutAmount += PayoutRewards[(int)lines.Tile].PayoutTier[2];
+            PayoutAmount += PayoutRewards[(int)lines.Tile].PayoutTier[2]; //payout all remaind winlines at their max reward
         }
 
-        GlobalManager.instance.Money += PayoutAmount;
-        Debug.Log(PayoutAmount);
-        //add money
+        GlobalManager.instance.Money += PayoutAmount; //give the player their final amount of money owned
     }
 
+    //returns a list of new winlines that arnt releated to the original winline data set so it dosnt mess with them
     List<WinLines> GenrateWinlineList()
     {
         List<WinLines> NewList = new List<WinLines>();
