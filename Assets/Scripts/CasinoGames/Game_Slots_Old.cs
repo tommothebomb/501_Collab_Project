@@ -217,7 +217,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
 
         if (output1 == output2 && output1 == output3)
         {
-            Win.Post(this.gameObject);
+            anim.Play("Win");
             Debug.Log("WINNER");
 
             switch (output1) //avg 11% win rate
@@ -250,6 +250,11 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
             Debug.Log("Loser");
             //currentPhase = Phase.Start;
         }
+    }
+
+    public void PlayWin()
+    {
+        Win.Post(this.gameObject);
     }
 
     public override void Interact()
