@@ -1095,6 +1095,17 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{615EC9CC-9E27-4B5B-B1FD-2C05125A49A7}" ShortID="287937212">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="Slot_Paramteric_EQ" ID="{A20E2809-19C1-43CE-85C8-32731B8298F6}" WorkUnitID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
 											<ActiveSourceList>
 												<ActiveSource Name="attract_FourLeafLuckalt" ID="{D2122A8C-92CA-4709-BB5E-010B4C6BE4B6}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1133,6 +1144,17 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{E25034E0-E30E-493F-8E6E-80D99A5BD5E6}" ShortID="822848007">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="Slot_Paramteric_EQ" ID="{A20E2809-19C1-43CE-85C8-32731B8298F6}" WorkUnitID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
 											<ActiveSourceList>
 												<ActiveSource Name="attract_SnakeEyes" ID="{6A90180F-7618-4998-9F52-BD8CE1135CC2}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1172,6 +1194,17 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{EEB99F55-76DE-4FBD-AD5C-A1B6FAB732A5}" ShortID="1036662070">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="Slot_Paramteric_EQ" ID="{A20E2809-19C1-43CE-85C8-32731B8298F6}" WorkUnitID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
 											<ActiveSourceList>
 												<ActiveSource Name="attract_Western" ID="{DD21966C-C8A0-4B4B-B375-977E468CFFAE}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1211,6 +1244,17 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{57528915-F1F0-4081-945F-9B61AA26F564}" ShortID="543853171">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="Slot_Paramteric_EQ" ID="{A20E2809-19C1-43CE-85C8-32731B8298F6}" WorkUnitID="{247434B8-DED8-43A5-951C-9B7CBB66AF09}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
 											<ActiveSourceList>
 												<ActiveSource Name="attract_xmarks" ID="{07A3202B-504F-4348-BD09-43BD6A0A598E}" Platform="Linked"/>
 											</ActiveSourceList>

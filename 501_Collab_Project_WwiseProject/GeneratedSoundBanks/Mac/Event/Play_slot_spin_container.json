@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{07AB0C95-AAFC-4423-9004-67A44EBBBF94}",
     "Language": "SFX",
-    "Hash": "{D13B407F-1B65-B2D0-4FC3-734431A2D263}",
+    "Hash": "{1329B33A-631E-CFAE-009E-32D29403B1B7}",
     "ObjectPath": "Play_slot_spin_container",
     "ShortName": "Play_slot_spin_container",
     "Path": "Event/Play_slot_spin_container.bnk",
@@ -49,7 +49,7 @@
       "Name": "Play_slot_spin_container",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_slot_spin_container",
       "GUID": "{07AB0C95-AAFC-4423-9004-67A44EBBBF94}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "0.57012",
       "DurationMax": "0.72608",
@@ -68,6 +68,6 @@
     ]
    }
   ],
-  "FileHash": "{3EE263A3-4F06-13DE-CBBA-F3DB3BB8A417}"
+  "FileHash": "{DD0429D4-675D-1E41-E67A-A2EB4FDAF252}"
  }
 }

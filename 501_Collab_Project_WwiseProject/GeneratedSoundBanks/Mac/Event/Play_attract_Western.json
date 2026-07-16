@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
     "Language": "SFX",
-    "Hash": "{FC303159-6D0B-8EA4-AB65-5E08B8931140}",
+    "Hash": "{08CA8750-E704-EBD9-2BC1-00E5B6A33753}",
     "ObjectPath": "Play_attract_Western",
     "ShortName": "Play_attract_Western",
     "Path": "Event/Play_attract_Western.bnk",
@@ -25,13 +25,25 @@
       "CachePath": "61/{61B052EB-3ECB-C022-8F47-3C96D1B66B18}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3935818673",
+       "Name": "Slot_Paramteric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
+       "GUID": "{A20E2809-19C1-43CE-85C8-32731B8298F6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "917334326",
       "Name": "Play_attract_Western",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_Western",
       "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "31.993063",
       "DurationMax": "31.993063",
@@ -39,11 +51,18 @@
        {
         "Id": "813455346"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{AB39F505-7B36-BF56-67A0-0E7D1E1E81F6}"
+  "FileHash": "{D452D8D4-CB97-3D56-8550-3CD03C24D34C}"
  }
 }
