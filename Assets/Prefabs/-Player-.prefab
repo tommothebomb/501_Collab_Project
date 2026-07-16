@@ -566,4 +566,4 @@ MonoBehaviour:
   playerT: {fileID: 8375812019569969136}
   mask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 25
