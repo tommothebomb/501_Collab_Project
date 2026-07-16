@@ -842,6 +842,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3306592895773528883, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306592895773528883, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: 'm_Animations.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7400000, guid: 20788cfb3d583d04d804e36ffb03c90c, type: 2}
+    - target: {fileID: 3469566741868150815, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4478450291352646515, guid: 10924b590804f4a42951af98d7425d8b, type: 3}
       propertyPath: uiTooltipObj
       value: 
@@ -903,6 +915,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1716680758658596306, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6082455338423960056, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
       propertyPath: m_Name
       value: x marks the spot
@@ -951,6 +967,14 @@ PrefabInstance:
       propertyPath: uiTooltipObj
       value: 
       objectReference: {fileID: 1877305699}
+    - target: {fileID: 8918397515785419919, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918397515785419919, guid: 82d7798bb49c05241b69390e70c621ed, type: 3}
+      propertyPath: 'm_Animations.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7400000, guid: 20788cfb3d583d04d804e36ffb03c90c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -964,13 +988,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 334879675856645847, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6255033816076464900, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: uiTooltipObj
       value: 
       objectReference: {fileID: 1877305699}
+    - target: {fileID: 7850698979678395729, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7850698979678395729, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: 'm_Animations.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7400000, guid: 20788cfb3d583d04d804e36ffb03c90c, type: 2}
     - target: {fileID: 8159188143168446938, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_Name
       value: midnight snake eyes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739185200177755075, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739185200177755075, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739185200177755075, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 258.50552
       objectReference: {fileID: 0}
     - target: {fileID: 8822713090116303712, guid: 65fdc966b2628ec43abc259e58b88e19, type: 3}
       propertyPath: m_LocalPosition.x
