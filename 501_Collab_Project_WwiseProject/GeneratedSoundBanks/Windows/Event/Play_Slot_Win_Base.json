@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C9D30CE8-02FB-4C70-926D-3715757032F1}",
     "Language": "SFX",
-    "Hash": "{6B0630AA-D570-0D99-BD09-1002AA87EDEB}",
+    "Hash": "{B13C126D-4D55-4CBB-A958-3C0D52609E0A}",
     "ObjectPath": "Play_Slot_Win_Base",
     "ShortName": "Play_Slot_Win_Base",
     "Path": "Event/Play_Slot_Win_Base.bnk",
@@ -31,7 +31,7 @@
       "Name": "Play_Slot_Win_Base",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Win_Base",
       "GUID": "{C9D30CE8-02FB-4C70-926D-3715757032F1}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "5.5",
       "DurationMax": "5.5",
@@ -44,6 +44,6 @@
     ]
    }
   ],
-  "FileHash": "{EA9CD25F-E33A-1963-C684-6E9D90FD574B}"
+  "FileHash": "{CFB988E4-E6E1-1282-A97B-69630457E56F}"
  }
 }

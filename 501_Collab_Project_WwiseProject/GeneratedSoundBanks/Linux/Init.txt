@@ -1,3 +1,9 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	168988604	Slot_Test_Group			\Default Work Unit\Slot_Test_Group	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Slot_Test_Group			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	

@@ -29,6 +29,20 @@ namespace AK
         static const AkUniqueID STOP_SPIN_CYCLE = 504588419U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace SLOT_TEST_GROUP
+        {
+            static const AkUniqueID GROUP = 168988604U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace SLOT_TEST_GROUP
+
+    } // namespace STATES
+
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;

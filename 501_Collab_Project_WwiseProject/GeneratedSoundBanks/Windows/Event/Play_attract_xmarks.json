@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
     "Language": "SFX",
-    "Hash": "{A5C844D5-3421-C639-FA32-4FADA3270AF6}",
+    "Hash": "{83BFB5EE-0E60-A12C-EAFE-52F3F409C934}",
     "ObjectPath": "Play_attract_xmarks",
     "ShortName": "Play_attract_xmarks",
     "Path": "Event/Play_attract_xmarks.bnk",
@@ -25,13 +25,25 @@
       "CachePath": "8D/{8DA4F014-7B87-A86A-4553-B1CD04C804E6}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3935818673",
+       "Name": "Slot_Paramteric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
+       "GUID": "{A20E2809-19C1-43CE-85C8-32731B8298F6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2702863590",
       "Name": "Play_attract_xmarks",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_xmarks",
       "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
-      "MaxAttenuation": "15",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
       "DurationMin": "21.333334",
       "DurationMax": "21.333334",
@@ -39,11 +51,18 @@
        {
         "Id": "635112411"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{56F846F9-DE6E-687D-BFED-11DFF522DD19}"
+  "FileHash": "{01D3199E-F581-FF8D-FC2E-52B65BF7C8AD}"
  }
 }

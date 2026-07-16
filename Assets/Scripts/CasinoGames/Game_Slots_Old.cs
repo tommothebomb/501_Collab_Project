@@ -56,6 +56,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
     private void Start()
     {
         randTime = Random.Range(15f, 100f);
+        uiTooltipObj = GameObject.FindGameObjectWithTag("ToolTip");
     }
 
     void Update()
@@ -108,7 +109,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
             if (attractTimer >= randTime)
             {
                 attractTimer = 0;
-                randTime = Random.Range(15f, 50f);
+                randTime = Random.Range(30f, 100f);
                 anim.Play("Attract");
             }
 
@@ -217,7 +218,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
 
         if (output1 == output2 && output1 == output3)
         {
-            Win.Post(this.gameObject);
+            anim.Play("Win");
             Debug.Log("WINNER");
 
             switch (output1) //avg 11% win rate
@@ -250,6 +251,11 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
             Debug.Log("Loser");
             //currentPhase = Phase.Start;
         }
+    }
+
+    public void PlayWin()
+    {
+        Win.Post(this.gameObject);
     }
 
     public override void Interact()
