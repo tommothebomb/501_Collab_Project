@@ -42,13 +42,96 @@ public class Game_Slots_New : MonoBehaviour
      * [1][1][1] //i mean we can swpa these to be rows so colloum 1 would get the child[at the top]
      * [0][0][0]
      */
-    WinLines TopRow = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
+
+    WinLines Base = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false },
+    };
+
+    WinLines TopTri = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
         row0 = new bool[] {true,  false, false, false ,true ,
                            false, true,  false, true  ,false ,
                            false, false, true , false ,false ,
                            false, false, false, false ,false ,
                            false, false, false, false ,false },
+    };
+
+    WinLines BottomTri = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, true, false  ,false ,
+                            false, true, false, true  ,false ,
+                            true, false, false, false  ,true },
+    };
+
+    WinLines TopDiag = new WinLines
+    {
+        row0 = new bool[] { true, false, false, false  ,false ,
+                            false, true, false, false  ,false ,
+                            false, false, true, false  ,false ,
+                            false, false, false, true  ,false ,
+                            false, false, false, false  ,true },
+    };
+
+    WinLines BottomDiag = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,true ,
+                            false, false, false, true  ,false ,
+                            false, false, true, false  ,false ,
+                            false, true, false, false  ,false ,
+                            true, false, false, false  ,false },
+    };
+
+
+    WinLines FirstLine = new WinLines
+    {
+        row0 = new bool[] { true , true  , true , true   ,true ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false },
+    };
+
+    WinLines SecondLine = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            true , true  , true , true   ,true ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false },
+    };
+
+    WinLines ThirdLine = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            true , true  , true , true   ,true ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false },
+    };
+
+    WinLines ForthLine = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            true , true  , true , true   ,true ,
+                            false, false, false, false  ,false },
+    };
+
+    WinLines FithLine = new WinLines
+    {
+        row0 = new bool[] { false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            false, false, false, false  ,false ,
+                            true , true  , true , true   ,true},
     };
     //HOW WIN LINES WORK
     //if the bool is true it will check that space,
@@ -142,6 +225,7 @@ public class Game_Slots_New : MonoBehaviour
                 //set values
                 HiddenSpeed = speed;
                 Loops = Random.Range(50, 100);
+                CurrentLoop = 0;
                 state++;
                 break;
             case State.Spin:
@@ -149,12 +233,16 @@ public class Game_Slots_New : MonoBehaviour
                 Spin();
                 break;
             case State.Payout:
+                state++;
+                state++;
                 Payout();
                 break;
             case State.BonusGame:
                 break;
             //check for paylines and all that Jazz
             case State.End:
+                state = State.Start;
+                break;
             default:
                 //do nothing until reset
                 break;
@@ -200,7 +288,7 @@ public class Game_Slots_New : MonoBehaviour
             //move to payout
             if (HiddenSpeed > 0)
             {
-                HiddenSpeed -= (1 / (float)FinalLaps);
+                HiddenSpeed -= (speed / (float)FinalLaps) * Time.deltaTime;
             }
             else
             {
@@ -223,13 +311,11 @@ public class Game_Slots_New : MonoBehaviour
 
         Debug.Log("PayoutTime");
 
-        WinLines[] RemaningWinlines = new WinLines[1]
-        {
-            TopRow,
-        };
+        List<WinLines> RemaningWinlines = GenrateWinlineList();
         //add all the winlines here
 
-        List<Transform> Rows = new  List<Transform>
+
+        List<Transform> Rows = new List<Transform>
         {
             Holder.transform.GetChild(4), Holder.transform.GetChild(3), Holder.transform.GetChild(2), Holder.transform.GetChild(1), Holder.transform.GetChild(0)
         };
@@ -245,11 +331,15 @@ public class Game_Slots_New : MonoBehaviour
                 Tiles currentTile = Rows[Row].GetChild(C).GetComponent<Game_Slot_TileData>().Tile;
 
                 //WinLine
-                for (int WL = 0; WL < RemaningWinlines.Length; WL++)
+                for (int WL = 0; WL < RemaningWinlines.Count; WL++)
                 {
 
                     
                     WinLines currentWinLine = RemaningWinlines[WL];
+
+                    Debug.Log((Row * 5) + C);
+                    Debug.Log(RemaningWinlines.Count);
+
                     if (currentWinLine.row0[(Row * 5) + C])
                     {
 
@@ -257,11 +347,14 @@ public class Game_Slots_New : MonoBehaviour
                         else if (currentTile == currentWinLine.Tile || currentWinLine.Tile == Tiles.Wild)
                         {
                             currentWinLine.Tile = currentTile;
+                            Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.green;
                         }
                         else
                         {
                             //DISCARD WINLINE
-                            Rows[Row].GetChild(C).gameObject.SetActive(false);
+                            //Rows[Row].GetChild(C).gameObject.GetComponent<Image>().color = Color.white;
+                            RemaningWinlines.RemoveAt(WL);
+                            WL--;
                         }
 
 
@@ -270,5 +363,26 @@ public class Game_Slots_New : MonoBehaviour
             }
         }
     }
+
+    List<WinLines> GenrateWinlineList()
+    {
+        List<WinLines> NewList = new List<WinLines>();
+        List<WinLines> BaseLine = new List<WinLines> {
+        FirstLine,SecondLine,ThirdLine,ForthLine,FithLine,TopTri,TopDiag,BottomTri,BottomDiag,
+        };
+        
+
+        int iteration = 0;
+        foreach (WinLines line in BaseLine)
+        {
+            NewList.Add(new WinLines
+            { Tile = line.Tile,
+              row0 = line.row0
+            });
+            iteration++;
+        }
+        return NewList;
+    }
+
 }
 
