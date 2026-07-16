@@ -12,7 +12,7 @@ public class MenuLogic : MonoBehaviour
     
     public void StartGame()
     {
-        //SceneManager.LoadScene("");
+        SceneManager.LoadScene(1);
     }
 
     public void Controls()
