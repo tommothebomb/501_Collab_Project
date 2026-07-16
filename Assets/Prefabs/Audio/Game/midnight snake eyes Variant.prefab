@@ -2395,6 +2395,18 @@ PrefabInstance:
       value: midnight snake eyes Variant
       objectReference: {fileID: 0}
     - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.34
       objectReference: {fileID: 0}
@@ -2432,6 +2444,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998072466964948327, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1970894873562809174, guid: b79a4a6f12df4be45980e71cd74f7331, type: 3}

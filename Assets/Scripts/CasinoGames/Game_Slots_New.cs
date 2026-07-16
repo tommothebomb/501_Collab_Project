@@ -1,61 +1,54 @@
+using TreeEditor;
 using Unity.VisualScripting;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class Game_Slots_New : MonoBehaviour
 {
     //each collum will have these values
     [SerializeField] float speed;
+    [SerializeField] float HiddenSpeed;
+    [SerializeField] float SpinTime;
     [SerializeField] GameObject Holder;
     public RectTransform Scaler;
     public Vector3 BaseScale;
     //public GameObject TileBase;
     float timer;
+    int Loops;//how many loops we will do before moving on
+    int CurrentLoop;
+    [SerializeField]int FinalLaps;
 
     public Sprite[] Icons;
-
-    public bool DisablePingPong;
-
     //Winlines
     class WinLines
     {
+        public Tiles Tile = Tiles.Wild;
         //add the typeing // if typing = null it hasnt been set yet
-        public bool[] row0 = new bool[5];
-        public bool[] row1 = new bool[5];
-        public bool[] row2 = new bool[5];
-        public bool[] row3 = new bool[5];
-        public bool[] row4 = new bool[5];
+        public bool[] row0 = new bool[25];
     }
-
-    
     public class Tile
     {
         public Tiles Type;
     }
-
-
-
+    public enum State
+    {
+        Start,Spin, Payout, BonusGame,End
+    }
+    [SerializeField] State state;
     //IS this a normal way to define the winlines?? problem is its sideways i would rather define it like
     /*
      * [1][1][1] //i mean we can swpa these to be rows so colloum 1 would get the child[at the top]
      * [0][0][0]
      */
-    WinLines TopRow = new WinLines
+    WinLines TopRow = new WinLines //this ones outdated instead for each line we just check each one with its own sytstem
     {
-        row0 = new bool[5] { true, true, true, true, true },
-        row1 = new bool[5] { false, false, false, false ,false },
-        row2 = new bool[5] { false, false, false, false ,false },
-        row3 = new bool[5] { false, false, false, false ,false },
-        row4 = new bool[5] { false, false, false, false ,false },
-    };
-
-    WinLines AnotherRow = new WinLines
-    {
-        row0 = new bool[5] { false, false, false, false, false },
-        row1 = new bool[5] { true, true, true, true, true },
-        row2 = new bool[5] { false, false, false, false, false },
-        row3 = new bool[5] { false, false, false, false, false },
-        row4 = new bool[5] { false, false, false, false, false },
+        row0 = new bool[] {true,  false, false, false ,true ,
+                           false, true,  false, true  ,false ,
+                           false, false, true , false ,false ,
+                           false, false, false, false ,false ,
+                           false, false, false, false ,false },
     };
     //HOW WIN LINES WORK
     //if the bool is true it will check that space,
@@ -142,14 +135,31 @@ public class Game_Slots_New : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > speed)
+        switch (state)
         {
-            //wrap around code spawn a new cube
-            Wrap();
-            timer = 0;
+            case State.Start:
+                //start
+                //set values
+                HiddenSpeed = speed;
+                Loops = Random.Range(50, 100);
+                state++;
+                break;
+            case State.Spin:
+                // Just move the size thingy asmany times as we want
+                Spin();
+                break;
+            case State.Payout:
+                Payout();
+                break;
+            case State.BonusGame:
+                break;
+            //check for paylines and all that Jazz
+            case State.End:
+            default:
+                //do nothing until reset
+                break;
+
         }
-        Spin();
     }
 
     //PLACEHOLDER CLASS BUT THIS WILL REPEISENT A SINGLE COLLUM OF VALUES THAT WAAAAAAAA
@@ -157,55 +167,108 @@ public class Game_Slots_New : MonoBehaviour
 
     void Spin()
     {
-        if (DisablePingPong)
+
+        timer += (HiddenSpeed - (float)CurrentLoop/(float)Loops) * Time.deltaTime;
+        //effect the speed by the remaning amount of loops
+        //Debug.Log(((float)CurrentLoop / (float)Loops));
+
+        if (timer > SpinTime)
         {
-            Scaler.sizeDelta = BaseScale;
+            Transform held = Holder.transform.GetChild(0);
+            held.SetSiblingIndex(Holder.transform.childCount - 2);
+
+            //Child = tile // Held = Row
+            foreach (Transform child in held)
+            {
+                Tiles newtile = ValueToTile(WeightedRng(Random.Range(0, 100)));
+                child.GetComponent<Game_Slot_TileData>().Tile = newtile;
+                child.GetComponent<Image>().sprite = Icons[(int)newtile];
+            }
+            timer = 0;
+            CurrentLoop++;
         }
-        else
-        {
             //mWAIT IM USING UI ELEMENETS
             //we ping pong the scaler grouping to move them, once it get to smallest size we add a new cube/move the bottom cube to the top and re randomise it
             //we can then get the child objects of the gird and the last 5ish (mins the very last one beacuse that should be offscreen to make the move smoother)
             //that then give the collum
             //we win!!! amaze amaze amaze!!!
-            float pingpong = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, timer / speed);
+            float pingpong = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, timer / SpinTime);
             Scaler.sizeDelta = new Vector2(BaseScale.x, pingpong);
-        }
-    }
 
-    void Wrap()
-    {
-        Transform held = Holder.transform.GetChild(0);
-        held.SetSiblingIndex(Holder.transform.childCount - 2);
-
-
-        foreach (Transform child in held)
+        if (CurrentLoop >= Loops)
         {
-            //get each fuck
-            //child.GetComponent<Image>().color = new Color(Random.Range(0, 255f)/255, Random.Range(0, 255f)/255, Random.Range(0, 255f)/255);
-            //weighted rng is used here
-            Tiles newtile = ValueToTile(WeightedRng(Random.Range(0, 100)));
-            child.GetComponent<Game_Slot_TileData>().Tile = newtile;
-            child.GetComponent<Image>().sprite = Icons[(int)newtile];
-        }
-        //when it wraps give the sibling a new face :3
+            //move to payout
+            if (HiddenSpeed > 0)
+            {
+                HiddenSpeed -= (1 / (float)FinalLaps);
+            }
+            else
+            {
+                float P = Mathf.Lerp(BaseScale.y, BaseScale.y * 2, 0);
+                Scaler.sizeDelta = new Vector2(BaseScale.x, P);
 
+                state++;
+            }
+        }
     }
 
-    //check for all winlines
-    void CheckScores()
+    void Payout()
     {
-        //remaing winlines
-        //list<winlines> win = all the new winlines
+        float BonusGameCount;
+        //check for paylines
 
-        //check holder.transform.getchild 1 & 2 & 3
+        //check for atleast 3 bonus tiles
+        //if atleast 3 , state = Staate.Bonusgame, else go to endStep and pass the turn  (funny little magic refrance for you)
+        //give money
 
-        //loop through each tile
-        //if winlines = true check that tile
-        //if its the first time this ones been check then we store its tile data
-        //also check for the default straight lines
+        Debug.Log("PayoutTime");
 
-        
+        WinLines[] RemaningWinlines = new WinLines[1]
+        {
+            TopRow,
+        };
+        //add all the winlines here
+
+        List<Transform> Rows = new  List<Transform>
+        {
+            Holder.transform.GetChild(4), Holder.transform.GetChild(3), Holder.transform.GetChild(2), Holder.transform.GetChild(1), Holder.transform.GetChild(0)
+        };
+
+        int PayoutAmount;
+
+        for (int C = 0; C < Rows[0].childCount ;C++)
+        {
+            
+
+            for (int Row = 0; Row < Rows.Count; Row++)
+            {
+                Tiles currentTile = Rows[Row].GetChild(C).GetComponent<Game_Slot_TileData>().Tile;
+
+                //WinLine
+                for (int WL = 0; WL < RemaningWinlines.Length; WL++)
+                {
+
+                    
+                    WinLines currentWinLine = RemaningWinlines[WL];
+                    if (currentWinLine.row0[(Row * 5) + C])
+                    {
+
+                        if (currentTile == Tiles.Wild) { }
+                        else if (currentTile == currentWinLine.Tile || currentWinLine.Tile == Tiles.Wild)
+                        {
+                            currentWinLine.Tile = currentTile;
+                        }
+                        else
+                        {
+                            //DISCARD WINLINE
+                            Rows[Row].GetChild(C).gameObject.SetActive(false);
+                        }
+
+
+                    }
+                }
+            }
+        }
     }
 }
 

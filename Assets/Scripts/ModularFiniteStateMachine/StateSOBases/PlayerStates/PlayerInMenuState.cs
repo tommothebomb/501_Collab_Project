@@ -15,7 +15,6 @@ public class PlayerInMenuState : MenuStateSOBase
 
     public override void DoEnterLogic()
     {
-        //Debug.Log("entered menu");
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
 
@@ -29,6 +28,11 @@ public class PlayerInMenuState : MenuStateSOBase
         Cursor.visible = false;
 
         inputActs.UI.Disable();
+    }
+
+    public override void DoFrameUpdateLogic()
+    {
+        base.DoFrameUpdateLogic();
     }
 
     public override void ResetValues()

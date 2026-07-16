@@ -1,0 +1,53 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "NPCGMInteracting", menuName = "State Machine/In Menu/NPC GM Interacting")]
+public class NPCGameMasterInteractingState : MenuStateSOBase
+{
+    // Libby Script \\
+    // What will do in this state:
+    // play dialogue before player plays game
+    // asks player if wants to play
+    // Connections to other states:
+    // if player selects yes swap to gambling state
+    // if player selects no swap to roaming state
+    Transform thisNPC;
+    Transform playerTransform;
+
+
+    public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
+    {
+        base.Initialize(gameObject, humanoid);
+        thisNPC = gameObject.transform;
+        playerTransform = GameObject.FindWithTag("Player").transform;
+    }
+
+    public override void DoEnterLogic()
+    {
+        Vector3 targetLook = playerTransform.position;
+        targetLook.y = thisNPC.position.y;
+        thisNPC.LookAt(targetLook);
+        // activate dialogue script for this object
+        base.DoEnterLogic();
+    }
+
+    public override void DoExitLogic()
+    {
+        // deactivate dialogue script for this gameobject
+        base.DoExitLogic();
+    }
+
+    public override void DoFrameUpdateLogic()
+    {
+        base.DoFrameUpdateLogic();
+    }
+
+    public override void ResetValues()
+    {
+        base.ResetValues();
+    }
+    public override void DoAnimationLogic(HumanoidBase.AnimationTriggers trigger)
+    {
+        base.DoAnimationLogic(trigger);
+    }
+}
+
