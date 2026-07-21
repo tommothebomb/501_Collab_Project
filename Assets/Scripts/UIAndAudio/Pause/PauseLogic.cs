@@ -10,10 +10,30 @@ public class PauseLogic : MonoBehaviour
     [SerializeField] GameObject closeAppButton;
     [SerializeField] GameObject settingsApp;
     [SerializeField] GameObject messagesApp;
+    InputSystem_Actions inputActs;
+    [SerializeField] PlayerState playerState;
+
+
+    #region // input enable and disable
+    private void OnEnable()
+    {
+        inputActs = new InputSystem_Actions();
+        inputActs.Player.Enable();
+
+        inputActs.Player.Menu.performed += ctx => OpenPauseMenu();
+    }
+    private void OnDisable() => inputActs.Player.Disable();
+    #endregion
 
     void Start()
     {
         phoneAnimator = GameObject.FindGameObjectWithTag("PhoneUI").GetComponent<Animator>();
+    }
+
+    void OpenPauseMenu()
+    {
+        phoneAnimator.SetBool("isPaused", true);
+        playerState.stateMachine.ChangeState(playerState.menuState);
     }
 
     public void ReturnToMenu()
