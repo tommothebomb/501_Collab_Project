@@ -1,12 +1,21 @@
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
-public class DoorInterractions : InteractableObjectBase, IInterractible
+public class DoorInterractions : MonoBehaviour
 {
     // Libby Script \\
+    [SerializeField] Animator doorOpenCloseLeft;
+    [SerializeField] Animator doorOpenCloseRight;
 
-    public override void Interact()
+
+    public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("door open animation");
+        doorOpenCloseLeft.SetBool("OpenDoor", true);
+        doorOpenCloseRight.SetBool("OpenDoor", true);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        doorOpenCloseLeft.SetBool("OpenDoor", false);
+        doorOpenCloseRight.SetBool("OpenDoor", false);
     }
 }

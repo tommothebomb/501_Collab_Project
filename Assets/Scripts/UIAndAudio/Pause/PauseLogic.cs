@@ -43,6 +43,7 @@ public class PauseLogic : MonoBehaviour
 
     public void YesMenu()
     {
+        inputActs.Player.Disable();
         SceneManager.LoadScene(0);
     }
 
@@ -54,6 +55,7 @@ public class PauseLogic : MonoBehaviour
     public void UnPause()
     {
         phoneAnimator.SetBool("isPaused", false);
+        playerState.stateMachine.ChangeState(playerState.roamingState);
         CloseApp();
     }
 
