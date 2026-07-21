@@ -31,6 +31,8 @@ public class NPCGamblingState : GamblingStateSOBase
 
     public override void DoEnterLogic()
     {
+        if (spl.emptyStandPoints.Count <= 0) { thisBase.stateMachine.ChangeState(thisBase.roamingState); Debug.Log("no space"); }
+
         atPoint = false;
         agent.enabled = true;
         int randomPoint = Random.Range(0, spl.emptyStandPoints.Count);
@@ -43,6 +45,8 @@ public class NPCGamblingState : GamblingStateSOBase
 
     public override void DoExitLogic()
     {
+        if (!atPoint) return; // dont do any of this if never reached point
+
         thisNPC.Rotate(Vector3.up, 180);
         thisNPC.position += thisNPC.forward;
         agent.enabled = true;
@@ -59,7 +63,7 @@ public class NPCGamblingState : GamblingStateSOBase
             if (timeSpentAtGame <= 0) thisBase.stateMachine.ChangeState(thisBase.roamingState);
             // play random voicelines
         }
-        else if(Vector3.Distance(thisNPC.position, currentStandPoint.position) < 0.2f) // point heighs MUST be set to match npc heights for this to work
+        else if(!atPoint && Vector3.Distance(thisNPC.position, currentStandPoint.position) < 0.5f) // point heighs MUST be set to match npc heights for this to work
         {
             atPoint = true;
             agent.enabled = false;

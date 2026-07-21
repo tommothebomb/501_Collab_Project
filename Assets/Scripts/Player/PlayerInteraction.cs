@@ -5,13 +5,15 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] Transform playerT;
     [SerializeField] LayerMask mask;
     IInterractible currentHit;
-    IInterractible lastHit;
-    bool tooltipShown = false;
+    [HideInInspector] public IInterractible lastHit;
+    [HideInInspector] public bool tooltipShown = false;
     InputSystem_Actions inputActs;
 
+    public static PlayerInteraction instance;
 
     private void OnEnable()
     {
+        instance = this;
         inputActs = new InputSystem_Actions();
         inputActs.Player.Enable();
         inputActs.Player.Interact.performed += ctx => CheckCanInteract();
