@@ -38072,7 +38072,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: OpenMessages
         m_Mode: 1
@@ -38163,7 +38163,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: NoMenu
         m_Mode: 1
@@ -38238,7 +38238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: YesMenu
         m_Mode: 1
@@ -38294,9 +38294,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 155089419}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: UnPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39014,7 +39014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: CloseApp
         m_Mode: 1
@@ -39615,7 +39615,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: OpenSettings
         m_Mode: 1
@@ -39690,7 +39690,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 155089421}
         m_TargetAssemblyTypeName: PauseLogic, Assembly-CSharp
         m_MethodName: ReturnToMenu
         m_Mode: 1
