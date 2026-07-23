@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LookAtCam
   faceCam: 0
-  rotateSpeed: 3
+  rotateSpeed: 7
 --- !u!1 &1602224282465201580
 GameObject:
   m_ObjectHideFlags: 0
