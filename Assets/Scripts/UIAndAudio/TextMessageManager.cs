@@ -15,11 +15,11 @@ public class TextMessageManager : MonoBehaviour
 
     private void Update()
     {
-        currentMoney = GlobalManager.instance.Money;
+        currentMoney = GlobalManager.instance.Money; // get value from manager
 
-        if (currentMoney == 100)
+        if (currentMoney == 100) // make this a switch statement instead?
         {
-            ShowTextMessage(messages[1], icons[1]);
+            ShowTextMessage(messages[1], icons[1]); // pass in values you want
         }
     }
 
