@@ -1,0 +1,3 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2564249364	IndoorAmbience			\Default Work Unit\Main Audio Bus\Ambient\IndoorAmbience	
+

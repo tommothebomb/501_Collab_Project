@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	76758945	Play_slot_spin_container			\Default Work Unit\Slots\Play_slot_spin_container	
+	121174090	Play_amb_outside			\Default Work Unit\Play_amb_outside	
 	149938048	Play_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Play_attract_FourLeafLuckalt	
 	504588419	Stop_Spin_Cycle			\Default Work Unit\Slots\Stop_Spin_Cycle	
 	788884573	Stop			\Default Work Unit\Stop	
@@ -13,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3510522014	Stop_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Stop_attract_FourLeafLuckalt	
 	3634297912	Stop_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Stop_attract_SnakeEyes	
 	4097516578	Play_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Play_attract_SnakeEyes	
+	4246019388	Play_amb_midCasino			\Default Work Unit\Play_amb_midCasino	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	168988604	Slot_Test_Group			\Default Work Unit\Slot_Test_Group	
@@ -29,6 +31,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	128454229	Spin Cycle	.cache\C9\{C998DC31-2613-3007-AC3B-ECC2EEE63F7F}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Spin Cycle		264696
 	348867920	Slot Spin-002	.cache\D3\{D3FE04D3-9F90-3B63-3E60-E42712D963A5}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\slot spin container\Slot Spin-002		100668
 	381998484	Slot Machine SFX-002	.cache\2B\{2B54509C-93C8-627E-D242-37D9CC7FC7A2}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-002		46872
+	479959301	amb_outside	.cache\2A\{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_outside		9783836
 	480015837	Slot Machine SFX-006	.cache\8E\{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-006		38828
 	585689114	Slot Machine SFX-007	.cache\10\{10EBBB9A-1521-F033-F959-61988D74A551}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-007		60812
 	595200575	attract_FourLeafLuckalt	.cache\C9\{C9769E54-9DEF-5271-7B6F-CFF26DE9E09E}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_FourLeafLuckalt		3328144
@@ -42,4 +45,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	996559230	attract_SnakeEyes	.cache\8B\{8B44359C-FEC0-80C4-3F73-4920A202B7CE}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_SnakeEyes		2048144
 	1003987524	Slot Machine SFX-004	.cache\CD\{CD62A8F7-7CBF-C738-7341-2A9B66356083}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-004		51964
 	1007684741	Slot Spin-001	.cache\A8\{A8959D1F-2DD9-ABAA-60E1-4C167727D1E4}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\slot spin container\Slot Spin-001		128176
+	1011870256	amb_midCasino	.cache\61\{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_midCasino		7792760
 

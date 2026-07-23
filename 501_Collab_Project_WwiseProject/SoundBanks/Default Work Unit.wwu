@@ -10,6 +10,7 @@
 						<ObjectRef Name="Play_Slot_Stop" ID="{FB3048F7-4674-420A-B453-3B89DDF2A9D7}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop" ID="{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_attract_Western" ID="{9E388745-95BF-4244-B2BB-078A24AC9023}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_amb_midCasino" ID="{C25D5D05-1552-4256-BD41-97EC4F322FF4}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Spin_Cycle" ID="{D479A95D-E68A-429A-A4D9-3180E58C56C6}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_attract_FourLeafLuckalt" ID="{C52AA46E-E097-43FD-8359-F611D7901693}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_slot_spin_container" ID="{07AB0C95-AAFC-4423-9004-67A44EBBBF94}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
@@ -18,6 +19,7 @@
 						<ObjectRef Name="Stop_attract_SnakeEyes" ID="{3C6F98AA-F29C-4777-B2D5-6F7466144426}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Spin_Cycle" ID="{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Slot_Win_Base" ID="{C9D30CE8-02FB-4C70-926D-3715757032F1}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_amb_outside" ID="{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_attract_xmarks" ID="{DE62DF80-2838-4D3F-A129-E14B1899BBEC}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

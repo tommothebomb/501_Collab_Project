@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2564249364",
+    "Type": "Bus",
+    "GUID": "{E28A46CC-C987-4B45-BA4D-782BAB1701AA}",
+    "Language": "SFX",
+    "Hash": "{897A22B9-E41A-ADD1-A5E0-06893CA986D4}",
+    "ObjectPath": "IndoorAmbience",
+    "ShortName": "IndoorAmbience",
+    "Path": "Bus/IndoorAmbience.bnk",
+    "AuxBusses": [
+     {
+      "Id": "2564249364",
+      "Name": "IndoorAmbience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\IndoorAmbience",
+      "GUID": "{E28A46CC-C987-4B45-BA4D-782BAB1701AA}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3A4D4A32-0C84-D9E2-F434-EFC0976664EE}"
+ }
+}

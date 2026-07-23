@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "SFX",
-    "Hash": "{FD115A55-EC7A-1CA2-685D-4AE0E25BE752}",
+    "Hash": "{92486630-9658-C771-9571-AC965EA1622F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "Casino.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "slot machine-006.wav",
       "CachePath": "2B/{2B54509C-93C8-627E-D242-37D9CC7FC7A2}.wem"
+     },
+     {
+      "Id": "479959301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\amb_outside.wav",
+      "CachePath": "2A/{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem"
      },
      {
       "Id": "480015837",
@@ -158,6 +166,14 @@
       "Location": "Memory",
       "ShortName": "slot machine-001.wav",
       "CachePath": "A8/{A8959D1F-2DD9-ABAA-60E1-4C167727D1E4}.wem"
+     },
+     {
+      "Id": "1011870256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\amb_midCasino.wav",
+      "CachePath": "61/{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem"
      }
     ],
     "Plugins": {
@@ -173,6 +189,32 @@
      ]
     },
     "Events": [
+     {
+      "Id": "4246019388",
+      "Name": "Play_amb_midCasino",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_midCasino",
+      "GUID": "{C25D5D05-1552-4256-BD41-97EC4F322FF4}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1011870256"
+       }
+      ]
+     },
+     {
+      "Id": "121174090",
+      "Name": "Play_amb_outside",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_outside",
+      "GUID": "{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "479959301"
+       }
+      ]
+     },
      {
       "Id": "149938048",
       "Name": "Play_attract_FourLeafLuckalt",
@@ -412,6 +454,6 @@
     ]
    }
   ],
-  "FileHash": "{923A29D4-0CD2-1F66-1C92-7850462E0EA1}"
+  "FileHash": "{12797F29-8602-F799-B6B6-E1B5909194C0}"
  }
 }

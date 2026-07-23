@@ -4,11 +4,24 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	748895195	None	Slot_Test_Group			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1229948536	Environment			\Default Work Unit\Environment	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Main Audio Bus\Ambient	
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	438105790	Outside			\Default Work Unit\Main Audio Bus\Ambient\Outside	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2292057722	VoiceLines			\Default Work Unit\Main Audio Bus\VoiceLines	
+	3553349781	Inside			\Default Work Unit\Main Audio Bus\Ambient\Inside	
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1259851950	Outdoor_Ambience			\Default Work Unit\Main Audio Bus\Ambient\Outdoor_Ambience	
+	2564249364	IndoorAmbience			\Default Work Unit\Main Audio Bus\Ambient\IndoorAmbience	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1992114213	Sidechain_Meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

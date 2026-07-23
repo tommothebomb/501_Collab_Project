@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{DF167436-6184-91CD-291D-43F6036102D2}",
+    "Hash": "{E76C2615-693F-3520-8F6F-2C23B6420DF5}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1992114213",
+       "Name": "Sidechain_Meter",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Sidechain_Meter",
+       "GUID": "{4187DA39-759F-485F-8F4D-812495172C0D}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -36,10 +46,29 @@
     },
     "Busses": [
      {
+      "Id": "77978275",
+      "Name": "Ambient",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient",
+      "GUID": "{FD9A5DF9-E9F1-4F7B-AFAF-AD87A0D77AD9}"
+     },
+     {
       "Id": "393239870",
       "Name": "SFX",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
       "GUID": "{F7C78DFC-92B4-44A0-B586-06F630528CBA}"
+     },
+     {
+      "Id": "438105790",
+      "Name": "Outside",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\Outside",
+      "GUID": "{6ED5E9D8-FD3E-4725-B9D3-126CAFEFF1A6}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1992114213"
+        }
+       ]
+      }
      },
      {
       "Id": "2246998526",
@@ -54,10 +83,45 @@
       "GUID": "{6498C1BF-1B9C-4DC9-BCCF-866D163A5D5E}"
      },
      {
+      "Id": "3553349781",
+      "Name": "Inside",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\Inside",
+      "GUID": "{A03E6059-3A3B-4AEC-BF0B-01EE9223291D}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1992114213"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3991942870",
       "Name": "Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
       "GUID": "{CD47621C-FD6E-4B5F-8AD1-A41CA0B9272D}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "1259851950",
+      "Name": "Outdoor_Ambience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\Outdoor_Ambience",
+      "GUID": "{B031BC3F-6854-426C-B7C9-BCC67AEE60B3}"
+     },
+     {
+      "Id": "2564249364",
+      "Name": "IndoorAmbience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\IndoorAmbience",
+      "GUID": "{E28A46CC-C987-4B45-BA4D-782BAB1701AA}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1229948536",
+      "Name": "Environment",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Environment",
+      "GUID": "{258B4456-1602-4012-9C84-533F4CB880BB}"
      }
     ],
     "StateGroups": [
@@ -75,9 +139,72 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1088209313",
+      "Name": "Floor",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Floor",
+      "GUID": "{B9E0305D-CA79-4EF6-90A0-5052A2DF40E9}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Concrete",
+        "GUID": "{83811881-95C6-420D-8FD1-7612A8F50201}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Grass",
+        "GUID": "{8DF868F8-7403-4104-B8AC-8C701273728F}"
+       },
+       {
+        "Id": "4294388576",
+        "Name": "Generic",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Generic",
+        "GUID": "{9FB4F546-B47C-4DFC-AC6B-9DEF9E55A022}"
+       }
+      ]
+     }
+    ],
+    "AcousticTextures": [
+     {
+      "Id": "3157003241",
+      "Name": "Test",
+      "ObjectPath": "\\Virtual Acoustics\\Default Work Unit\\Test",
+      "GUID": "{36D4F38C-15CD-4C60-BB2B-0724681736B1}",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "12"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "18"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "23"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "35"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{39FFF6A1-F21C-2919-04E5-59525B655652}"
+  "FileHash": "{AA8C4097-4317-84B2-4A0F-B65C0E97ED49}"
  }
 }

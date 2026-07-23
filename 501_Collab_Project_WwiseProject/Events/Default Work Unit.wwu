@@ -213,6 +213,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_amb_outside" ID="{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}">
+					<ChildrenList>
+						<Action Name="" ID="{76FBDAA7-3F97-423B-9E43-8AF7B61EA383}" ShortID="63191231">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_outside" ID="{A978A9D5-0C47-495A-9B1B-B84F062A802A}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_amb_midCasino" ID="{C25D5D05-1552-4256-BD41-97EC4F322FF4}">
+					<ChildrenList>
+						<Action Name="" ID="{F4DF2515-8835-4D57-9502-58651EC43689}" ShortID="897417653">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_midCasino" ID="{1A4D3A83-B8F3-47EE-8203-69055C96A5D8}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
