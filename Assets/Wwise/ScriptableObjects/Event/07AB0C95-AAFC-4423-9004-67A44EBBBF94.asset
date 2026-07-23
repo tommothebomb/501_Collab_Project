@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_slot_spin_container
   id: 76758945
   guid: 07AB0C95-AAFC-4423-9004-67A44EBBBF94
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

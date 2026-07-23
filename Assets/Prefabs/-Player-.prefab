@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 5537846802606760718}
   - component: {fileID: 5346302260226270420}
   - component: {fileID: 9081872413585323080}
+  - component: {fileID: 3259930707919077684}
   m_Layer: 6
   m_Name: -Player-
   m_TagString: Player
@@ -226,6 +227,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TestStateMachine
   player: {fileID: 2553151499768618156}
   state: 0
+--- !u!114 &3259930707919077684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396634110274652218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf597df852eb71340bbb087473165908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkBank
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 51b4b3619f45fcc4e887820807f70356, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &4859803378363599166
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,3 +593,4 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 25
+  tooltipShown: 0
