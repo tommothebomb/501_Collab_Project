@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_Slot_Win_Base
   id: 2932405927
   guid: C9D30CE8-02FB-4C70-926D-3715757032F1
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1
