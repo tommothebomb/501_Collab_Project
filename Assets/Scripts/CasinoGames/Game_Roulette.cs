@@ -1,10 +1,20 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Game_Roulette : MonoBehaviour
 {
     [SerializeField] float MaxBet;
+    public bool Isplaying = false;
+    [SerializeField] GameObject Chips;
+    [SerializeField] Animation ChipAnim;
+    [SerializeField] Transform Spinny;
+    [SerializeField] Transform NumbersHolder;
+    [SerializeField] GameObject WinnerGlow;
+    [SerializeField] GameObject ZeroGlow;
+
 
     [Header("Return to Player % ")]
     [SerializeField] float ColourRTP; //they are all the same length YIPPIE!!!!!!!!!!!!!!!!!!!!!!
@@ -60,19 +70,24 @@ public class Game_Roulette : MonoBehaviour
 
     public void BetOnNumber(float Number)
     {
-        Code(Input.Number, Number, RandomMethod(), MaxBet);
+        StartCoroutine(Code(Input.Number, Number, RandomMethod(), MaxBet));
     }
 
     public void BetOnOddorEven(float Number) //either 1 or 2
     {
-        Code(Input.OddOrEven, Number, RandomMethod(), MaxBet);
+        StartCoroutine(Code(Input.OddOrEven, Number, RandomMethod(), MaxBet));
     }
 
     public void BetOnColour(float Number) //either 1 or 2
     {
-        Code(Input.Colour, Number, RandomMethod(), MaxBet);
+        StartCoroutine(Code(Input.Colour, Number, RandomMethod(), MaxBet));
     }
 
+    public void PlaceChips(Vector3 position)
+    {
+        Chips.transform.position = position;
+        ChipAnim.Play();
+    }
 
     //WORK IN PROGRESSES
     /// <summary>
@@ -97,16 +112,47 @@ public class Game_Roulette : MonoBehaviour
     /// <param name="PlayerBet"></param> the guessed number of the player,,, for color we default to 1 - black 2 - red // make sure the numbers match
     /// <param name="Result"></param> the resulting randomised number
     /// <param name="BetAmount"></param> the amount of money
-    void Code(Input Type,float PlayerBet,float Result,float BetAmount)
+    IEnumerator Code(Input Type,float PlayerBet,float Result,float BetAmount)
     {
-        GlobalManager.instance.Money -= BetAmount; // take away the money needed for the bet
+        //play animation
+        if (Isplaying) { yield break; }
+        GlobalManager.instance.Money -= MaxBet;
+        ZeroGlow.SetActive(false);
+        WinnerGlow.SetActive(false);
+        float time = 0;
+        float SpinDuraction = 3;
+
+        Isplaying = true;
+        while (time <= SpinDuraction)
+        {
+            time += Time.deltaTime;
+            Spinny.transform.Rotate(Vector3.up,3600 * (1- (time/SpinDuraction)) * Time.deltaTime);
+            //spin the wheel
+            //ball
+            //during this time prevent inreraction
+            //play animation
+
+            yield return null;
+        }
+        Isplaying = false;
+
+        Chips.transform.position = this.transform.position;
+        //add glow to the winning button maybe?
 
         if (Result == 0)
         {
             Debug.Log("0 NO WINNERS");
             Loss(BetAmount);
+            ZeroGlow.SetActive(true);
+            WinnerGlow.SetActive(false);
         }
-        Debug.Log(Result);
+        else
+        {
+            ZeroGlow.SetActive(false);
+            WinnerGlow.SetActive(true);
+            WinnerGlow.transform.position = NumbersHolder.transform.GetChild((int)Result - 1).position;
+        }
+
         switch (Type)
         {
             case Input.Colour: //If the colour matches the color of the bet number
@@ -114,8 +160,8 @@ public class Game_Roulette : MonoBehaviour
                 wheelNumber.TryGetValue(PlayerBet, out numberColour); //gets the colour of the thingy
                 bool ColResult; 
                 wheelNumber.TryGetValue(Result, out ColResult);
-                Debug.Log(numberColour);
-                Debug.Log(ColResult);
+                //Debug.Log(numberColour);
+                //Debug.Log(ColResult);
                 if (numberColour == ColResult)
                 {
                     Win(MaxBet, ColourRTP);
@@ -171,8 +217,29 @@ public class Game_Roulette : MonoBehaviour
     }
 
     /// <param name="betAmount"></param> the amount of money the players going to lose -- the good ending
+    /// //DONSE USE THE BET AMOUNT JUST CANT REMOVE WITHOUT BREAKING ALL THE FUNCTIONS AND I DONT WANN MESS SHIT UP
     void Loss(float betAmount)
     {
-        Debug.Log("Loss");
+       Debug.Log("Loss");
+    }
+
+
+
+
+    IEnumerator ISpin()
+    {
+        float time = 0;
+        float SpinDuraction = 3;
+        while (time <= SpinDuraction)
+        {
+            //spin the wheel
+            //ball
+            //during this time prevent inreraction
+            //play animation
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        //move to payout bit
     }
 }
