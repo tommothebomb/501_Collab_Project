@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_Slot_Stop
   id: 2303260725
   guid: FB3048F7-4674-420A-B453-3B89DDF2A9D7
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

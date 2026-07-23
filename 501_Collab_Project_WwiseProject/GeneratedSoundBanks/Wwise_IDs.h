@@ -43,6 +43,13 @@ namespace AK
 
     } // namespace STATES
 
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID CASINO = 200935300U;
+        static const AkUniqueID MAIN_MENU = 2005704188U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;

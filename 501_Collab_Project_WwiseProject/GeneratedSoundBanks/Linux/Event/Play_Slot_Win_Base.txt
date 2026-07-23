@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2932405927	Play_Slot_Win_Base			\Default Work Unit\Slots\Play_Slot_Win_Base	
-
