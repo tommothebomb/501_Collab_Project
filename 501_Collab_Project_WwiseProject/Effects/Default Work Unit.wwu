@@ -45,6 +45,13 @@
 						</CustomStateList>
 					</StateInfo>
 				</Effect>
+				<Effect Name="Sidechain_Meter" ID="{4187DA39-759F-485F-8F4D-812495172C0D}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<ReferenceList>
+						<Reference Name="GameParameter">
+							<ObjectRef Name="Environment" ID="{258B4456-1602-4012-9C84-533F4CB880BB}" WorkUnitID="{50082966-68BA-41E6-8777-117EEC167E36}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -1263,6 +1263,912 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Environment SFX" ID="{1BF0148D-7E32-459C-B174-ECA393AA9618}" ShortID="184281827">
+							<ChildrenList>
+								<Sound Name="amb_midCasino" ID="{1A4D3A83-B8F3-47EE-8203-69055C96A5D8}" ShortID="778901268">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Ambience" ID="{B71E00BE-5FC4-4094-A2A5-35C5DEB4021D}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Inside" ID="{A03E6059-3A3B-4AEC-BF0B-01EE9223291D}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_midCasino" ID="{70E0629B-304E-49B5-B94B-1E513AAD901A}">
+											<Language>SFX</Language>
+											<AudioFile>Environment SFX\amb_midCasino.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1011870256"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_midCasino" ID="{70E0629B-304E-49B5-B94B-1E513AAD901A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_outside" ID="{A978A9D5-0C47-495A-9B1B-B84F062A802A}" ShortID="935939696">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Ambience" ID="{B71E00BE-5FC4-4094-A2A5-35C5DEB4021D}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Outside" ID="{6ED5E9D8-FD3E-4725-B9D3-126CAFEFF1A6}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_outside" ID="{576B8821-ED59-4D5C-A262-CAD92786DFBB}">
+											<Language>SFX</Language>
+											<AudioFile>Environment SFX\amb_outside.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="479959301"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_outside" ID="{576B8821-ED59-4D5C-A262-CAD92786DFBB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="Footsteps" ID="{E7327A55-0338-42CB-B1E8-E58BD38D2C71}" ShortID="769523344">
+									<ChildrenList>
+										<SwitchContainer Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" ShortID="214105900">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Floor" ID="{B9E0305D-CA79-4EF6-90A0-5052A2DF40E9}" WorkUnitID="{ABAB76FF-39C0-4BBB-87BB-96495AC8E55F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Generic" ID="{FF722679-6446-425D-A546-B9DB565DBC0F}" ShortID="452606733">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_footstep_3" ID="{325089E4-6433-4889-B59F-7F840AEFBB12}" ShortID="881811510">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_footstep_3" ID="{0C3DAC4D-6CC1-4DBA-BEC1-6FEF931E72DF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Environment SFX\sfx_footstep_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="34319950"/>
+																	</MediaIDList>
+																</AudioFileSource>
+																<AudioFileSource Name="sfx_footstep_01" ID="{73778D00-DC4D-43D0-B311-37374FEA28E9}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_footstep_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="100922231"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_footstep_01" ID="{73778D00-DC4D-43D0-B311-37374FEA28E9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_footstep_1" ID="{90DA1F1C-1C53-4AFB-B9B4-F79E34111FA6}" ShortID="523891149">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_footstep_1" ID="{6E07352B-6918-4CF6-88D3-2E160F2757EC}">
+																	<Language>SFX</Language>
+																	<AudioFile>Environment SFX\sfx_footstep_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="852743850"/>
+																	</MediaIDList>
+																</AudioFileSource>
+																<AudioFileSource Name="sfx_footstep_01" ID="{E1D6DEFB-7080-48FF-8866-9F11F4572F64}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_footstep_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="300601520"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_footstep_01" ID="{E1D6DEFB-7080-48FF-8866-9F11F4572F64}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_footstep_2" ID="{9D3688A3-78A6-4F0A-B36E-DC0BD1C28D40}" ShortID="582074306">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_footstep_2" ID="{200468D9-3030-4772-8269-92E87690471A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Environment SFX\sfx_footstep_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1027804749"/>
+																	</MediaIDList>
+																</AudioFileSource>
+																<AudioFileSource Name="sfx_footstep_01" ID="{36B3FCFE-1B12-425F-A281-6C5280F871F2}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_footstep_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="617365663"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_footstep_01" ID="{36B3FCFE-1B12-425F-A281-6C5280F871F2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Stone" ID="{7EC436A0-D3E6-4C3E-8F7A-5B5F8672EA54}" ShortID="826141847">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Bare Step Stone Medium A" ID="{CBA41169-4EE1-4ED6-BE53-087206060E20}" ShortID="766233755">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Bare Step Stone Medium A" ID="{76BE9237-D000-4CC6-8281-FA0B020FFE3E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Bare Step Stone Medium A.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="356095830"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Bare Step Stone Medium A" ID="{76BE9237-D000-4CC6-8281-FA0B020FFE3E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Bare Step Stone Medium B" ID="{BF7C027A-E66D-42B5-8951-F12B38F7E144}" ShortID="500291736">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Bare Step Stone Medium B" ID="{CD8DDBD0-E12C-408C-B766-D762C66DF0A2}">
+																	<Language>SFX</Language>
+																	<AudioFile>Bare Step Stone Medium B.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="236675762"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Bare Step Stone Medium B" ID="{CD8DDBD0-E12C-408C-B766-D762C66DF0A2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Bare Step Stone Medium C" ID="{319E51E5-DFE5-41A7-BF60-29C8C00480F5}" ShortID="643000759">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Bare Step Stone Medium C" ID="{28728B81-F7A4-482C-9C64-0D98E8D574D7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Bare Step Stone Medium C.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="347238335"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Bare Step Stone Medium C" ID="{28728B81-F7A4-482C-9C64-0D98E8D574D7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Bare Step Stone Medium D" ID="{285696B9-0BF4-430B-8170-B36213E01932}" ShortID="221630712">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Bare Step Stone Medium D" ID="{15CE13C5-1844-4978-8281-01735DFB4AF1}">
+																	<Language>SFX</Language>
+																	<AudioFile>Bare Step Stone Medium D.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="683848984"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Bare Step Stone Medium D" ID="{15CE13C5-1844-4978-8281-01735DFB4AF1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Bare Step Stone Medium E" ID="{CF206805-24A6-46E2-B210-3BC96E852251}" ShortID="331222272">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Bare Step Stone Medium E" ID="{10E14898-423E-453A-8183-C02E0B494158}">
+																	<Language>SFX</Language>
+																	<AudioFile>Bare Step Stone Medium E.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="821528645"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Bare Step Stone Medium E" ID="{10E14898-423E-453A-8183-C02E0B494158}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Grass" ID="{19A47713-86DA-4731-A88B-41B6DA0FE151}" ShortID="311436771">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Shoe Step Grass Medium B" ID="{677D7A98-30BF-4399-B9F0-3031DBDF680C}" ShortID="339235207">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Shoe Step Grass Medium B" ID="{D8D503E9-6DAF-450F-9B8E-44FFB8EC11BA}">
+																	<Language>SFX</Language>
+																	<AudioFile>Shoe Step Grass Medium B.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="881691880"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Shoe Step Grass Medium B" ID="{D8D503E9-6DAF-450F-9B8E-44FFB8EC11BA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Shoe Step Grass Medium C" ID="{F4508425-C55E-43D9-937B-2603988F55D2}" ShortID="312721854">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Shoe Step Grass Medium C" ID="{C7E40130-76D0-4639-B2A5-EC3E86E18B87}">
+																	<Language>SFX</Language>
+																	<AudioFile>Shoe Step Grass Medium C.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1064935557"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Shoe Step Grass Medium C" ID="{C7E40130-76D0-4639-B2A5-EC3E86E18B87}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Shoe Step Grass Medium D" ID="{BEF83BC6-F777-41DE-A92E-A3FE28ED1BD5}" ShortID="1016991517">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Shoe Step Grass Medium D" ID="{1E99BD76-BF71-4EDE-B2AA-EA1AD6BE6E4A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Shoe Step Grass Medium D.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="809377767"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Shoe Step Grass Medium D" ID="{1E99BD76-BF71-4EDE-B2AA-EA1AD6BE6E4A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Shoe Step Grass Medium E" ID="{89E2409F-7623-4D2E-B4EF-6C791DAB2369}" ShortID="130988663">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Shoe Step Grass Medium E" ID="{034EE741-BC0A-45B0-8E84-D9768091C11E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Shoe Step Grass Medium E.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="35805181"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Shoe Step Grass Medium E" ID="{034EE741-BC0A-45B0-8E84-D9768091C11E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Shoe Step Grass Medium A" ID="{BBE92A5A-A02E-4CB0-8DC9-02F8E52980EB}" ShortID="480746488">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Shoe Step Grass Medium A" ID="{B2305E2B-8142-4FDD-98B4-5150E1CD4CC4}">
+																	<Language>SFX</Language>
+																	<AudioFile>Shoe Step Grass Medium A.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="46101133"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Shoe Step Grass Medium A" ID="{B2305E2B-8142-4FDD-98B4-5150E1CD4CC4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Grass" ID="{19A47713-86DA-4731-A88B-41B6DA0FE151}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Generic" ID="{FF722679-6446-425D-A546-B9DB565DBC0F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Stone" ID="{7EC436A0-D3E6-4C3E-8F7A-5B5F8672EA54}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Generic" ID="{9FB4F546-B47C-4DFC-AC6B-9DEF9E55A022}"/>
+														<ItemList>
+															<ItemRef Name="Generic" ID="{FF722679-6446-425D-A546-B9DB565DBC0F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Concrete" ID="{83811881-95C6-420D-8FD1-7612A8F50201}"/>
+														<ItemList>
+															<ItemRef Name="Stone" ID="{7EC436A0-D3E6-4C3E-8F7A-5B5F8672EA54}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{8DF868F8-7403-4104-B8AC-8C701273728F}"/>
+														<ItemList>
+															<ItemRef Name="Grass" ID="{19A47713-86DA-4731-A88B-41B6DA0FE151}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="UI" ID="{F4EB8C9F-F7B2-4789-83DA-DC48BA7E9872}" ShortID="878036595">
+									<ChildrenList>
+										<Sound Name="sfx_interact_1" ID="{34B9C783-56A2-4424-BFF5-3ECB4CB2FA81}" ShortID="89007586">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_interact_1" ID="{EF12D201-3CDA-406D-B9DE-24C2431D4F44}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_interact_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="511212044"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_interact_1" ID="{EF12D201-3CDA-406D-B9DE-24C2431D4F44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_interact_2" ID="{F76DB874-620C-4E14-A9E5-40FA8BF2FC8D}" ShortID="628253842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_interact_2" ID="{4391524A-D5C9-440B-923B-EA2B7FF01E51}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_interact_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="309629099"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_interact_2" ID="{4391524A-D5C9-440B-923B-EA2B7FF01E51}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_interact_3" ID="{E337DC34-7B17-4FE6-8761-F0F4F21C5ECF}" ShortID="363894846">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_interact_3" ID="{33B6F14D-80A7-4500-9D0A-457ACE7DF976}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_interact_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="629613821"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_interact_3" ID="{33B6F14D-80A7-4500-9D0A-457ACE7DF976}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Folder Name="Phone SFX" ID="{025B7FE5-5D63-4A69-82FB-AAA79F731563}" ShortID="641608636">
+											<ChildrenList>
+												<Sound Name="keyboard click" ID="{375EFD2A-0EFD-4A40-ABE5-D5E1100B1C95}" ShortID="835649885">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="keyboard click" ID="{5D69FBB8-83FA-497E-B3AB-39E022CD5204}">
+															<Language>SFX</Language>
+															<AudioFile>Phone SFX\keyboard click.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="392789631"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="keyboard click" ID="{5D69FBB8-83FA-497E-B3AB-39E022CD5204}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Phone App open" ID="{288822E8-75E3-47AF-BD54-5149A450AE44}" ShortID="345907299">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Phone App open" ID="{8540E954-F9C0-454E-BF60-69E32F2D87E7}">
+															<Language>SFX</Language>
+															<AudioFile>Phone SFX\Phone App open.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="366238829"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Phone App open" ID="{8540E954-F9C0-454E-BF60-69E32F2D87E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="phone down" ID="{E5DD1D74-56A3-49FA-B960-6CEE2F2E9B67}" ShortID="1045345841">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="phone down" ID="{B6D57EC7-9DB6-4221-A058-FB13A7FCFB3B}">
+															<Language>SFX</Language>
+															<AudioFile>Phone SFX\phone down.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="213094987"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="phone down" ID="{B6D57EC7-9DB6-4221-A058-FB13A7FCFB3B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="phone notification" ID="{22B5CDB6-0132-4410-AEC9-80FA7037A838}" ShortID="240956509">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="phone notification" ID="{5A1B3B8E-E5A5-4ECB-AEBC-630E30248E75}">
+															<Language>SFX</Language>
+															<AudioFile>Phone SFX\phone notification.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="193646577"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="phone notification" ID="{5A1B3B8E-E5A5-4ECB-AEBC-630E30248E75}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="phone up" ID="{278E1B74-7009-490E-9647-5400CA591773}" ShortID="369634307">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="phone up" ID="{D0D65B8F-EE50-46E5-BE85-FD22167D3D8A}">
+															<Language>SFX</Language>
+															<AudioFile>Phone SFX\phone up.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="409179116"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="phone up" ID="{D0D65B8F-EE50-46E5-BE85-FD22167D3D8A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="NPC" ID="{C8BC2001-304B-4715-883A-87D6C6AE4447}" ShortID="278330751">
+									<ChildrenList>
+										<Sound Name="sfx_NPCtalk_1" ID="{D7AD1A53-2C7F-4F75-A5DB-96DA69CD7976}" ShortID="196516114">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_1" ID="{D58CD0A9-8D30-4986-BBB3-627C772D91B2}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766558413"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_1" ID="{D58CD0A9-8D30-4986-BBB3-627C772D91B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_10" ID="{F8CA3001-A257-48FB-AE40-D64D7F601DCD}" ShortID="630699718">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_10" ID="{9A3884C0-D6B1-4B04-989C-2C8EBEABBCCC}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951035937"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_10" ID="{9A3884C0-D6B1-4B04-989C-2C8EBEABBCCC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_11" ID="{FFE2F90B-8450-43A2-AD96-51F64840F994}" ShortID="40423315">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_11" ID="{609B7797-D936-4F12-B6B8-39F0C31C54C2}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="102005089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_11" ID="{609B7797-D936-4F12-B6B8-39F0C31C54C2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_2" ID="{80181971-C94B-4DD0-A55C-32136E90E627}" ShortID="640231985">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_2" ID="{A398BDBB-00FF-4B1F-B5E4-F6B960AEDAC2}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="436079881"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_2" ID="{A398BDBB-00FF-4B1F-B5E4-F6B960AEDAC2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_3" ID="{F9B420FB-D25F-43F2-8BFB-D8BC64DA2817}" ShortID="612249187">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_3" ID="{7E8A792B-8DAE-48A5-8D09-DEF3CB59526D}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1011545770"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_3" ID="{7E8A792B-8DAE-48A5-8D09-DEF3CB59526D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_12" ID="{5ADC2CC6-145D-4797-9DA6-FF079DCEFB2A}" ShortID="717517004">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_12" ID="{0FD13585-5FDA-4BD0-A2A4-8B747AC5743D}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="613557902"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_12" ID="{0FD13585-5FDA-4BD0-A2A4-8B747AC5743D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_8" ID="{16C9497E-A663-4D71-BC01-3717634DAF8B}" ShortID="598964740">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_8" ID="{8D1E022A-FBE0-4983-A354-EA00A15B9877}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52630117"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_8" ID="{8D1E022A-FBE0-4983-A354-EA00A15B9877}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_9" ID="{875535B7-409D-48E4-9758-53B7436B2244}" ShortID="899599593">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_9" ID="{B71A7E5B-C8CA-4295-A704-0AF0A07A832F}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="418977895"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_9" ID="{B71A7E5B-C8CA-4295-A704-0AF0A07A832F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_7" ID="{8B010847-60D9-458F-9FE4-4A0DA2321A9F}" ShortID="401512020">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_7" ID="{37565066-4FD4-47C3-B062-C779FFAB7E79}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="562544433"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_7" ID="{37565066-4FD4-47C3-B062-C779FFAB7E79}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_5" ID="{545EB24B-9A2E-4A71-A14A-633229C4B7A2}" ShortID="183126276">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_5" ID="{1606BE74-89DA-46CA-A65A-84B96217D43F}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="594290406"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_5" ID="{1606BE74-89DA-46CA-A65A-84B96217D43F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_NPCtalk_6" ID="{669C0EB0-29D5-48A7-92D7-122581905D25}" ShortID="173711703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_NPCtalk_6" ID="{D10E2CA6-AD5C-414B-88FF-5E649AC64FF2}">
+													<Language>SFX</Language>
+													<AudioFile>Environment SFX\sfx_NPCtalk_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="482333772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_NPCtalk_6" ID="{D10E2CA6-AD5C-414B-88FF-5E649AC64FF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Voice Lines" ID="{7D348B82-6146-4868-8E3C-9A4102161FF1}" ShortID="291944206">
@@ -4943,6 +5849,7 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{A12639D1-A1C3-4A16-89EC-082C1F290ABC}" ShortID="475737418"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

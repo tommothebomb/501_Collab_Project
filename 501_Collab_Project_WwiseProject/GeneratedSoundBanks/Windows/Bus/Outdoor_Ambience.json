@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1259851950",
+    "Type": "Bus",
+    "GUID": "{B031BC3F-6854-426C-B7C9-BCC67AEE60B3}",
+    "Language": "SFX",
+    "Hash": "{8E14EBCF-D9E5-8962-D924-B89099873518}",
+    "ObjectPath": "Outdoor_Ambience",
+    "ShortName": "Outdoor_Ambience",
+    "Path": "Bus/Outdoor_Ambience.bnk",
+    "AuxBusses": [
+     {
+      "Id": "1259851950",
+      "Name": "Outdoor_Ambience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambient\\Outdoor_Ambience",
+      "GUID": "{B031BC3F-6854-426C-B7C9-BCC67AEE60B3}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A54612A5-6968-FB9C-EF5B-AA28EAB6F705}"
+ }
+}
