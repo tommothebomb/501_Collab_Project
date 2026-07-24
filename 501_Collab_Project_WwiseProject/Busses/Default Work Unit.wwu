@@ -27,7 +27,11 @@
 						<Bus Name="SFX" ID="{F7C78DFC-92B4-44A0-B586-06F630528CBA}"/>
 						<Bus Name="Ambient" ID="{FD9A5DF9-E9F1-4F7B-AFAF-AD87A0D77AD9}">
 							<ChildrenList>
-								<AuxBus Name="Outdoor_Ambience" ID="{B031BC3F-6854-426C-B7C9-BCC67AEE60B3}"/>
+								<AuxBus Name="Outdoor_Ambience" ID="{B031BC3F-6854-426C-B7C9-BCC67AEE60B3}">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+								</AuxBus>
 								<Bus Name="Outside" ID="{6ED5E9D8-FD3E-4725-B9D3-126CAFEFF1A6}">
 									<ObjectLists>
 										<ObjectList Name="Effects">
@@ -93,7 +97,11 @@
 										</ObjectList>
 									</ObjectLists>
 								</Bus>
-								<AuxBus Name="IndoorAmbience" ID="{E28A46CC-C987-4B45-BA4D-782BAB1701AA}"/>
+								<AuxBus Name="IndoorAmbience" ID="{E28A46CC-C987-4B45-BA4D-782BAB1701AA}">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

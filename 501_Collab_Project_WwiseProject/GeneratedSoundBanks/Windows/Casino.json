@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "SFX",
-    "Hash": "{92486630-9658-C771-9571-AC965EA1622F}",
+    "Hash": "{81B4B487-2B7E-D4C4-9893-3DF08E3D7041}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "Casino.bnk",
@@ -454,6 +454,6 @@
     ]
    }
   ],
-  "FileHash": "{E2A8E4E2-AEB3-02FE-843D-DC0EDE6390B7}"
+  "FileHash": "{7A5D8EE1-E44E-DF73-DC57-8C660102E892}"
  }
 }
