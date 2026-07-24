@@ -9,8 +9,9 @@ public class RoulettBet : InteractableObjectBase, IInterractible
 
     public override void Interact()
     {
+        if (logic.Isplaying) { return; }
         //TO DO ADD CODE TO MNOT ALOOW BETTING IF CURRNTLY SPINNING
-
+        logic.PlaceChips(this.transform.position);
         switch (BetStyle)
         {
             case Game_Roulette.Input.Number:
@@ -23,11 +24,12 @@ public class RoulettBet : InteractableObjectBase, IInterractible
                 logic.BetOnColour(inputNumber);
                 break;
         }
-
+        HideUIToolTip();
     }
 
     public override void CheckToDisplayUIToolTip()
     {
+        if (logic.Isplaying) { return; }
         uiTooltipObj.transform.Rotate(Vector3.up * Random.Range(0, 360));
          DisplayUIToolTip();
     }
