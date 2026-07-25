@@ -34,6 +34,8 @@ public class ObjectSpawn : MonoBehaviour
     {
         int i = Random.Range(0, prefabCount); // randomises which prefab will spawn from an array
 
-        Instantiate(prefab[i], transform.position, Quaternion.identity); // this spawns the prefab
+        Quaternion spawnRotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
+
+        Instantiate(prefab[i], transform.position, spawnRotation); // this spawns the prefab
     }
 }
