@@ -10,12 +10,82 @@
     "Type": "User",
     "GUID": "{12074D06-A386-484E-856D-CE3058AADA20}",
     "Language": "SFX",
-    "Hash": "{23864D8A-B173-0D36-4943-B81DD9838473}",
+    "Hash": "{F5E6EC64-4349-D0FF-DEFE-C6E2CD899639}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Menu",
     "ShortName": "Main_Menu",
-    "Path": "Main_Menu.bnk"
+    "Path": "Main_Menu.bnk",
+    "Media": [
+     {
+      "Id": "309629099",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\sfx_interact_2.wav",
+      "CachePath": "C7/{C7437194-0C08-21BC-AF6A-7305685716A4}.wem"
+     },
+     {
+      "Id": "511212044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\sfx_interact_1.wav",
+      "CachePath": "BB/{BB638587-CC09-D7D2-F61A-502652D7600B}.wem"
+     },
+     {
+      "Id": "629613821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\sfx_interact_3.wav",
+      "CachePath": "99/{99DF7592-392A-9582-6CAB-822C6A949BAF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1780698603",
+      "Name": "Play_sfx_back",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_sfx_back",
+      "GUID": "{08135E4B-F4E1-4B28-9E2D-022187E4B2A9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "309629099"
+       }
+      ]
+     },
+     {
+      "Id": "3978225973",
+      "Name": "Play_sfx_forward",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_sfx_forward",
+      "GUID": "{BD018170-90F4-49BF-9324-F5B616E90010}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.365375",
+      "DurationMax": "0.365375",
+      "MediaRefs": [
+       {
+        "Id": "511212044"
+       }
+      ]
+     },
+     {
+      "Id": "325086926",
+      "Name": "Play_sfx_select",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_sfx_select",
+      "GUID": "{E68A31D1-AC49-4A31-9220-372661B94744}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.302875",
+      "DurationMax": "0.302875",
+      "MediaRefs": [
+       {
+        "Id": "629613821"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{C5E669E9-6330-ECAC-5041-FAF4A65297D9}"
+  "FileHash": "{5E7F85ED-0A5F-CBD0-E098-1CE8A6AE61E8}"
  }
 }

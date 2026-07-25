@@ -10,6 +10,13 @@
 						<Switch Name="Generic" ID="{9FB4F546-B47C-4DFC-AC6B-9DEF9E55A022}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Chips" ID="{0799AA26-E446-4595-8086-DE435BB350C8}">
+					<ChildrenList>
+						<Switch Name="Big" ID="{02784F03-C334-4123-9E73-3766773F729C}"/>
+						<Switch Name="Small" ID="{3319DD67-BAB4-438C-82D5-7EE78F094A2B}"/>
+						<Switch Name="Medium" ID="{C1E2F872-1195-49B0-B5A9-EF1875CD834D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

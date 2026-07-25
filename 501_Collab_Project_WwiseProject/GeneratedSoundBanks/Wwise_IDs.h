@@ -19,15 +19,37 @@ namespace AK
         static const AkUniqueID PLAY_ATTRACT_SNAKEEYES = 4097516578U;
         static const AkUniqueID PLAY_ATTRACT_WESTERN = 917334326U;
         static const AkUniqueID PLAY_ATTRACT_XMARKS = 2702863590U;
+        static const AkUniqueID PLAY_BIGLAD = 4257882499U;
+        static const AkUniqueID PLAY_DOUCHE = 2459562556U;
+        static const AkUniqueID PLAY_FARMER = 545496015U;
+        static const AkUniqueID PLAY_FOOTSTEPSCONTAINER = 2488303320U;
+        static const AkUniqueID PLAY_GEEZER = 78570490U;
+        static const AkUniqueID PLAY_IDK = 2574927968U;
+        static const AkUniqueID PLAY_KEYBOARD_CLICK = 2571661844U;
+        static const AkUniqueID PLAY_LOSER = 2125167341U;
+        static const AkUniqueID PLAY_PHONE_APP_OPEN = 3046872037U;
+        static const AkUniqueID PLAY_PHONE_DOWN = 839760237U;
+        static const AkUniqueID PLAY_PHONE_NOTIFICATION = 3900699724U;
+        static const AkUniqueID PLAY_PHONE_UP = 554652250U;
+        static const AkUniqueID PLAY_POLKA = 1316105455U;
+        static const AkUniqueID PLAY_REGULAR_GUY = 2212624710U;
+        static const AkUniqueID PLAY_SFX_BACK = 1780698603U;
+        static const AkUniqueID PLAY_SFX_FORWARD = 3978225973U;
+        static const AkUniqueID PLAY_SFX_SELECT = 325086926U;
+        static const AkUniqueID PLAY_SLOT_MACHINE_SFX_VIRTUAL = 2579523620U;
         static const AkUniqueID PLAY_SLOT_SPIN_CONTAINER = 76758945U;
         static const AkUniqueID PLAY_SLOT_STOP = 2303260725U;
         static const AkUniqueID PLAY_SLOT_WIN_BASE = 2932405927U;
+        static const AkUniqueID PLAY_SLOTWINVIRTUAL = 1118907549U;
+        static const AkUniqueID PLAY_SMOKER = 4192618525U;
         static const AkUniqueID PLAY_SPIN_CYCLE = 2852958513U;
+        static const AkUniqueID PLAY_ZESTY_RICH_GUY = 4115026698U;
         static const AkUniqueID STOP = 788884573U;
         static const AkUniqueID STOP_ATTRACT_FOURLEAFLUCKALT = 3510522014U;
         static const AkUniqueID STOP_ATTRACT_SNAKEEYES = 3634297912U;
         static const AkUniqueID STOP_ATTRACT_WESTERN = 2969981116U;
         static const AkUniqueID STOP_ATTRACT_XMARKS = 1665187052U;
+        static const AkUniqueID STOP_SLOT_MACHINE_SFX_VIRTUAL = 4232836462U;
         static const AkUniqueID STOP_SPIN_CYCLE = 504588419U;
     } // namespace EVENTS
 
@@ -47,6 +69,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CHIPS
+        {
+            static const AkUniqueID GROUP = 200764838U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIG = 647611021U;
+                static const AkUniqueID MEDIUM = 2849147824U;
+                static const AkUniqueID SMALL = 1846755610U;
+            } // namespace SWITCH
+        } // namespace CHIPS
+
         namespace FLOOR
         {
             static const AkUniqueID GROUP = 1088209313U;

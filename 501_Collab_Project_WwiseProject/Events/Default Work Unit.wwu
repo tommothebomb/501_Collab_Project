@@ -167,74 +167,310 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Stop" ID="{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}">
+							<ChildrenList>
+								<Action Name="" ID="{3247D4A3-7B04-4F0B-98C6-2B98D36497AD}" ShortID="74698940">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3D626FC2-0779-497B-88A8-65F2C99A3B71}" ShortID="174965590">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0DCC6027-75CE-4304-A008-16792A5D2830}" ShortID="673910761">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83B75D2A-F1E5-4AED-88DB-8C21D1EBCD37}" ShortID="20349082">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Slot_machine_sfx_virtual" ID="{FEC4E0D7-7838-4692-8037-B20259095DB3}">
+							<ChildrenList>
+								<Action Name="" ID="{BC72B9A9-57D3-4516-95A8-097AEB4CA3AD}" ShortID="990852207">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slot machine sfx virtual" ID="{74EDF95E-0B99-4083-99A2-3EB8CBBA98F3}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Stop" ID="{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}">
+				<Folder Name="UI" ID="{D3D29C0A-4B1F-4EA3-9678-B3C358600B0D}" ShortID="629690953">
 					<ChildrenList>
-						<Action Name="" ID="{3247D4A3-7B04-4F0B-98C6-2B98D36497AD}" ShortID="74698940">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="attract_FourLeafLuckalt" ID="{E1100819-02D8-4BEC-8046-71A17C8DC339}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{3D626FC2-0779-497B-88A8-65F2C99A3B71}" ShortID="174965590">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="attract_SnakeEyes" ID="{1B2CD411-B057-44A9-B89D-8EF3160276C2}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0DCC6027-75CE-4304-A008-16792A5D2830}" ShortID="673910761">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="attract_Western" ID="{C30891D4-5DC1-426C-90EE-DD9CE808DFB0}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{83B75D2A-F1E5-4AED-88DB-8C21D1EBCD37}" ShortID="20349082">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="attract_xmarks" ID="{9B9C9870-03FD-4E9D-8ECE-E456381A8EE1}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_sfx_back" ID="{08135E4B-F4E1-4B28-9E2D-022187E4B2A9}">
+							<ChildrenList>
+								<Action Name="" ID="{901FD3F0-14B1-4078-A163-F6B4E7B7EBCA}" ShortID="415124440">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_back" ID="{F76DB874-620C-4E14-A9E5-40FA8BF2FC8D}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_forward" ID="{BD018170-90F4-49BF-9324-F5B616E90010}">
+							<ChildrenList>
+								<Action Name="" ID="{881CB4E1-20B8-41C7-B54E-930BC6000EC1}" ShortID="999791776">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_forward" ID="{34B9C783-56A2-4424-BFF5-3ECB4CB2FA81}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_select" ID="{E68A31D1-AC49-4A31-9220-372661B94744}">
+							<ChildrenList>
+								<Action Name="" ID="{746C1140-ACB9-4D22-9BF0-CB1369D60E6E}" ShortID="661604943">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_select" ID="{E337DC34-7B17-4FE6-8761-F0F4F21C5ECF}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_amb_outside" ID="{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}">
+				</Folder>
+				<Folder Name="Phone" ID="{CE6686B9-0565-44B8-B4DB-8D66858DF379}" ShortID="498100026">
 					<ChildrenList>
-						<Action Name="" ID="{76FBDAA7-3F97-423B-9E43-8AF7B61EA383}" ShortID="63191231">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="amb_outside" ID="{A978A9D5-0C47-495A-9B1B-B84F062A802A}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_phone_up" ID="{DC0DF660-BC8E-47DB-BEDB-C5AC45F7EAF2}">
+							<ChildrenList>
+								<Action Name="" ID="{5389C641-6503-430D-8F99-D09976982E2A}" ShortID="389853211">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="phone up" ID="{278E1B74-7009-490E-9647-5400CA591773}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_phone_notification" ID="{9D955D4B-D8D4-4752-9B06-E5CBBC0187A3}">
+							<ChildrenList>
+								<Action Name="" ID="{55BCFFA4-D495-46C1-A3CF-0DB20CEDADB6}" ShortID="848213080">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="phone notification" ID="{22B5CDB6-0132-4410-AEC9-80FA7037A838}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_phone_down" ID="{7E90BBF4-62B6-4916-9996-57DD27C76552}">
+							<ChildrenList>
+								<Action Name="" ID="{51BFB9E2-F860-449A-8A24-87D911D492F5}" ShortID="564423361">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="phone down" ID="{E5DD1D74-56A3-49FA-B960-6CEE2F2E9B67}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_keyboard_click" ID="{11672FAE-4E93-4FFE-BE8D-8E0A8AB246C4}">
+							<ChildrenList>
+								<Action Name="" ID="{1D2A972F-6986-4543-A789-6F1F60D5960D}" ShortID="183025036">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="keyboard click" ID="{375EFD2A-0EFD-4A40-ABE5-D5E1100B1C95}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Phone_App_open" ID="{7B023896-E17D-4997-A8D7-D8296462D3BF}">
+							<ChildrenList>
+								<Action Name="" ID="{D047652F-FB27-42BB-B1D5-B72485116927}" ShortID="581376073">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phone App open" ID="{288822E8-75E3-47AF-BD54-5149A450AE44}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_amb_midCasino" ID="{C25D5D05-1552-4256-BD41-97EC4F322FF4}">
+				</Folder>
+				<Folder Name="Ambience" ID="{C5DC20FD-60B4-4863-BEE5-5B11B1114E11}" ShortID="452548048">
 					<ChildrenList>
-						<Action Name="" ID="{F4DF2515-8835-4D57-9502-58651EC43689}" ShortID="897417653">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="amb_midCasino" ID="{1A4D3A83-B8F3-47EE-8203-69055C96A5D8}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_amb_midCasino" ID="{C25D5D05-1552-4256-BD41-97EC4F322FF4}">
+							<ChildrenList>
+								<Action Name="" ID="{F4DF2515-8835-4D57-9502-58651EC43689}" ShortID="897417653">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_midCasino" ID="{1A4D3A83-B8F3-47EE-8203-69055C96A5D8}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_amb_outside" ID="{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}">
+							<ChildrenList>
+								<Action Name="" ID="{76FBDAA7-3F97-423B-9E43-8AF7B61EA383}" ShortID="63191231">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_outside" ID="{A978A9D5-0C47-495A-9B1B-B84F062A802A}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="NPCs" ID="{CB976A0E-4CCF-4527-8B25-6E0124ED4146}" ShortID="260875051">
+					<ChildrenList>
+						<Event Name="Play_Geezer" ID="{5AC2A201-4330-4672-819D-F7523D4C5989}">
+							<ChildrenList>
+								<Action Name="" ID="{5CE87411-01A1-47A0-857F-561DE4F01623}" ShortID="174107526">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Geezer" ID="{3BAFF9BC-A909-4B8E-BD64-C2A827F7D622}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BigLad" ID="{8C8C722D-2061-4664-94EE-74797B9B81C9}">
+							<ChildrenList>
+								<Action Name="" ID="{85CEE48E-74DC-4B90-ADCC-00CD4C9E34E1}" ShortID="1027097430">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BigLad" ID="{7A424C58-CB44-4EBD-85C4-9994249FF881}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Smoker" ID="{C006D2C8-EBEC-47CA-AD85-4C83B53A3977}">
+							<ChildrenList>
+								<Action Name="" ID="{7BA24F4D-CF0D-4BBD-9D25-1F625B66629F}" ShortID="389001594">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Smoker" ID="{1EF8B9AD-3354-4844-B6B6-4C697E69D256}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Loser" ID="{4347BC7E-AC20-4454-8219-EF6A14797462}">
+							<ChildrenList>
+								<Action Name="" ID="{B334AF04-7894-4EDF-816E-112E6889AA08}" ShortID="133273001">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Loser" ID="{7AE3907C-5570-465C-A915-EB05BEF95BA7}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_FootStepsContainer" ID="{85F5B3E9-6729-476F-B3D9-8C47646901B8}">
+							<ChildrenList>
+								<Action Name="" ID="{3240A58B-208B-4DF5-9CED-D6103F7754D8}" ShortID="1053644206">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Zesty_Rich_Guy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}">
+							<ChildrenList>
+								<Action Name="" ID="{3CAF3FF4-538E-4E01-8EB5-5166F34E886C}" ShortID="330321291">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Zesty Rich Guy" ID="{82D1BB86-2F2C-4C8F-B39A-4D4B48B52A66}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Polka" ID="{25CA863F-654F-4C72-A4AB-CC53C1642155}">
+							<ChildrenList>
+								<Action Name="" ID="{439537EE-68B3-4858-94EF-A2786C7907D1}" ShortID="471234493">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Polka" ID="{FF48B24B-C4C9-405D-9309-89E31BB9947B}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Farmer" ID="{0F409CB4-10C0-464F-8C44-88DD1FAC9761}">
+							<ChildrenList>
+								<Action Name="" ID="{12893ACE-4D9D-4C73-8C48-C0DDC9B08596}" ShortID="622949012">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Farmer" ID="{C6CFA635-0992-4ACC-8C65-A1244D49264C}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Idk" ID="{65EEDC5A-4B06-4568-810D-A159181E423E}">
+							<ChildrenList>
+								<Action Name="" ID="{579C4386-4FC1-406B-8824-87B3BE88FF9C}" ShortID="998190192">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Idk" ID="{827CFD39-4432-479B-A4FC-664E77018D29}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Douche" ID="{0A65232E-2139-40A7-A102-5470A3A631DB}">
+							<ChildrenList>
+								<Action Name="" ID="{7FA5FFF1-9FFC-44F5-9EB4-701F0CD20B29}" ShortID="1034450891">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Douche" ID="{6FEC23C5-F088-45C2-ABF3-A27CC53BEB90}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Regular_guy" ID="{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}">
+							<ChildrenList>
+								<Action Name="" ID="{18BA74D1-4C26-4319-9326-6C2219FD3F14}" ShortID="82953848">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular guy" ID="{BBAE34EF-F5D5-4969-83DD-CBEA38F8E663}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

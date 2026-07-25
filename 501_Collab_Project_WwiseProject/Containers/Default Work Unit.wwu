@@ -487,7 +487,7 @@
 						</Folder>
 						<Folder Name="Chips" ID="{7C48B4C9-EE24-4791-8A28-90B0DD32647D}" ShortID="895718744">
 							<ChildrenList>
-								<Sound Name="BigBet" ID="{B1B19B80-4DB3-4A55-B598-FF459DC5A064}" ShortID="204226309">
+								<SwitchContainer Name="BetChips" ID="{1DA492B2-B9BA-4E0C-B8F6-A4E527726724}" ShortID="44351910">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -495,75 +495,103 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
 										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="pokerChips-001" ID="{0CA12EA3-CE12-479C-9524-655B9CC826D3}">
-											<Language>SFX</Language>
-											<AudioFile>pokerChips-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="8090944"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="pokerChips-001" ID="{0CA12EA3-CE12-479C-9524-655B9CC826D3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MediumBet" ID="{D686A394-11BF-4C28-8ED4-89D2A4F9E0B6}" ShortID="99245230">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Chips" ID="{0799AA26-E446-4595-8086-DE435BB350C8}" WorkUnitID="{ABAB76FF-39C0-4BBB-87BB-96495AC8E55F}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="pokerChips-002" ID="{DE923A20-BA44-4F42-B307-78BE9A61C822}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.54417"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>pokerChips-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="310429150"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="BigBet" ID="{B1B19B80-4DB3-4A55-B598-FF459DC5A064}" ShortID="204226309">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pokerChips-001" ID="{0CA12EA3-CE12-479C-9524-655B9CC826D3}">
+													<Language>SFX</Language>
+													<AudioFile>pokerChips-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="8090944"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pokerChips-001" ID="{0CA12EA3-CE12-479C-9524-655B9CC826D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MediumBet" ID="{D686A394-11BF-4C28-8ED4-89D2A4F9E0B6}" ShortID="99245230">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pokerChips-002" ID="{DE923A20-BA44-4F42-B307-78BE9A61C822}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.54417"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>pokerChips-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="310429150"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pokerChips-002" ID="{DE923A20-BA44-4F42-B307-78BE9A61C822}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SmallBet" ID="{65787BCD-8F00-4C88-BC25-A2068D9863C5}" ShortID="133914804">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pokerChips-003" ID="{12C6C105-2CCD-4533-8EAB-CA6578F01D5D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.18951"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.19967"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.28385"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>pokerChips-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801455214"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pokerChips-003" ID="{12C6C105-2CCD-4533-8EAB-CA6578F01D5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="pokerChips-002" ID="{DE923A20-BA44-4F42-B307-78BE9A61C822}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SmallBet" ID="{65787BCD-8F00-4C88-BC25-A2068D9863C5}" ShortID="133914804">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="pokerChips-003" ID="{12C6C105-2CCD-4533-8EAB-CA6578F01D5D}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.18951"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.19967"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.28385"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>pokerChips-003.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="801455214"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="pokerChips-003" ID="{12C6C105-2CCD-4533-8EAB-CA6578F01D5D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="BigBet" ID="{B1B19B80-4DB3-4A55-B598-FF459DC5A064}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="MediumBet" ID="{D686A394-11BF-4C28-8ED4-89D2A4F9E0B6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SmallBet" ID="{65787BCD-8F00-4C88-BC25-A2068D9863C5}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Slot Machine" ID="{C3496836-72A3-4264-A356-08EEE857FFA8}" ShortID="356074709">
@@ -1261,6 +1289,94 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+								<Sound Name="Slot machine sfx virtual" ID="{74EDF95E-0B99-4083-99A2-3EB8CBBA98F3}" ShortID="1054619626">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{F7C78DFC-92B4-44A0-B586-06F630528CBA}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Slot machine sfx virtual" ID="{086B1EBF-C0CF-43D7-A3D0-06E67D141FBC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.00426"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.13222"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Slot machine sfx virtual.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="339341435"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Slot machine sfx virtual" ID="{086B1EBF-C0CF-43D7-A3D0-06E67D141FBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SlotWinVirtual" ID="{E349069A-471B-4BCB-85BD-061632F85F8F}" ShortID="281107513">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" WorkUnitID="{B0DBAAD0-ED44-4AF9-A5BB-C372513B4D56}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4185CF58-9770-4582-8D2C-CC2037357A73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="untitled-005" ID="{6B07DB60-DEF6-455C-BF35-C0E909DD913D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25486"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>untitled-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="578248724"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="untitled-005" ID="{6B07DB60-DEF6-455C-BF35-C0E909DD913D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Environment SFX" ID="{1BF0148D-7E32-459C-B174-ECA393AA9618}" ShortID="184281827">
@@ -1739,7 +1855,7 @@
 								</Folder>
 								<Folder Name="UI" ID="{F4EB8C9F-F7B2-4789-83DA-DC48BA7E9872}" ShortID="878036595">
 									<ChildrenList>
-										<Sound Name="sfx_interact_1" ID="{34B9C783-56A2-4424-BFF5-3ECB4CB2FA81}" ShortID="89007586">
+										<Sound Name="sfx_forward" ID="{34B9C783-56A2-4424-BFF5-3ECB4CB2FA81}" ShortID="89007586">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -1761,7 +1877,7 @@
 												<ActiveSource Name="sfx_interact_1" ID="{EF12D201-3CDA-406D-B9DE-24C2431D4F44}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_interact_2" ID="{F76DB874-620C-4E14-A9E5-40FA8BF2FC8D}" ShortID="628253842">
+										<Sound Name="sfx_back" ID="{F76DB874-620C-4E14-A9E5-40FA8BF2FC8D}" ShortID="628253842">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -1783,7 +1899,7 @@
 												<ActiveSource Name="sfx_interact_2" ID="{4391524A-D5C9-440B-923B-EA2B7FF01E51}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_interact_3" ID="{E337DC34-7B17-4FE6-8761-F0F4F21C5ECF}" ShortID="363894846">
+										<Sound Name="sfx_select" ID="{E337DC34-7B17-4FE6-8761-F0F4F21C5ECF}" ShortID="363894846">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -2350,6 +2466,9 @@
 										<Folder Name="Grandson" ID="{43D6B36C-F5C9-4497-A4BF-89E0554BFD3B}" ShortID="190967487">
 											<ChildrenList>
 												<RandomSequenceContainer Name="Grandson" ID="{8A969C90-3526-4B8C-A3BE-5E02B89595E4}" ShortID="36099721">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -2516,6 +2635,9 @@
 										<Folder Name="Daughter In Law" ID="{FE98CC70-62A5-4A86-96D5-5B12B5BDDCF2}" ShortID="1068771572">
 											<ChildrenList>
 												<RandomSequenceContainer Name="Daughter In Law" ID="{C0494D7A-392E-445C-BF60-A28886E3A690}" ShortID="533049326">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -2707,6 +2829,9 @@
 										<Folder Name="Daughter" ID="{8828FC3E-B980-42B3-A976-0E18581C2059}" ShortID="24914294">
 											<ChildrenList>
 												<RandomSequenceContainer Name="Daughter" ID="{D20922E6-6B9B-4444-AA99-71B24EF97CA2}" ShortID="903699433">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2D2CD8D-47CE-4876-952C-0D9B67323E5E}"/>
@@ -2901,7 +3026,7 @@
 									<ChildrenList>
 										<Folder Name="Smoker" ID="{4A783219-7867-4663-B669-5AA0C94B8101}" ShortID="729415898">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{1EF8B9AD-3354-4844-B6B6-4C697E69D256}" ShortID="35893885">
+												<RandomSequenceContainer Name="Smoker" ID="{1EF8B9AD-3354-4844-B6B6-4C697E69D256}" ShortID="35893885">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -3209,7 +3334,7 @@
 										</Folder>
 										<Folder Name="Douche" ID="{7E147F21-36A3-4B0C-B523-0109D2DC95D5}" ShortID="1035909737">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{6FEC23C5-F088-45C2-ABF3-A27CC53BEB90}" ShortID="668642801">
+												<RandomSequenceContainer Name="Douche" ID="{6FEC23C5-F088-45C2-ABF3-A27CC53BEB90}" ShortID="668642801">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -3353,7 +3478,7 @@
 										</Folder>
 										<Folder Name="Loser" ID="{9C3EEFD5-8AC8-4B17-9522-8F27FE072F5E}" ShortID="415914435">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{7AE3907C-5570-465C-A915-EB05BEF95BA7}" ShortID="605453613">
+												<RandomSequenceContainer Name="Loser" ID="{7AE3907C-5570-465C-A915-EB05BEF95BA7}" ShortID="605453613">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -3636,7 +3761,7 @@
 										</Folder>
 										<Folder Name="Farmer" ID="{8B9664DD-5795-4464-B105-7A083AEF0DC8}" ShortID="790779115">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{C6CFA635-0992-4ACC-8C65-A1244D49264C}" ShortID="169296184">
+												<RandomSequenceContainer Name="Farmer" ID="{C6CFA635-0992-4ACC-8C65-A1244D49264C}" ShortID="169296184">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -3780,7 +3905,7 @@
 										</Folder>
 										<Folder Name="Regular Guy" ID="{CFE6EA5A-0C25-4E30-B0B4-169AD3D2DED6}" ShortID="808533798">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{BBAE34EF-F5D5-4969-83DD-CBEA38F8E663}" ShortID="874334813">
+												<RandomSequenceContainer Name="Regular guy" ID="{BBAE34EF-F5D5-4969-83DD-CBEA38F8E663}" ShortID="874334813">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4088,7 +4213,7 @@
 										</Folder>
 										<Folder Name="Zesty Rich Guy" ID="{2D1432B5-3037-47EC-9F7F-1BE5CFD76D8B}" ShortID="1004040055">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{82D1BB86-2F2C-4C8F-B39A-4D4B48B52A66}" ShortID="898207735">
+												<RandomSequenceContainer Name="Zesty Rich Guy" ID="{82D1BB86-2F2C-4C8F-B39A-4D4B48B52A66}" ShortID="898207735">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4235,7 +4360,7 @@
 										</Folder>
 										<Folder Name="Polka" ID="{2AD5486F-81F2-4016-BB11-EFBB7D973DB8}" ShortID="36088726">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{FF48B24B-C4C9-405D-9309-89E31BB9947B}" ShortID="884762027">
+												<RandomSequenceContainer Name="Polka" ID="{FF48B24B-C4C9-405D-9309-89E31BB9947B}" ShortID="884762027">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4493,7 +4618,7 @@
 										</Folder>
 										<Folder Name="Idk" ID="{7660DF4E-9DB0-4D5F-85A2-E387BCE4EEC3}" ShortID="191761908">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{827CFD39-4432-479B-A4FC-664E77018D29}" ShortID="76641466">
+												<RandomSequenceContainer Name="Idk" ID="{827CFD39-4432-479B-A4FC-664E77018D29}" ShortID="76641466">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4587,7 +4712,7 @@
 										</Folder>
 										<Folder Name="Geezer" ID="{BF1F2A16-69FE-4BF7-B4D8-41F287424145}" ShortID="545310694">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{3BAFF9BC-A909-4B8E-BD64-C2A827F7D622}" ShortID="287466296">
+												<RandomSequenceContainer Name="Geezer" ID="{3BAFF9BC-A909-4B8E-BD64-C2A827F7D622}" ShortID="287466296">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4731,7 +4856,7 @@
 										</Folder>
 										<Folder Name="Big Lad" ID="{F8A8FF0B-E40C-4DF1-A55F-110958E0827A}" ShortID="361517941">
 											<ChildrenList>
-												<RandomSequenceContainer Name="New Random Container" ID="{7A424C58-CB44-4EBD-85C4-9994249FF881}" ShortID="72091158">
+												<RandomSequenceContainer Name="BigLad" ID="{7A424C58-CB44-4EBD-85C4-9994249FF881}" ShortID="72091158">
 													<PropertyList>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>

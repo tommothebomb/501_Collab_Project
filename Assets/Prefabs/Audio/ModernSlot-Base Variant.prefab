@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ModernSlot-Base Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6488002502983026181, guid: 3fbcc992ff6346f429c63b54a97843b2, type: 3}
+      propertyPath: SpinTime
+      value: 0.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

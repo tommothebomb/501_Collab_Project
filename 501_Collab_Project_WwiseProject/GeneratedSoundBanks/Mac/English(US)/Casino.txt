@@ -1,0 +1,145 @@
+Event	ID	Name			Wwise Object Path	Notes
+	76758945	Play_slot_spin_container			\Default Work Unit\Slots\Play_slot_spin_container	
+	78570490	Play_Geezer			\Default Work Unit\NPCs\Play_Geezer	
+	121174090	Play_amb_outside			\Default Work Unit\Ambience\Play_amb_outside	
+	149938048	Play_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Play_attract_FourLeafLuckalt	
+	504588419	Stop_Spin_Cycle			\Default Work Unit\Slots\Stop_Spin_Cycle	
+	545496015	Play_Farmer			\Default Work Unit\NPCs\Play_Farmer	
+	554652250	Play_phone_up			\Default Work Unit\Phone\Play_phone_up	
+	788884573	Stop			\Default Work Unit\Slots\Stop	
+	839760237	Play_phone_down			\Default Work Unit\Phone\Play_phone_down	
+	917334326	Play_attract_Western			\Default Work Unit\Slots\Attractions\Play_attract_Western	
+	1118907549	Play_SlotWinVirtual			\Default Work Unit\Slots\Play_SlotWinVirtual	
+	1316105455	Play_Polka			\Default Work Unit\NPCs\Play_Polka	
+	1665187052	Stop_attract_xmarks			\Default Work Unit\Slots\Attractions\Stop_attract_xmarks	
+	2125167341	Play_Loser			\Default Work Unit\NPCs\Play_Loser	
+	2212624710	Play_Regular_guy			\Default Work Unit\NPCs\Play_Regular_guy	
+	2303260725	Play_Slot_Stop			\Default Work Unit\Slots\Play_Slot_Stop	
+	2459562556	Play_Douche			\Default Work Unit\NPCs\Play_Douche	
+	2488303320	Play_FootStepsContainer			\Default Work Unit\NPCs\Play_FootStepsContainer	
+	2571661844	Play_keyboard_click			\Default Work Unit\Phone\Play_keyboard_click	
+	2574927968	Play_Idk			\Default Work Unit\NPCs\Play_Idk	
+	2579523620	Play_Slot_machine_sfx_virtual			\Default Work Unit\Slots\Play_Slot_machine_sfx_virtual	
+	2702863590	Play_attract_xmarks			\Default Work Unit\Slots\Attractions\Play_attract_xmarks	
+	2852958513	Play_Spin_Cycle			\Default Work Unit\Slots\Play_Spin_Cycle	
+	2932405927	Play_Slot_Win_Base			\Default Work Unit\Slots\Play_Slot_Win_Base	
+	2969981116	Stop_attract_Western			\Default Work Unit\Slots\Attractions\Stop_attract_Western	
+	3046872037	Play_Phone_App_open			\Default Work Unit\Phone\Play_Phone_App_open	
+	3510522014	Stop_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Stop_attract_FourLeafLuckalt	
+	3634297912	Stop_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Stop_attract_SnakeEyes	
+	3900699724	Play_phone_notification			\Default Work Unit\Phone\Play_phone_notification	
+	4097516578	Play_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Play_attract_SnakeEyes	
+	4115026698	Play_Zesty_Rich_Guy			\Default Work Unit\NPCs\Play_Zesty_Rich_Guy	
+	4192618525	Play_Smoker			\Default Work Unit\NPCs\Play_Smoker	
+	4232836462	Stop_Slot_machine_sfx_virtual			\Default Work Unit\Slots\Stop_Slot_machine_sfx_virtual	
+	4246019388	Play_amb_midCasino			\Default Work Unit\Ambience\Play_amb_midCasino	
+	4257882499	Play_BigLad			\Default Work Unit\NPCs\Play_BigLad	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1088209313	Floor			\Default Work Unit\Floor	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Floor			
+	4248645337	Grass	Floor			
+	4294388576	Generic	Floor			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	168988604	Slot_Test_Group			\Default Work Unit\Slot_Test_Group	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Slot_Test_Group			
+
+Effect plug-ins	ID	Name	Type				Notes
+	3935818673	Slot_Paramteric_EQ	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24347595	Slot Machine SFX-009	.cache\25\{25C6299F-7124-B2F9-9C2B-C8B41053FAE4}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-009		44680
+	35805181	Shoe Step Grass Medium E	.cache\FE\{FEC18650-901D-8905-FB6B-95A83BDB7F68}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium E		77676
+	46101133	Shoe Step Grass Medium A	.cache\6D\{6DBA4B58-4267-373E-D785-06D41C451188}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium A		77612
+	65542308	Douche0-50_500	.cache\AA\{AABAD2BC-2423-89E1-0C47-2ECFD0756100}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-50_500		441096
+	74728829	Geezer0-13_500	.cache\8E\{8E0CB809-0C10-97A7-E108-90499785BA2C}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Geezer\Geezer\Geezer0-13_500		176496
+	98207390	Geezer0-09_000	.cache\54\{54223937-9C15-D197-5390-CDC927DE7F7E}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Geezer\Geezer\Geezer0-09_000		214244
+	100922231	sfx_footstep_3	.cache\45\{45F163FF-F881-FF29-FD48-6E6E39340992}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Generic\sfx_footstep_3		96144
+	104126226	Slot Machine SFX-001	.cache\D9\{D94C922F-4E51-B832-92EA-A7DF59FCD8A9}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-001		47220
+	114111115	Smoker1-06_500	.cache\E5\{E553D00C-09BC-3C74-4EFC-DDA528C05D7D}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-06_500		705696
+	128454229	Spin Cycle	.cache\C9\{C998DC31-2613-3007-AC3B-ECC2EEE63F7F}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Spin Cycle		264696
+	149566734	Regular Guy0-16_000	.cache\F3\{F37B5CE9-C70F-C645-31F5-5B08A504543F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-16_000		352896
+	174274522	Geezer0-11_500	.cache\46\{46A9649A-213C-BD42-6CBD-D0AD5EF1B86F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Geezer\Geezer\Geezer0-11_500		352896
+	181502551	Loser1-39_000	.cache\AA\{AA3BA654-8A88-F0F2-89AB-4A87493104AA}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-39_000		1058496
+	192997628	Zesty Rich Guy1-56_000	.cache\02\{026D41DC-82B2-EA07-26D2-BBA442859490}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Zesty Rich Guy\Zesty Rich Guy\Zesty Rich Guy1-56_000		617496
+	193646577	phone notification	.cache\59\{5978B6CE-51CD-5FBD-7B46-5D895C24090E}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\Phone SFX\phone notification		276072
+	197840068	Smoker1-02_500	.cache\0B\{0B2C98CE-078F-86B5-5C9D-26D705D5BC13}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-02_500		441096
+	213094987	phone down	.cache\80\{807B5B15-A2C7-E800-6810-9C33F67D2338}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\Phone SFX\phone down		177376
+	236675762	Bare Step Stone Medium B	.cache\1D\{1DC7630F-1F40-770C-7AC0-847C4CDF6D37}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Stone\Bare Step Stone Medium B		42200
+	239804848	Polka2-16_220	.cache\5F\{5FCEE993-E572-5142-039B-501C186A70CF}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-16_220		490484
+	279104164	Smoker1-10_500	.cache\19\{192B0E7B-B58F-EA49-ADAF-A75F6BA239A5}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-10_500		705696
+	300601520	sfx_footstep_1	.cache\C3\{C3ACC247-4006-0E9E-6127-F62D1565FFAE}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Generic\sfx_footstep_1		70296
+	307350902	Zesty Rich Guy1-48_500	.cache\5C\{5C3F6C75-4774-0306-635B-E3810E2756E5}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Zesty Rich Guy\Zesty Rich Guy\Zesty Rich Guy1-48_500		441096
+	313407036	Idk0-53_000	.cache\69\{69861FBD-39E4-6FB3-7674-29938F5A2E6E}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Idk\Idk\Idk0-53_000		529296
+	339341435	Slot machine sfx virtual	.cache\1D\{1DC332F0-0402-EF86-3074-775A81C8B907}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot machine sfx virtual		793532
+	347238335	Bare Step Stone Medium C	.cache\AA\{AA81F67F-E8D7-51FF-5D57-BFA330B076C4}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Stone\Bare Step Stone Medium C		43928
+	348867920	Slot Spin-002	.cache\D3\{D3FE04D3-9F90-3B63-3E60-E42712D963A5}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\slot spin container\Slot Spin-002		100668
+	356095830	Bare Step Stone Medium A	.cache\08\{08AC559D-C80F-18D0-D008-42C132C438BB}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Stone\Bare Step Stone Medium A		42200
+	360136687	Regular Guy0-27_000	.cache\0C\{0C82BDF9-4844-D6F9-7B32-F81E2BBCBB3A}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-27_000		224424
+	366238829	Phone App open	.cache\4D\{4D1FFA59-AA66-957E-51E8-642859ECD9DE}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\Phone SFX\Phone App open		147160
+	381998484	Slot Machine SFX-002	.cache\2B\{2B54509C-93C8-627E-D242-37D9CC7FC7A2}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-002		46872
+	383890732	Regular Guy0-20_500	.cache\DE\{DE8290C7-4E9F-B8B1-BC16-67356D6842D6}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-20_500		441096
+	392789631	keyboard click	.cache\3B\{3B5E68DA-C8FD-6918-0C78-752347138550}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\Phone SFX\keyboard click		21376
+	404187990	Zesty Rich Guy1-45_000	.cache\A3\{A3196BE8-F2DD-B3C5-60C1-7426AC7C0157}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Zesty Rich Guy\Zesty Rich Guy\Zesty Rich Guy1-45_000		617496
+	409133506	Big Lad2-06_500	.cache\A3\{A30272B8-F8F5-ADD1-E06F-3EF42C30CD77}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad2-06_500		617496
+	409179116	phone up	.cache\9D\{9D40E1F3-A639-FDFB-6889-009E73031A30}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\Phone SFX\phone up		177376
+	431682857	Big Lad2-10_000	.cache\05\{055239D4-9A5D-7EAD-2644-0E858A98C102}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad2-10_000		352896
+	444372985	Loser1-35_500	.cache\C2\{C274B842-5DCE-473F-E5E7-E69A6BFD92EF}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-35_500		617496
+	460184777	Loser1-29_500	.cache\96\{9653DBCD-CF69-2F12-06D0-F50BD1A6E41A}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-29_500		1058496
+	460994830	Farmer0-29_000	.cache\5A\{5A91CF21-61B8-DB41-E608-B12DED9B9CB2}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-29_000		529296
+	479959301	amb_outside	.cache\2A\{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_outside		9783836
+	480015837	Slot Machine SFX-006	.cache\8E\{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-006		38828
+	578248724	SlotWinVirtual	.cache\72\{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\SlotWinVirtual		617496
+	579006181	Douche0-40_500	.cache\81\{814069C5-DE7F-815B-38A0-BD67637281D3}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-40_500		529296
+	585689114	Slot Machine SFX-007	.cache\10\{10EBBB9A-1521-F033-F959-61988D74A551}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-007		60812
+	586071865	Big Lad1-59_500	.cache\F3\{F3C41A11-4232-8F68-F9E9-A9FB6ADBF21F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad1-59_500		441096
+	595200575	attract_FourLeafLuckalt	.cache\C9\{C9769E54-9DEF-5271-7B6F-CFF26DE9E09E}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_FourLeafLuckalt		3328144
+	617365663	sfx_footstep_2	.cache\6A\{6A6B494B-BDDA-E24F-48FC-F3D28EB50AE5}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Generic\sfx_footstep_2		109068
+	635112411	attract_xmarks	.cache\8D\{8DA4F014-7B87-A86A-4553-B1CD04C804E6}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_xmarks		4096144
+	649120144	Douche0-46_000	.cache\6D\{6D68CDA9-B6C2-CFFD-3FA8-97A1D74C3217}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-46_000		176496
+	657574222	Slot Machine SFX-005	.cache\79\{79BDE484-3909-6590-695E-E31F14FCA0E7}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-005		47208
+	669870219	Regular Guy0-18_000	.cache\B9\{B9F58CF8-3398-0BAF-94D5-1116D1505994}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-18_000		441096
+	669916531	Smoker1-05_000	.cache\4C\{4C7AA36B-18E4-5A79-4897-E78FD080B459}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-05_000		264696
+	672356513	Slot Machine SFX-003	.cache\4C\{4C6503BB-ED17-7371-41D6-DCE4F9A446CD}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-003		54904
+	683848984	Bare Step Stone Medium D	.cache\DB\{DB7AB5F5-1286-F024-159B-74ECD55160B8}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Stone\Bare Step Stone Medium D		44128
+	697623604	Polka2-14_500	.cache\FA\{FAB9E634-44D1-9A6C-50EA-0213DCB45457}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-14_500		303508
+	725208820	Regular Guy0-23_000	.cache\01\{0193E3FD-9712-544C-FB54-4F4F77EBBE2B}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-23_000		264696
+	739915709	Zesty Rich Guy1-54_000	.cache\00\{002C1E97-30B6-B2D4-FC66-30EC76BB0E85}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Zesty Rich Guy\Zesty Rich Guy\Zesty Rich Guy1-54_000		352896
+	752674598	Geezer0-10_214	.cache\EC\{ECD94513-2D5B-A664-C201-2488F3C48D6F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Geezer\Geezer\Geezer0-10_214		226948
+	787751396	Idk1-00_500	.cache\E7\{E76C705E-C844-8B97-73B2-CB05809E3961}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Idk\Idk\Idk1-00_500		352896
+	791351491	Slot Machine SFX-008	.cache\28\{2801ED0F-6DC8-CA55-2D8D-B2499B0BBF8E}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-008		86888
+	795899879	Farmer0-32_000	.cache\40\{400B55FB-64BA-E41E-CB29-C48876194A2F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-32_000		441096
+	807119791	Loser1-21_500	.cache\73\{73339030-78C9-54D0-F0C7-E505AF580DF4}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-21_500		882096
+	809377767	Shoe Step Grass Medium D	.cache\DB\{DB7B0852-DC01-57C6-E9A3-8FF3DAE583ED}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium D		77612
+	813455346	attract_Western	.cache\61\{61B052EB-3ECB-C022-8F47-3C96D1B66B18}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_Western		6142812
+	817897953	Smoker1-14_500	.cache\CD\{CD0F41E8-9AF8-2EFA-46E5-C0B41C402901}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-14_500		705696
+	821528645	Bare Step Stone Medium E	.cache\AB\{AB0900D6-5E6F-363F-34E4-8A6F4452799C}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Stone\Bare Step Stone Medium E		47628
+	823807799	Zesty Rich Guy1-51_000	.cache\B4\{B47AA634-F77B-B5B6-D751-CB0155E32A2E}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Zesty Rich Guy\Zesty Rich Guy\Zesty Rich Guy1-51_000		529296
+	837680767	Geezer0-14_500	.cache\FA\{FAF24CB8-CCC5-0517-5581-D9CD10621D0D}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Geezer\Geezer\Geezer0-14_500		264696
+	850977825	Loser1-26_500	.cache\5B\{5B733DD5-73D2-1E17-6C49-203EF114B913}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-26_500		529296
+	861407229	Slot Spin-003	.cache\D2\{D2943C77-572E-E5BB-218E-A193211B901C}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\slot spin container\Slot Spin-003		104908
+	878299629	Farmer0-27_000	.cache\54\{542BD150-6E42-2FE4-2420-596F5AA2D6E0}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-27_000		352896
+	880650506	Smoker1-18_500	.cache\13\{133D6BE8-1758-117D-6918-8980E940ABAA}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-18_500		529296
+	881691880	Shoe Step Grass Medium B	.cache\DC\{DCEC1888-30DD-BF0B-C269-9965010B3B24}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium B		77612
+	920357531	Polka2-12_000	.cache\70\{70757922-4A53-94C0-F4EE-D10143793862}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-12_000		176496
+	939967480	Slot Win Base	.cache\3B\{3BB19C7B-AC06-65A6-7935-6C3576950DF5}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Win Base		970296
+	953007744	Farmer0-34_500	.cache\2D\{2D6848A7-8163-A6C0-011A-137FCCB52992}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-34_500		705696
+	972246811	Douche0-43_500	.cache\89\{89BC796E-556D-95CA-64DF-0D828CC08478}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-43_500		441096
+	996559230	attract_SnakeEyes	.cache\8B\{8B44359C-FEC0-80C4-3F73-4920A202B7CE}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_SnakeEyes		2048144
+	1003987524	Slot Machine SFX-004	.cache\CD\{CD62A8F7-7CBF-C738-7341-2A9B66356083}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-004		51964
+	1007684741	Slot Spin-001	.cache\A8\{A8959D1F-2DD9-ABAA-60E1-4C167727D1E4}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\slot spin container\Slot Spin-001		128176
+	1007722772	Idk0-56_000	.cache\8E\{8E8A57E1-1ACA-B7DC-3E67-000469B5818C}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Idk\Idk\Idk0-56_000		793896
+	1011870256	amb_midCasino	.cache\61\{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_midCasino		7792760
+	1025526754	Big Lad2-02_000	.cache\FE\{FE6D766A-DFAA-2500-CC6A-002AFCA96F98}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad2-02_000		352896
+	1049001441	Regular Guy0-24_500	.cache\75\{75ED83EC-774C-E7AB-272A-0192C100D79D}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Regular Guy\Regular guy\Regular Guy0-24_500		441096
+	1059337340	Douche0-47_000	.cache\D0\{D0648097-3461-60B7-68CC-D75C38C48412}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-47_000		617496
+	1059816810	Big Lad2-04_000	.cache\0D\{0D8E3B16-28B0-43D6-61CF-D72210DDA0A0}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad2-04_000		441096
+	1061312869	Polka2-13_000	.cache\03\{03081A94-5DD3-3008-3EB4-AA321CC299A5}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-13_000		264696
+	1062582967	Farmer0-38_500	.cache\69\{690B245D-82DF-50FC-38FE-0A017C3E339A}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-38_500		352896
+	1064935557	Shoe Step Grass Medium C	.cache\B2\{B26CDB26-BA1C-8A3A-9A94-DCCF19C5D84F}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium C		77612
+
