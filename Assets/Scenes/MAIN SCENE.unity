@@ -24448,6 +24448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Text: {fileID: 59527056}
+  _money: 901
 --- !u!43 &873475384
 Mesh:
   m_ObjectHideFlags: 0
@@ -32569,8 +32570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77, y: 292}
-  m_SizeDelta: {x: 358.48, y: 50}
+  m_AnchoredPosition: {x: 25, y: 292}
+  m_SizeDelta: {x: 562.58, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146903256
 MonoBehaviour:
