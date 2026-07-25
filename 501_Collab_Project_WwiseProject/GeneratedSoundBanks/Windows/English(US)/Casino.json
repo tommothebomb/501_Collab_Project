@@ -1,0 +1,1491 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "200935300",
+    "Type": "User",
+    "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
+    "Language": "English(US)",
+    "Hash": "{82CD362A-244B-C8B7-2009-D2633551D1FB}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
+    "ShortName": "Casino",
+    "Path": "English(US)/Casino.bnk",
+    "Media": [
+     {
+      "Id": "24347595",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-015.wav",
+      "CachePath": "25/{25C6299F-7124-B2F9-9C2B-C8B41053FAE4}.wem"
+     },
+     {
+      "Id": "35805181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shoe Step Grass Medium E.wav",
+      "CachePath": "FE/{FEC18650-901D-8905-FB6B-95A83BDB7F68}.wem"
+     },
+     {
+      "Id": "46101133",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shoe Step Grass Medium A.wav",
+      "CachePath": "6D/{6DBA4B58-4267-373E-D785-06D41C451188}.wem"
+     },
+     {
+      "Id": "65542308",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-021.wav",
+      "CachePath": "AA/{AABAD2BC-2423-89E1-0C47-2ECFD0756100}.wem"
+     },
+     {
+      "Id": "74728829",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-004.wav",
+      "CachePath": "8E/{8E0CB809-0C10-97A7-E108-90499785BA2C}.wem"
+     },
+     {
+      "Id": "98207390",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-001.wav",
+      "CachePath": "54/{54223937-9C15-D197-5390-CDC927DE7F7E}.wem"
+     },
+     {
+      "Id": "100922231",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_footstep_3.wav",
+      "CachePath": "45/{45F163FF-F881-FF29-FD48-6E6E39340992}.wem"
+     },
+     {
+      "Id": "104126226",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-005.wav",
+      "CachePath": "D9/{D94C922F-4E51-B832-92EA-A7DF59FCD8A9}.wem"
+     },
+     {
+      "Id": "114111115",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-027.wav",
+      "CachePath": "E5/{E553D00C-09BC-3C74-4EFC-DDA528C05D7D}.wem"
+     },
+     {
+      "Id": "128454229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slotCycle.wav",
+      "CachePath": "C9/{C998DC31-2613-3007-AC3B-ECC2EEE63F7F}.wem"
+     },
+     {
+      "Id": "149566734",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-007.wav",
+      "CachePath": "F3/{F37B5CE9-C70F-C645-31F5-5B08A504543F}.wem"
+     },
+     {
+      "Id": "174274522",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-003.wav",
+      "CachePath": "46/{46A9649A-213C-BD42-6CBD-D0AD5EF1B86F}.wem"
+     },
+     {
+      "Id": "181502551",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-035.wav",
+      "CachePath": "AA/{AA3BA654-8A88-F0F2-89AB-4A87493104AA}.wem"
+     },
+     {
+      "Id": "192997628",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-040.wav",
+      "CachePath": "02/{026D41DC-82B2-EA07-26D2-BBA442859490}.wem"
+     },
+     {
+      "Id": "193646577",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone SFX\\phone notification.wav",
+      "CachePath": "59/{5978B6CE-51CD-5FBD-7B46-5D895C24090E}.wem"
+     },
+     {
+      "Id": "197840068",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-025.wav",
+      "CachePath": "0B/{0B2C98CE-078F-86B5-5C9D-26D705D5BC13}.wem"
+     },
+     {
+      "Id": "213094987",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone SFX\\phone down.wav",
+      "CachePath": "80/{807B5B15-A2C7-E800-6810-9C33F67D2338}.wem"
+     },
+     {
+      "Id": "236675762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bare Step Stone Medium B.wav",
+      "CachePath": "1D/{1DC7630F-1F40-770C-7AC0-847C4CDF6D37}.wem"
+     },
+     {
+      "Id": "239804848",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-049.wav",
+      "CachePath": "5F/{5FCEE993-E572-5142-039B-501C186A70CF}.wem"
+     },
+     {
+      "Id": "279104164",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-028.wav",
+      "CachePath": "19/{192B0E7B-B58F-EA49-ADAF-A75F6BA239A5}.wem"
+     },
+     {
+      "Id": "300601520",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_footstep_1.wav",
+      "CachePath": "C3/{C3ACC247-4006-0E9E-6127-F62D1565FFAE}.wem"
+     },
+     {
+      "Id": "307350902",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-037.wav",
+      "CachePath": "5C/{5C3F6C75-4774-0306-635B-E3810E2756E5}.wem"
+     },
+     {
+      "Id": "313407036",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-022.wav",
+      "CachePath": "69/{69861FBD-39E4-6FB3-7674-29938F5A2E6E}.wem"
+     },
+     {
+      "Id": "339341435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Slot machine sfx virtual.wav",
+      "CachePath": "1D/{1DC332F0-0402-EF86-3074-775A81C8B907}.wem"
+     },
+     {
+      "Id": "347238335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bare Step Stone Medium C.wav",
+      "CachePath": "AA/{AA81F67F-E8D7-51FF-5D57-BFA330B076C4}.wem"
+     },
+     {
+      "Id": "348867920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-002.wav",
+      "CachePath": "D3/{D3FE04D3-9F90-3B63-3E60-E42712D963A5}.wem"
+     },
+     {
+      "Id": "356095830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bare Step Stone Medium A.wav",
+      "CachePath": "08/{08AC559D-C80F-18D0-D008-42C132C438BB}.wem"
+     },
+     {
+      "Id": "360136687",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FuckShitCunt-001.wav",
+      "CachePath": "0C/{0C82BDF9-4844-D6F9-7B32-F81E2BBCBB3A}.wem"
+     },
+     {
+      "Id": "366238829",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone SFX\\Phone App open.wav",
+      "CachePath": "4D/{4D1FFA59-AA66-957E-51E8-642859ECD9DE}.wem"
+     },
+     {
+      "Id": "381998484",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-006.wav",
+      "CachePath": "2B/{2B54509C-93C8-627E-D242-37D9CC7FC7A2}.wem"
+     },
+     {
+      "Id": "383890732",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-009.wav",
+      "CachePath": "DE/{DE8290C7-4E9F-B8B1-BC16-67356D6842D6}.wem"
+     },
+     {
+      "Id": "392789631",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone SFX\\keyboard click.wav",
+      "CachePath": "3B/{3B5E68DA-C8FD-6918-0C78-752347138550}.wem"
+     },
+     {
+      "Id": "404187990",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-036.wav",
+      "CachePath": "A3/{A3196BE8-F2DD-B3C5-60C1-7426AC7C0157}.wem"
+     },
+     {
+      "Id": "409133506",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-044.wav",
+      "CachePath": "A3/{A30272B8-F8F5-ADD1-E06F-3EF42C30CD77}.wem"
+     },
+     {
+      "Id": "409179116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone SFX\\phone up.wav",
+      "CachePath": "9D/{9D40E1F3-A639-FDFB-6889-009E73031A30}.wem"
+     },
+     {
+      "Id": "431682857",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-045.wav",
+      "CachePath": "05/{055239D4-9A5D-7EAD-2644-0E858A98C102}.wem"
+     },
+     {
+      "Id": "444372985",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-034.wav",
+      "CachePath": "C2/{C274B842-5DCE-473F-E5E7-E69A6BFD92EF}.wem"
+     },
+     {
+      "Id": "460184777",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-033.wav",
+      "CachePath": "96/{9653DBCD-CF69-2F12-06D0-F50BD1A6E41A}.wem"
+     },
+     {
+      "Id": "460994830",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-013.wav",
+      "CachePath": "5A/{5A91CF21-61B8-DB41-E608-B12DED9B9CB2}.wem"
+     },
+     {
+      "Id": "479959301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\amb_outside.wav",
+      "CachePath": "2A/{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem"
+     },
+     {
+      "Id": "480015837",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-011.wav",
+      "CachePath": "8E/{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem"
+     },
+     {
+      "Id": "578248724",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "untitled-005.wav",
+      "CachePath": "72/{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem"
+     },
+     {
+      "Id": "579006181",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-017.wav",
+      "CachePath": "81/{814069C5-DE7F-815B-38A0-BD67637281D3}.wem"
+     },
+     {
+      "Id": "585689114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-013.wav",
+      "CachePath": "10/{10EBBB9A-1521-F033-F959-61988D74A551}.wem"
+     },
+     {
+      "Id": "586071865",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-041.wav",
+      "CachePath": "F3/{F3C41A11-4232-8F68-F9E9-A9FB6ADBF21F}.wem"
+     },
+     {
+      "Id": "595200575",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "attract_FourLeafLuckalt.wav",
+      "CachePath": "C9/{C9769E54-9DEF-5271-7B6F-CFF26DE9E09E}.wem"
+     },
+     {
+      "Id": "617365663",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_footstep_2.wav",
+      "CachePath": "6A/{6A6B494B-BDDA-E24F-48FC-F3D28EB50AE5}.wem"
+     },
+     {
+      "Id": "635112411",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "attract_xmarks.wav",
+      "CachePath": "8D/{8DA4F014-7B87-A86A-4553-B1CD04C804E6}.wem"
+     },
+     {
+      "Id": "649120144",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-019.wav",
+      "CachePath": "6D/{6D68CDA9-B6C2-CFFD-3FA8-97A1D74C3217}.wem"
+     },
+     {
+      "Id": "657574222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-010.wav",
+      "CachePath": "79/{79BDE484-3909-6590-695E-E31F14FCA0E7}.wem"
+     },
+     {
+      "Id": "669870219",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-008.wav",
+      "CachePath": "B9/{B9F58CF8-3398-0BAF-94D5-1116D1505994}.wem"
+     },
+     {
+      "Id": "669916531",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-026.wav",
+      "CachePath": "4C/{4C7AA36B-18E4-5A79-4897-E78FD080B459}.wem"
+     },
+     {
+      "Id": "672356513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-007.wav",
+      "CachePath": "4C/{4C6503BB-ED17-7371-41D6-DCE4F9A446CD}.wem"
+     },
+     {
+      "Id": "683848984",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bare Step Stone Medium D.wav",
+      "CachePath": "DB/{DB7AB5F5-1286-F024-159B-74ECD55160B8}.wem"
+     },
+     {
+      "Id": "697623604",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-048.wav",
+      "CachePath": "FA/{FAB9E634-44D1-9A6C-50EA-0213DCB45457}.wem"
+     },
+     {
+      "Id": "725208820",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-010.wav",
+      "CachePath": "01/{0193E3FD-9712-544C-FB54-4F4F77EBBE2B}.wem"
+     },
+     {
+      "Id": "739915709",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-039.wav",
+      "CachePath": "00/{002C1E97-30B6-B2D4-FC66-30EC76BB0E85}.wem"
+     },
+     {
+      "Id": "752674598",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-002.wav",
+      "CachePath": "EC/{ECD94513-2D5B-A664-C201-2488F3C48D6F}.wem"
+     },
+     {
+      "Id": "787751396",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-024.wav",
+      "CachePath": "E7/{E76C705E-C844-8B97-73B2-CB05809E3961}.wem"
+     },
+     {
+      "Id": "791351491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-014.wav",
+      "CachePath": "28/{2801ED0F-6DC8-CA55-2D8D-B2499B0BBF8E}.wem"
+     },
+     {
+      "Id": "795899879",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-014.wav",
+      "CachePath": "40/{400B55FB-64BA-E41E-CB29-C48876194A2F}.wem"
+     },
+     {
+      "Id": "807119791",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-031.wav",
+      "CachePath": "73/{73339030-78C9-54D0-F0C7-E505AF580DF4}.wem"
+     },
+     {
+      "Id": "809377767",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shoe Step Grass Medium D.wav",
+      "CachePath": "DB/{DB7B0852-DC01-57C6-E9A3-8FF3DAE583ED}.wem"
+     },
+     {
+      "Id": "813455346",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "attract_Western.wav",
+      "CachePath": "61/{61B052EB-3ECB-C022-8F47-3C96D1B66B18}.wem"
+     },
+     {
+      "Id": "817897953",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-029.wav",
+      "CachePath": "CD/{CD0F41E8-9AF8-2EFA-46E5-C0B41C402901}.wem"
+     },
+     {
+      "Id": "821528645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bare Step Stone Medium E.wav",
+      "CachePath": "AB/{AB0900D6-5E6F-363F-34E4-8A6F4452799C}.wem"
+     },
+     {
+      "Id": "823807799",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-038.wav",
+      "CachePath": "B4/{B47AA634-F77B-B5B6-D751-CB0155E32A2E}.wem"
+     },
+     {
+      "Id": "837680767",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-005.wav",
+      "CachePath": "FA/{FAF24CB8-CCC5-0517-5581-D9CD10621D0D}.wem"
+     },
+     {
+      "Id": "850977825",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-032.wav",
+      "CachePath": "5B/{5B733DD5-73D2-1E17-6C49-203EF114B913}.wem"
+     },
+     {
+      "Id": "861407229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-003.wav",
+      "CachePath": "D2/{D2943C77-572E-E5BB-218E-A193211B901C}.wem"
+     },
+     {
+      "Id": "878299629",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-012.wav",
+      "CachePath": "54/{542BD150-6E42-2FE4-2420-596F5AA2D6E0}.wem"
+     },
+     {
+      "Id": "880650506",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-030.wav",
+      "CachePath": "13/{133D6BE8-1758-117D-6918-8980E940ABAA}.wem"
+     },
+     {
+      "Id": "881691880",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shoe Step Grass Medium B.wav",
+      "CachePath": "DC/{DCEC1888-30DD-BF0B-C269-9965010B3B24}.wem"
+     },
+     {
+      "Id": "920357531",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-046.wav",
+      "CachePath": "70/{70757922-4A53-94C0-F4EE-D10143793862}.wem"
+     },
+     {
+      "Id": "939967480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "winSFX_SlotMachine-002.wav",
+      "CachePath": "3B/{3BB19C7B-AC06-65A6-7935-6C3576950DF5}.wem"
+     },
+     {
+      "Id": "953007744",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-015.wav",
+      "CachePath": "2D/{2D6848A7-8163-A6C0-011A-137FCCB52992}.wem"
+     },
+     {
+      "Id": "972246811",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-018.wav",
+      "CachePath": "89/{89BC796E-556D-95CA-64DF-0D828CC08478}.wem"
+     },
+     {
+      "Id": "996559230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "attract_SnakeEyes.wav",
+      "CachePath": "8B/{8B44359C-FEC0-80C4-3F73-4920A202B7CE}.wem"
+     },
+     {
+      "Id": "1003987524",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-009.wav",
+      "CachePath": "CD/{CD62A8F7-7CBF-C738-7341-2A9B66356083}.wem"
+     },
+     {
+      "Id": "1007684741",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "slot machine-001.wav",
+      "CachePath": "A8/{A8959D1F-2DD9-ABAA-60E1-4C167727D1E4}.wem"
+     },
+     {
+      "Id": "1007722772",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-023.wav",
+      "CachePath": "8E/{8E8A57E1-1ACA-B7DC-3E67-000469B5818C}.wem"
+     },
+     {
+      "Id": "1011870256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment SFX\\amb_midCasino.wav",
+      "CachePath": "61/{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem"
+     },
+     {
+      "Id": "1025526754",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-042.wav",
+      "CachePath": "FE/{FE6D766A-DFAA-2500-CC6A-002AFCA96F98}.wem"
+     },
+     {
+      "Id": "1049001441",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-011.wav",
+      "CachePath": "75/{75ED83EC-774C-E7AB-272A-0192C100D79D}.wem"
+     },
+     {
+      "Id": "1059337340",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-020.wav",
+      "CachePath": "D0/{D0648097-3461-60B7-68CC-D75C38C48412}.wem"
+     },
+     {
+      "Id": "1059816810",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-043.wav",
+      "CachePath": "0D/{0D8E3B16-28B0-43D6-61CF-D72210DDA0A0}.wem"
+     },
+     {
+      "Id": "1061312869",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-047.wav",
+      "CachePath": "03/{03081A94-5DD3-3008-3EB4-AA321CC299A5}.wem"
+     },
+     {
+      "Id": "1062582967",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NPC Lines-016.wav",
+      "CachePath": "69/{690B245D-82DF-50FC-38FE-0A017C3E339A}.wem"
+     },
+     {
+      "Id": "1064935557",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shoe Step Grass Medium C.wav",
+      "CachePath": "B2/{B26CDB26-BA1C-8A3A-9A94-DCCF19C5D84F}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3935818673",
+       "Name": "Slot_Paramteric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
+       "GUID": "{A20E2809-19C1-43CE-85C8-32731B8298F6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "4246019388",
+      "Name": "Play_amb_midCasino",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_midCasino",
+      "GUID": "{C25D5D05-1552-4256-BD41-97EC4F322FF4}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1011870256"
+       }
+      ]
+     },
+     {
+      "Id": "121174090",
+      "Name": "Play_amb_outside",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_outside",
+      "GUID": "{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "479959301"
+       }
+      ]
+     },
+     {
+      "Id": "149938048",
+      "Name": "Play_attract_FourLeafLuckalt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_FourLeafLuckalt",
+      "GUID": "{C52AA46E-E097-43FD-8359-F611D7901693}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "17.33333",
+      "DurationMax": "17.33333",
+      "MediaRefs": [
+       {
+        "Id": "595200575"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4097516578",
+      "Name": "Play_attract_SnakeEyes",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_SnakeEyes",
+      "GUID": "{E7EC3575-75DB-4083-AAA9-1A5A93025567}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "10.666667",
+      "DurationMax": "10.666667",
+      "MediaRefs": [
+       {
+        "Id": "996559230"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "917334326",
+      "Name": "Play_attract_Western",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_Western",
+      "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "31.993063",
+      "DurationMax": "31.993063",
+      "MediaRefs": [
+       {
+        "Id": "813455346"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2702863590",
+      "Name": "Play_attract_xmarks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_xmarks",
+      "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "21.333334",
+      "DurationMax": "21.333334",
+      "MediaRefs": [
+       {
+        "Id": "635112411"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3935818673"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4257882499",
+      "Name": "Play_BigLad",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BigLad",
+      "GUID": "{8C8C722D-2061-4664-94EE-74797B9B81C9}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "409133506"
+       },
+       {
+        "Id": "431682857"
+       },
+       {
+        "Id": "586071865"
+       },
+       {
+        "Id": "1025526754"
+       },
+       {
+        "Id": "1059816810"
+       }
+      ]
+     },
+     {
+      "Id": "2459562556",
+      "Name": "Play_Douche",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Douche",
+      "GUID": "{0A65232E-2139-40A7-A102-5470A3A631DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "65542308"
+       },
+       {
+        "Id": "579006181"
+       },
+       {
+        "Id": "649120144"
+       },
+       {
+        "Id": "972246811"
+       },
+       {
+        "Id": "1059337340"
+       }
+      ]
+     },
+     {
+      "Id": "545496015",
+      "Name": "Play_Farmer",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Farmer",
+      "GUID": "{0F409CB4-10C0-464F-8C44-88DD1FAC9761}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "4",
+      "MediaRefs": [
+       {
+        "Id": "460994830"
+       },
+       {
+        "Id": "795899879"
+       },
+       {
+        "Id": "878299629"
+       },
+       {
+        "Id": "953007744"
+       },
+       {
+        "Id": "1062582967"
+       }
+      ]
+     },
+     {
+      "Id": "2488303320",
+      "Name": "Play_FootStepsContainer",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_FootStepsContainer",
+      "GUID": "{85F5B3E9-6729-476F-B3D9-8C47646901B8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2386848",
+      "DurationMax": "0.5673125",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1088209313",
+         "Id": "4294388576",
+         "GUID": "{9FB4F546-B47C-4DFC-AC6B-9DEF9E55A022}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "100922231"
+         },
+         {
+          "Id": "300601520"
+         },
+         {
+          "Id": "617365663"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1088209313",
+         "Id": "841620460",
+         "GUID": "{83811881-95C6-420D-8FD1-7612A8F50201}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "236675762"
+         },
+         {
+          "Id": "347238335"
+         },
+         {
+          "Id": "356095830"
+         },
+         {
+          "Id": "683848984"
+         },
+         {
+          "Id": "821528645"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1088209313",
+         "Id": "4248645337",
+         "GUID": "{8DF868F8-7403-4104-B8AC-8C701273728F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "35805181"
+         },
+         {
+          "Id": "46101133"
+         },
+         {
+          "Id": "809377767"
+         },
+         {
+          "Id": "881691880"
+         },
+         {
+          "Id": "1064935557"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "78570490",
+      "Name": "Play_Geezer",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Geezer",
+      "GUID": "{5AC2A201-4330-4672-819D-F7523D4C5989}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "74728829"
+       },
+       {
+        "Id": "98207390"
+       },
+       {
+        "Id": "174274522"
+       },
+       {
+        "Id": "752674598"
+       },
+       {
+        "Id": "837680767"
+       }
+      ]
+     },
+     {
+      "Id": "2574927968",
+      "Name": "Play_Idk",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Idk",
+      "GUID": "{65EEDC5A-4B06-4568-810D-A159181E423E}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "4.5",
+      "MediaRefs": [
+       {
+        "Id": "313407036"
+       },
+       {
+        "Id": "787751396"
+       },
+       {
+        "Id": "1007722772"
+       }
+      ]
+     },
+     {
+      "Id": "2571661844",
+      "Name": "Play_keyboard_click",
+      "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_keyboard_click",
+      "GUID": "{11672FAE-4E93-4FFE-BE8D-8E0A8AB246C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.110583335",
+      "DurationMax": "0.110583335",
+      "MediaRefs": [
+       {
+        "Id": "392789631"
+       }
+      ]
+     },
+     {
+      "Id": "2125167341",
+      "Name": "Play_Loser",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Loser",
+      "GUID": "{4347BC7E-AC20-4454-8219-EF6A14797462}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "3",
+      "DurationMax": "6",
+      "MediaRefs": [
+       {
+        "Id": "181502551"
+       },
+       {
+        "Id": "444372985"
+       },
+       {
+        "Id": "460184777"
+       },
+       {
+        "Id": "807119791"
+       },
+       {
+        "Id": "850977825"
+       }
+      ]
+     },
+     {
+      "Id": "3046872037",
+      "Name": "Play_Phone_App_open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_Phone_App_open",
+      "GUID": "{7B023896-E17D-4997-A8D7-D8296462D3BF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7657083",
+      "DurationMax": "0.7657083",
+      "MediaRefs": [
+       {
+        "Id": "366238829"
+       }
+      ]
+     },
+     {
+      "Id": "839760237",
+      "Name": "Play_phone_down",
+      "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_phone_down",
+      "GUID": "{7E90BBF4-62B6-4916-9996-57DD27C76552}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9230833",
+      "DurationMax": "0.9230833",
+      "MediaRefs": [
+       {
+        "Id": "213094987"
+       }
+      ]
+     },
+     {
+      "Id": "3900699724",
+      "Name": "Play_phone_notification",
+      "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_phone_notification",
+      "GUID": "{9D955D4B-D8D4-4752-9B06-E5CBBC0187A3}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.437125",
+      "DurationMax": "1.437125",
+      "MediaRefs": [
+       {
+        "Id": "193646577"
+       }
+      ]
+     },
+     {
+      "Id": "554652250",
+      "Name": "Play_phone_up",
+      "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_phone_up",
+      "GUID": "{DC0DF660-BC8E-47DB-BEDB-C5AC45F7EAF2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9230833",
+      "DurationMax": "0.9230833",
+      "MediaRefs": [
+       {
+        "Id": "409179116"
+       }
+      ]
+     },
+     {
+      "Id": "1316105455",
+      "Name": "Play_Polka",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Polka",
+      "GUID": "{25CA863F-654F-4C72-A4AB-CC53C1642155}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "2.7799773",
+      "MediaRefs": [
+       {
+        "Id": "239804848"
+       },
+       {
+        "Id": "697623604"
+       },
+       {
+        "Id": "920357531"
+       },
+       {
+        "Id": "1061312869"
+       }
+      ]
+     },
+     {
+      "Id": "2212624710",
+      "Name": "Play_Regular_guy",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Regular_guy",
+      "GUID": "{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2717007",
+      "DurationMax": "2.5",
+      "MediaRefs": [
+       {
+        "Id": "149566734"
+       },
+       {
+        "Id": "360136687"
+       },
+       {
+        "Id": "383890732"
+       },
+       {
+        "Id": "669870219"
+       },
+       {
+        "Id": "725208820"
+       },
+       {
+        "Id": "1049001441"
+       }
+      ]
+     },
+     {
+      "Id": "2579523620",
+      "Name": "Play_Slot_machine_sfx_virtual",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_machine_sfx_virtual",
+      "GUID": "{FEC4E0D7-7838-4692-8037-B20259095DB3}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "4.13222",
+      "DurationMax": "4.13222",
+      "MediaRefs": [
+       {
+        "Id": "339341435"
+       }
+      ]
+     },
+     {
+      "Id": "76758945",
+      "Name": "Play_slot_spin_container",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_slot_spin_container",
+      "GUID": "{07AB0C95-AAFC-4423-9004-67A44EBBBF94}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "0.57012",
+      "DurationMax": "0.72608",
+      "MediaRefs": [
+       {
+        "Id": "348867920"
+       },
+       {
+        "Id": "861407229"
+       },
+       {
+        "Id": "1007684741"
+       }
+      ]
+     },
+     {
+      "Id": "2303260725",
+      "Name": "Play_Slot_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Stop",
+      "GUID": "{FB3048F7-4674-420A-B453-3B89DDF2A9D7}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26110673",
+      "DurationMax": "0.58511144",
+      "MediaRefs": [
+       {
+        "Id": "24347595"
+       },
+       {
+        "Id": "104126226"
+       },
+       {
+        "Id": "381998484"
+       },
+       {
+        "Id": "480015837"
+       },
+       {
+        "Id": "585689114"
+       },
+       {
+        "Id": "657574222"
+       },
+       {
+        "Id": "672356513"
+       },
+       {
+        "Id": "791351491"
+       },
+       {
+        "Id": "1003987524"
+       }
+      ]
+     },
+     {
+      "Id": "2932405927",
+      "Name": "Play_Slot_Win_Base",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Win_Base",
+      "GUID": "{C9D30CE8-02FB-4C70-926D-3715757032F1}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5",
+      "DurationMax": "5.5",
+      "MediaRefs": [
+       {
+        "Id": "939967480"
+       }
+      ]
+     },
+     {
+      "Id": "1118907549",
+      "Name": "Play_SlotWinVirtual",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_SlotWinVirtual",
+      "GUID": "{062F8649-D467-482D-A236-9CD48CB9C9ED}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "3.5",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "578248724"
+       }
+      ]
+     },
+     {
+      "Id": "4192618525",
+      "Name": "Play_Smoker",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Smoker",
+      "GUID": "{C006D2C8-EBEC-47CA-AD85-4C83B53A3977}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "4",
+      "MediaRefs": [
+       {
+        "Id": "114111115"
+       },
+       {
+        "Id": "197840068"
+       },
+       {
+        "Id": "279104164"
+       },
+       {
+        "Id": "669916531"
+       },
+       {
+        "Id": "817897953"
+       },
+       {
+        "Id": "880650506"
+       }
+      ]
+     },
+     {
+      "Id": "2852958513",
+      "Name": "Play_Spin_Cycle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Spin_Cycle",
+      "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
+      "MaxAttenuation": "25",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "128454229"
+       }
+      ]
+     },
+     {
+      "Id": "4115026698",
+      "Name": "Play_Zesty_Rich_Guy",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Zesty_Rich_Guy",
+      "GUID": "{F51E99BA-4E20-49E7-B333-8D91B25AC12B}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "192997628"
+       },
+       {
+        "Id": "307350902"
+       },
+       {
+        "Id": "404187990"
+       },
+       {
+        "Id": "739915709"
+       },
+       {
+        "Id": "823807799"
+       }
+      ]
+     },
+     {
+      "Id": "788884573",
+      "Name": "Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop",
+      "GUID": "{152ED250-AF8B-4213-AB7E-7679F0FCDAD8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3510522014",
+      "Name": "Stop_attract_FourLeafLuckalt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_FourLeafLuckalt",
+      "GUID": "{ADD6545D-365F-40D8-B2B7-E63C62DA28A3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3634297912",
+      "Name": "Stop_attract_SnakeEyes",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_SnakeEyes",
+      "GUID": "{3C6F98AA-F29C-4777-B2D5-6F7466144426}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2969981116",
+      "Name": "Stop_attract_Western",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_Western",
+      "GUID": "{9E388745-95BF-4244-B2BB-078A24AC9023}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1665187052",
+      "Name": "Stop_attract_xmarks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Stop_attract_xmarks",
+      "GUID": "{959D64FC-147D-4683-99A7-46BDCA96FCA4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4232836462",
+      "Name": "Stop_Slot_machine_sfx_virtual",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop_Slot_machine_sfx_virtual",
+      "GUID": "{E1F82023-1E52-4F68-A9E9-A6250B4F1A7E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "504588419",
+      "Name": "Stop_Spin_Cycle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop_Spin_Cycle",
+      "GUID": "{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1088209313",
+      "Name": "Floor",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Floor",
+      "GUID": "{B9E0305D-CA79-4EF6-90A0-5052A2DF40E9}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Concrete",
+        "GUID": "{83811881-95C6-420D-8FD1-7612A8F50201}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Grass",
+        "GUID": "{8DF868F8-7403-4104-B8AC-8C701273728F}"
+       },
+       {
+        "Id": "4294388576",
+        "Name": "Generic",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor\\Generic",
+        "GUID": "{9FB4F546-B47C-4DFC-AC6B-9DEF9E55A022}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5237F26C-08E6-0B21-DF38-A17653C42322}"
+ }
+}

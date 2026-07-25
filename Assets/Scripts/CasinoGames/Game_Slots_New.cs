@@ -237,6 +237,8 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
             case State.Start:
                 //start
                 //set values
+                AkUnitySoundEngine.PostEvent("Stop_Slot_machine_sfx_virtual", this.gameObject);
+                AkUnitySoundEngine.PostEvent("Play_Slot_machine_sfx_virtual", this.gameObject);
                 HiddenSpeed = speed;
                 Loops = Random.Range(50, 100);
                 CurrentLoop = 0;
@@ -274,7 +276,7 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
     /// </summary>
     void Spin()
     {
-
+        
         timer += (HiddenSpeed - (float)CurrentLoop/(float)Loops) * Time.deltaTime;
         //effect the speed by the remaning amount of loops
         //Debug.Log(((float)CurrentLoop / (float)Loops));
@@ -375,6 +377,7 @@ public class Game_Slots_New : InteractableObjectBase, IInterractible
             PayoutAmount += PayoutRewards[(int)lines.Tile].PayoutTier[2]; //payout all remaind winlines at their max reward
         }
 
+        if (PayoutAmount > 0) AkUnitySoundEngine.PostEvent("Play_SlotWinVirtual", this.gameObject);
         GlobalManager.instance.Money += PayoutAmount; //give the player their final amount of money owned
     }
 

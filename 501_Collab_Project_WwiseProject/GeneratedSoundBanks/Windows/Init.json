@@ -142,6 +142,32 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "200764838",
+      "Name": "Chips",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Chips",
+      "GUID": "{0799AA26-E446-4595-8086-DE435BB350C8}",
+      "Switches": [
+       {
+        "Id": "647611021",
+        "Name": "Big",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Big",
+        "GUID": "{02784F03-C334-4123-9E73-3766773F729C}"
+       },
+       {
+        "Id": "1846755610",
+        "Name": "Small",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Small",
+        "GUID": "{3319DD67-BAB4-438C-82D5-7EE78F094A2B}"
+       },
+       {
+        "Id": "2849147824",
+        "Name": "Medium",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Medium",
+        "GUID": "{C1E2F872-1195-49B0-B5A9-EF1875CD834D}"
+       }
+      ]
+     },
+     {
       "Id": "1088209313",
       "Name": "Floor",
       "ObjectPath": "\\Switches\\Default Work Unit\\Floor",
@@ -205,6 +231,6 @@
     ]
    }
   ],
-  "FileHash": "{AA8C4097-4317-84B2-4A0F-B65C0E97ED49}"
+  "FileHash": "{9CF57112-0505-DFA7-5C4F-048A2E41C17B}"
  }
 }

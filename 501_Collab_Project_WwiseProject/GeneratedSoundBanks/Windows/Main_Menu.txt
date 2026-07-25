@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	325086926	Play_sfx_select			\Default Work Unit\UI\Play_sfx_select	
+	1780698603	Play_sfx_back			\Default Work Unit\UI\Play_sfx_back	
+	3978225973	Play_sfx_forward			\Default Work Unit\UI\Play_sfx_forward	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	309629099	sfx_back	.cache\C7\{C7437194-0C08-21BC-AF6A-7305685716A4}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_back		96144
+	511212044	sfx_forward	.cache\BB\{BB638587-CC09-D7D2-F61A-502652D7600B}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_forward		70296
+	629613821	sfx_select	.cache\99\{99DF7592-392A-9582-6CAB-822C6A949BAF}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_select		58296
+
