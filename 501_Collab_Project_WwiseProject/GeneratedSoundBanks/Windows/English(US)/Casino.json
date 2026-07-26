@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "English(US)",
-    "Hash": "{CC3A1B43-6B1E-A19E-0FD5-0FE7FA9663D3}",
+    "Hash": "{71D18277-F80B-7D02-A414-953CB63C689B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "English(US)/Casino.bnk",
@@ -1624,6 +1624,6 @@
     ]
    }
   ],
-  "FileHash": "{6824365B-C1AC-B195-AF8F-0C8A09AED9D1}"
+  "FileHash": "{4705EF75-E644-090F-7E76-B509A4C6E1B4}"
  }
 }

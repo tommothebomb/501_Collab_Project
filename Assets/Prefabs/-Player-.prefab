@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 5346302260226270420}
   - component: {fileID: 9081872413585323080}
   - component: {fileID: 3259930707919077684}
+  - component: {fileID: 2008405516824996366}
   m_Layer: 6
   m_Name: -Player-
   m_TagString: Player
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4396634110274652218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf597df852eb71340bbb087473165908, type: 3}
   m_Name: 
@@ -254,6 +255,19 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &2008405516824996366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396634110274652218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639dbcd85114625478bdf09b71e60235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WwiseLogicForCasion
+  bankName: Casino
 --- !u!1 &4859803378363599166
 GameObject:
   m_ObjectHideFlags: 0

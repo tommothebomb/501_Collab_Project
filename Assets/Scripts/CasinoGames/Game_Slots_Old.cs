@@ -1,10 +1,6 @@
 using System.Collections;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using Unity.Collections.LowLevel.Unsafe;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using AK.Wwise.Editor;
 
 public class Game_Slots_Old : InteractableObjectBase, IInterractible
 {
