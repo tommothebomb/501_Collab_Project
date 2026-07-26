@@ -55,7 +55,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
 
     private void Start()
     {
-        randTime = Random.Range(15f, 100f);
+        randTime = Random.Range(50f, 1000f);
         uiTooltipObj = GameObject.FindGameObjectWithTag("ToolTip").transform.GetChild(0).gameObject;
     }
 
@@ -117,6 +117,7 @@ public class Game_Slots_Old : InteractableObjectBase, IInterractible
         else
         {
             attractionSoundStop.Post(this.gameObject);
+
         }
 
     }

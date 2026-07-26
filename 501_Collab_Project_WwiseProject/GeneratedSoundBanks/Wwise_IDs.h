@@ -27,6 +27,8 @@ namespace AK
         static const AkUniqueID PLAY_IDK = 2574927968U;
         static const AkUniqueID PLAY_KEYBOARD_CLICK = 2571661844U;
         static const AkUniqueID PLAY_LOSER = 2125167341U;
+        static const AkUniqueID PLAY_MAINMENUMUSIC = 667425441U;
+        static const AkUniqueID PLAY_MUSIC_MIDCASINO = 2184809433U;
         static const AkUniqueID PLAY_PHONE_APP_OPEN = 3046872037U;
         static const AkUniqueID PLAY_PHONE_DOWN = 839760237U;
         static const AkUniqueID PLAY_PHONE_NOTIFICATION = 3900699724U;
@@ -40,7 +42,6 @@ namespace AK
         static const AkUniqueID PLAY_SLOT_SPIN_CONTAINER = 76758945U;
         static const AkUniqueID PLAY_SLOT_STOP = 2303260725U;
         static const AkUniqueID PLAY_SLOT_WIN_BASE = 2932405927U;
-        static const AkUniqueID PLAY_SLOTWINVIRTUAL = 1118907549U;
         static const AkUniqueID PLAY_SMOKER = 4192618525U;
         static const AkUniqueID PLAY_SPIN_CYCLE = 2852958513U;
         static const AkUniqueID PLAY_ZESTY_RICH_GUY = 4115026698U;
@@ -49,7 +50,6 @@ namespace AK
         static const AkUniqueID STOP_ATTRACT_SNAKEEYES = 3634297912U;
         static const AkUniqueID STOP_ATTRACT_WESTERN = 2969981116U;
         static const AkUniqueID STOP_ATTRACT_XMARKS = 1665187052U;
-        static const AkUniqueID STOP_SLOT_MACHINE_SFX_VIRTUAL = 4232836462U;
         static const AkUniqueID STOP_SPIN_CYCLE = 504588419U;
     } // namespace EVENTS
 
@@ -115,6 +115,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OUTSIDE = 438105790U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SLOTS = 3888770528U;
         static const AkUniqueID VOICELINES = 2292057722U;
     } // namespace BUSSES
 

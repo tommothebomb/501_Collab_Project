@@ -140,7 +140,7 @@
 				</Attenuation>
 				<Attenuation Name="Slots" ID="{C4D4274E-EBD2-4D0D-A62A-7940BD7D2CDA}" ShortID="63437317">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="25"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -156,7 +156,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -183,7 +183,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>15</XPos>
 											<YPos>46</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -254,6 +254,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="Ambience" ID="{B71E00BE-5FC4-4094-A2A5-35C5DEB4021D}" ShortID="6771696">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -268,7 +271,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

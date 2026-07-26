@@ -22,10 +22,10 @@
 				<Effect Name="Slot_Paramteric_EQ" ID="{A20E2809-19C1-43CE-85C8-32731B8298F6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
 						<Property Name="DynamicsEnableBand3" Type="bool" Value="True"/>
-						<Property Name="FrequencyBand1" Type="Real32" Value="28.19021"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="55.99954"/>
 						<Property Name="FrequencyBand2" Type="Real32" Value="106.5953"/>
 						<Property Name="FrequencyBand3" Type="Real32" Value="660.1818"/>
-						<Property Name="GainBand1" Type="Real32" Value="-8.191617"/>
+						<Property Name="GainBand1" Type="Real32" Value="-21.66857"/>
 						<Property Name="GainBand2" Type="Real32" Value="-11.92814"/>
 						<Property Name="GainBand3" Type="Real32" Value="2.538922"/>
 						<Property Name="OnOffBand3" Type="bool" Value="True"/>

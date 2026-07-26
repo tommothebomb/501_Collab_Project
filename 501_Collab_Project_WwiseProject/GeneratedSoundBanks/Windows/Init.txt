@@ -14,6 +14,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2292057722	VoiceLines			\Default Work Unit\Main Audio Bus\VoiceLines	
 	3553349781	Inside			\Default Work Unit\Main Audio Bus\Ambient\Inside	
+	3888770528	Slots			\Default Work Unit\Main Audio Bus\SFX\Slots	
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

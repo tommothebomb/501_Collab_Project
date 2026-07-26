@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E76C2615-693F-3520-8F6F-2C23B6420DF5}",
+    "Hash": "{D1260053-016A-A48A-52BB-2A765EA8B848}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -94,6 +94,12 @@
         }
        ]
       }
+     },
+     {
+      "Id": "3888770528",
+      "Name": "Slots",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Slots",
+      "GUID": "{3BA7182F-6AEE-4F00-8370-235FADB23770}"
      },
      {
       "Id": "3991942870",
@@ -231,6 +237,6 @@
     ]
    }
   ],
-  "FileHash": "{9CF57112-0505-DFA7-5C4F-048A2E41C17B}"
+  "FileHash": "{8B947563-CBD2-C4FE-C457-BBF0B803B1E6}"
  }
 }

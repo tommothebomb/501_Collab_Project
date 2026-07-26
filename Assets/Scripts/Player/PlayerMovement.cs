@@ -1,5 +1,7 @@
-using UnityEngine;
 using System;
+using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
@@ -19,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     bool canJump;
     InputSystem_Actions inputActs;
+    float stepTimer;
 
 
     // input system and component gets
@@ -41,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerInput();
         GroundCheck();
+        ChangeFootSteps();
     }
     private void FixedUpdate() => MovePlayer();
 
@@ -69,6 +73,24 @@ public class PlayerMovement : MonoBehaviour
             Vector3 limitedVel = flatVal.normalized * moveSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
+        stepTimer += Time.deltaTime;
+        switch (moveSpeed)
+        {
+            case 6:
+                if (stepTimer >= 3)
+                {
+                    AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                    stepTimer = 0;
+                }
+                break;
+            case 12:
+                if (stepTimer >= 1)
+                {
+                    AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                    stepTimer = 0;
+                }
+                break;
+        }
     }
     void Jump()
     {
@@ -84,4 +106,25 @@ public class PlayerMovement : MonoBehaviour
     void ResetJump() => canJump = true;
     void SetToSprintSpeed() => moveSpeed = sprintSpeed;
     void SetToWalkSpeed() => moveSpeed = walkSpeed;
+
+    void ChangeFootSteps()
+    {
+        RaycastHit hit;
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down), Color.red);
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, groundMask))
+        {
+            switch (hit.collider.tag)
+            {
+                case ("Stone"):
+                    AkUnitySoundEngine.SetSwitch("Floor", "Concrete", this.gameObject);
+                    break;
+                case ("Wood"):
+                    AkUnitySoundEngine.SetSwitch("Floor", "Wood", this.gameObject);
+                    break;
+                case ("Grass"):
+                    AkUnitySoundEngine.SetSwitch("Floor", "Grass", this.gameObject);
+                    break;
+            }
+        }
+    }
 }
