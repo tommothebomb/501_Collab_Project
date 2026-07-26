@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "English(US)",
-    "Hash": "{82CD362A-244B-C8B7-2009-D2633551D1FB}",
+    "Hash": "{3A2F3049-FD34-EB27-86BB-81DCF05B2F81}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "English(US)/Casino.bnk",
@@ -344,14 +344,6 @@
       "CachePath": "8E/{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem"
      },
      {
-      "Id": "578248724",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "untitled-005.wav",
-      "CachePath": "72/{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem"
-     },
-     {
       "Id": "579006181",
       "Language": "English(US)",
       "Streaming": "false",
@@ -608,6 +600,14 @@
       "CachePath": "70/{70757922-4A53-94C0-F4EE-D10143793862}.wem"
      },
      {
+      "Id": "939568479",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_midCasino(1).wav",
+      "CachePath": "D4/{D488ABD1-3D3F-C21E-6CCA-04396496F22A}.wem"
+     },
+     {
       "Id": "939967480",
       "Language": "SFX",
       "Streaming": "false",
@@ -746,7 +746,7 @@
       "Name": "Play_amb_midCasino",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_midCasino",
       "GUID": "{C25D5D05-1552-4256-BD41-97EC4F322FF4}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -759,7 +759,7 @@
       "Name": "Play_amb_outside",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_outside",
       "GUID": "{2238737F-3A9B-4CF4-B6D8-1A4667DFC59B}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -772,7 +772,7 @@
       "Name": "Play_attract_FourLeafLuckalt",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_FourLeafLuckalt",
       "GUID": "{C52AA46E-E097-43FD-8359-F611D7901693}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "17.33333",
       "DurationMax": "17.33333",
@@ -794,7 +794,7 @@
       "Name": "Play_attract_SnakeEyes",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_SnakeEyes",
       "GUID": "{E7EC3575-75DB-4083-AAA9-1A5A93025567}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "10.666667",
       "DurationMax": "10.666667",
@@ -816,7 +816,7 @@
       "Name": "Play_attract_Western",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_Western",
       "GUID": "{239C2151-E67A-447D-A378-5B8BE646D123}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "31.993063",
       "DurationMax": "31.993063",
@@ -838,7 +838,7 @@
       "Name": "Play_attract_xmarks",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Attractions\\Play_attract_xmarks",
       "GUID": "{DE62DF80-2838-4D3F-A129-E14B1899BBEC}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "21.333334",
       "DurationMax": "21.333334",
@@ -966,7 +966,8 @@
          "GroupType": "Switch",
          "GroupId": "1088209313",
          "Id": "841620460",
-         "GUID": "{83811881-95C6-420D-8FD1-7612A8F50201}"
+         "GUID": "{83811881-95C6-420D-8FD1-7612A8F50201}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -1101,6 +1102,20 @@
       ]
      },
      {
+      "Id": "2184809433",
+      "Name": "Play_music_midCasino",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_music_midCasino",
+      "GUID": "{9253F4E7-6255-4886-8946-C8382D83B827}",
+      "DurationType": "OneShot",
+      "DurationMin": "144",
+      "DurationMax": "144",
+      "MediaRefs": [
+       {
+        "Id": "939568479"
+       }
+      ]
+     },
+     {
       "Id": "3046872037",
       "Name": "Play_Phone_App_open",
       "ObjectPath": "\\Events\\Default Work Unit\\Phone\\Play_Phone_App_open",
@@ -1215,7 +1230,7 @@
       "Name": "Play_Slot_machine_sfx_virtual",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_machine_sfx_virtual",
       "GUID": "{FEC4E0D7-7838-4692-8037-B20259095DB3}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "4.13222",
       "DurationMax": "4.13222",
@@ -1230,7 +1245,7 @@
       "Name": "Play_slot_spin_container",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_slot_spin_container",
       "GUID": "{07AB0C95-AAFC-4423-9004-67A44EBBBF94}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "0.57012",
       "DurationMax": "0.72608",
@@ -1251,7 +1266,7 @@
       "Name": "Play_Slot_Stop",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Stop",
       "GUID": "{FB3048F7-4674-420A-B453-3B89DDF2A9D7}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "0.26110673",
       "DurationMax": "0.58511144",
@@ -1290,28 +1305,13 @@
       "Name": "Play_Slot_Win_Base",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Slot_Win_Base",
       "GUID": "{C9D30CE8-02FB-4C70-926D-3715757032F1}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "5.5",
       "DurationMax": "5.5",
       "MediaRefs": [
        {
         "Id": "939967480"
-       }
-      ]
-     },
-     {
-      "Id": "1118907549",
-      "Name": "Play_SlotWinVirtual",
-      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_SlotWinVirtual",
-      "GUID": "{062F8649-D467-482D-A236-9CD48CB9C9ED}",
-      "MaxAttenuation": "25",
-      "DurationType": "OneShot",
-      "DurationMin": "3.5",
-      "DurationMax": "3.5",
-      "MediaRefs": [
-       {
-        "Id": "578248724"
        }
       ]
      },
@@ -1350,7 +1350,7 @@
       "Name": "Play_Spin_Cycle",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Spin_Cycle",
       "GUID": "{D479A95D-E68A-429A-A4D9-3180E58C56C6}",
-      "MaxAttenuation": "25",
+      "MaxAttenuation": "15",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -1436,16 +1436,6 @@
       "DurationMax": "0"
      },
      {
-      "Id": "4232836462",
-      "Name": "Stop_Slot_machine_sfx_virtual",
-      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop_Slot_machine_sfx_virtual",
-      "GUID": "{E1F82023-1E52-4F68-A9E9-A6250B4F1A7E}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "504588419",
       "Name": "Stop_Spin_Cycle",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Stop_Spin_Cycle",
@@ -1486,6 +1476,6 @@
     ]
    }
   ],
-  "FileHash": "{72794787-9386-AC5C-59A8-66793C8B2D2E}"
+  "FileHash": "{CE0454A4-6524-E1EA-8DE9-10712B0DE842}"
  }
 }

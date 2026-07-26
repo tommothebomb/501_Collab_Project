@@ -471,6 +471,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_music_midCasino" ID="{9253F4E7-6255-4886-8946-C8382D83B827}">
+					<ChildrenList>
+						<Action Name="" ID="{ED3ACC62-6F84-4D1B-AABA-B061BDC34AA6}" ShortID="764576647">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music_midCasino" ID="{E4DE3B95-53A9-47CD-8238-112ED6FF3073}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MainMenuMusic" ID="{BCE30A2F-1E1B-47EA-9B05-CA3FB5AF3EA5}">
+					<ChildrenList>
+						<Action Name="" ID="{21F54955-98FB-4965-962F-DC1327FA2D53}" ShortID="994318844">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{AC1EC5AC-FF4C-48FB-BEB8-45D56E87AD06}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

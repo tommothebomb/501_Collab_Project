@@ -29,6 +29,7 @@
 						<ObjectRef Name="Stop_attract_SnakeEyes" ID="{3C6F98AA-F29C-4777-B2D5-6F7466144426}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Smoker" ID="{C006D2C8-EBEC-47CA-AD85-4C83B53A3977}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_phone_up" ID="{DC0DF660-BC8E-47DB-BEDB-C5AC45F7EAF2}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_music_midCasino" ID="{9253F4E7-6255-4886-8946-C8382D83B827}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_phone_down" ID="{7E90BBF4-62B6-4916-9996-57DD27C76552}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Phone_App_open" ID="{7B023896-E17D-4997-A8D7-D8296462D3BF}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Zesty_Rich_Guy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
@@ -44,6 +45,7 @@
 				</SoundBank>
 				<SoundBank Name="Main_Menu" ID="{12074D06-A386-484E-856D-CE3058AADA20}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_MainMenuMusic" ID="{BCE30A2F-1E1B-47EA-9B05-CA3FB5AF3EA5}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_forward" ID="{BD018170-90F4-49BF-9324-F5B616E90010}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_select" ID="{E68A31D1-AC49-4A31-9220-372661B94744}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_back" ID="{08135E4B-F4E1-4B28-9E2D-022187E4B2A9}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>

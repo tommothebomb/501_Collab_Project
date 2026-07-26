@@ -9,10 +9,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	788884573	Stop			\Default Work Unit\Slots\Stop	
 	839760237	Play_phone_down			\Default Work Unit\Phone\Play_phone_down	
 	917334326	Play_attract_Western			\Default Work Unit\Slots\Attractions\Play_attract_Western	
-	1118907549	Play_SlotWinVirtual			\Default Work Unit\Slots\Play_SlotWinVirtual	
 	1316105455	Play_Polka			\Default Work Unit\NPCs\Play_Polka	
 	1665187052	Stop_attract_xmarks			\Default Work Unit\Slots\Attractions\Stop_attract_xmarks	
 	2125167341	Play_Loser			\Default Work Unit\NPCs\Play_Loser	
+	2184809433	Play_music_midCasino			\Default Work Unit\Play_music_midCasino	
 	2212624710	Play_Regular_guy			\Default Work Unit\NPCs\Play_Regular_guy	
 	2303260725	Play_Slot_Stop			\Default Work Unit\Slots\Play_Slot_Stop	
 	2459562556	Play_Douche			\Default Work Unit\NPCs\Play_Douche	
@@ -31,7 +31,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	4097516578	Play_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Play_attract_SnakeEyes	
 	4115026698	Play_Zesty_Rich_Guy			\Default Work Unit\NPCs\Play_Zesty_Rich_Guy	
 	4192618525	Play_Smoker			\Default Work Unit\NPCs\Play_Smoker	
-	4232836462	Stop_Slot_machine_sfx_virtual			\Default Work Unit\Slots\Stop_Slot_machine_sfx_virtual	
 	4246019388	Play_amb_midCasino			\Default Work Unit\Ambience\Play_amb_midCasino	
 	4257882499	Play_BigLad			\Default Work Unit\NPCs\Play_BigLad	
 
@@ -94,7 +93,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	460994830	Farmer0-29_000	.cache\5A\{5A91CF21-61B8-DB41-E608-B12DED9B9CB2}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-29_000		529296
 	479959301	amb_outside	.cache\2A\{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_outside		9783836
 	480015837	Slot Machine SFX-006	.cache\8E\{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-006		38828
-	578248724	SlotWinVirtual	.cache\72\{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\SlotWinVirtual		617496
 	579006181	Douche0-40_500	.cache\81\{814069C5-DE7F-815B-38A0-BD67637281D3}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-40_500		529296
 	585689114	Slot Machine SFX-007	.cache\10\{10EBBB9A-1521-F033-F959-61988D74A551}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-007		60812
 	586071865	Big Lad1-59_500	.cache\F3\{F3C41A11-4232-8F68-F9E9-A9FB6ADBF21F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad1-59_500		441096
@@ -127,6 +125,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	880650506	Smoker1-18_500	.cache\13\{133D6BE8-1758-117D-6918-8980E940ABAA}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-18_500		529296
 	881691880	Shoe Step Grass Medium B	.cache\DC\{DCEC1888-30DD-BF0B-C269-9965010B3B24}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium B		77612
 	920357531	Polka2-12_000	.cache\70\{70757922-4A53-94C0-F4EE-D10143793862}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-12_000		176496
+	939568479	music_midCasino	.cache\D4\{D488ABD1-3D3F-C21E-6CCA-04396496F22A}.wem		\Containers\Default Work Unit\Music\music_midCasino		27648144
 	939967480	Slot Win Base	.cache\3B\{3BB19C7B-AC06-65A6-7935-6C3576950DF5}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Win Base		970296
 	953007744	Farmer0-34_500	.cache\2D\{2D6848A7-8163-A6C0-011A-137FCCB52992}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-34_500		705696
 	972246811	Douche0-43_500	.cache\89\{89BC796E-556D-95CA-64DF-0D828CC08478}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-43_500		441096
