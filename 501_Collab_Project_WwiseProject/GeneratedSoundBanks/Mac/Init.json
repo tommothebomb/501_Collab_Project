@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{9179C712-14FC-5BD0-F0A9-3FC846F82116}",
+    "Hash": "{05682CA4-8076-AD4A-13E5-8395367F49AB}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -124,10 +124,28 @@
     ],
     "GameParameters": [
      {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
+      "GUID": "{26DE804B-0880-4122-9828-AB9E78A914C6}"
+     },
+     {
       "Id": "1229948536",
       "Name": "Environment",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Environment",
       "GUID": "{258B4456-1602-4012-9C84-533F4CB880BB}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{88FB8E56-A429-4D64-ABBC-8CDC0E2D881D}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{86756120-9F29-4F27-B2E5-E0A6DD530317}"
      }
     ],
     "StateGroups": [
@@ -237,6 +255,6 @@
     ]
    }
   ],
-  "FileHash": "{3CC3E3DC-0501-A232-2F23-7A291AF3FFCD}"
+  "FileHash": "{E78C53B5-F8F1-DCB0-0895-F6CD63A4883A}"
  }
 }

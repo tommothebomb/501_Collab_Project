@@ -4083,6 +4083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1154110416}
+  - component: {fileID: 1154110417}
   m_Layer: 0
   m_Name: -- SCENE --
   m_TagString: Untagged
@@ -4107,6 +4108,19 @@ Transform:
   - {fileID: 1144164531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154110417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154110415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639dbcd85114625478bdf09b71e60235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WwiseLogicForCasion
+  bankName: Main_Menu
 --- !u!1 &1241627698
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,7 +4402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
   isDefaultListener: 1
   bOverrideScalingFactor: 0
-  scalingFactor: -1
+  scalingFactor: 0
   listenerId: 0
 --- !u!114 &1376722387
 MonoBehaviour:
@@ -5805,7 +5819,7 @@ MonoBehaviour:
   overrideLoadSetting: 0
   loadAsynchronous: 1
   saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
+  unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1913779378
