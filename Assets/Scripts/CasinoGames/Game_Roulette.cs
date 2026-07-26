@@ -86,6 +86,7 @@ public class Game_Roulette : MonoBehaviour
     public void PlaceChips(Vector3 position)
     {
         Chips.transform.position = position;
+        AkUnitySoundEngine.PostEvent("Play_SmallBet", this.gameObject);
         ChipAnim.Play();
     }
 
@@ -116,6 +117,7 @@ public class Game_Roulette : MonoBehaviour
     {
         //play animation
         if (Isplaying) { yield break; }
+        else AkUnitySoundEngine.PostEvent("Play_Spin", this.gameObject);
         GlobalManager.instance.Money -= MaxBet;
         ZeroGlow.SetActive(false);
         WinnerGlow.SetActive(false);
@@ -214,6 +216,7 @@ public class Game_Roulette : MonoBehaviour
     {
         GlobalManager.instance.Money += betAmount * ReturnToPlayer;
         Debug.Log("Winner!!!!!");
+        AkUnitySoundEngine.PostEvent("Play_BigBet", this.gameObject);
     }
 
     /// <param name="betAmount"></param> the amount of money the players going to lose -- the good ending

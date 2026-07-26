@@ -12,6 +12,8 @@ public class PauseLogic : MonoBehaviour
     [SerializeField] GameObject messagesApp;
     InputSystem_Actions inputActs;
     [SerializeField] PlayerState playerState;
+    bool phoneUpPlayed = false, phoneDownPlayed = false, appOpen = false;
+
 
 
     #region // input enable and disable
@@ -34,6 +36,12 @@ public class PauseLogic : MonoBehaviour
     {
         phoneAnimator.SetBool("isPaused", true);
         playerState.stateMachine.ChangeState(playerState.menuState);
+        if (!phoneUpPlayed)
+        {
+            AkUnitySoundEngine.PostEvent("Play_phone_up", Camera.main.gameObject);
+            phoneUpPlayed=true;
+            phoneDownPlayed = false;
+        }
     }
 
     public void ReturnToMenu()
@@ -57,6 +65,12 @@ public class PauseLogic : MonoBehaviour
         phoneAnimator.SetBool("isPaused", false);
         playerState.stateMachine.ChangeState(playerState.roamingState);
         CloseApp();
+        if (!phoneDownPlayed)
+        {
+            AkUnitySoundEngine.PostEvent("Play_phone_down", Camera.main.gameObject);
+            phoneDownPlayed = true;
+            phoneUpPlayed = false;
+        }
     }
 
     public void OpenSettings()
@@ -75,6 +89,12 @@ public class PauseLogic : MonoBehaviour
     {
         appButtons.SetActive(false);
         closeAppButton.SetActive(true);
+        if (!appOpen)
+        {
+            AkUnitySoundEngine.PostEvent("Play_Phone_App_open", Camera.main.gameObject);
+            appOpen = true;
+            
+        }
     }
 
     public void CloseApp()
@@ -83,5 +103,6 @@ public class PauseLogic : MonoBehaviour
         closeAppButton.SetActive(false);
         messagesApp.SetActive(false);
         settingsApp.SetActive(false);
+        appOpen = false;
     }
 }

@@ -3,20 +3,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	78570490	Play_Geezer			\Default Work Unit\NPCs\Play_Geezer	
 	121174090	Play_amb_outside			\Default Work Unit\Ambience\Play_amb_outside	
 	149938048	Play_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Play_attract_FourLeafLuckalt	
+	301125906	Play_Spin			\Default Work Unit\Roulette\Play_Spin	
 	504588419	Stop_Spin_Cycle			\Default Work Unit\Slots\Stop_Spin_Cycle	
 	545496015	Play_Farmer			\Default Work Unit\NPCs\Play_Farmer	
 	554652250	Play_phone_up			\Default Work Unit\Phone\Play_phone_up	
 	788884573	Stop			\Default Work Unit\Slots\Stop	
 	839760237	Play_phone_down			\Default Work Unit\Phone\Play_phone_down	
 	917334326	Play_attract_Western			\Default Work Unit\Slots\Attractions\Play_attract_Western	
+	1118907549	Play_SlotWinVirtual			\Default Work Unit\Slots\Play_SlotWinVirtual	
 	1316105455	Play_Polka			\Default Work Unit\NPCs\Play_Polka	
 	1665187052	Stop_attract_xmarks			\Default Work Unit\Slots\Attractions\Stop_attract_xmarks	
 	2125167341	Play_Loser			\Default Work Unit\NPCs\Play_Loser	
+	2126956004	Play_SmallBet			\Default Work Unit\Roulette\Play_SmallBet	
 	2184809433	Play_music_midCasino			\Default Work Unit\Play_music_midCasino	
 	2212624710	Play_Regular_guy			\Default Work Unit\NPCs\Play_Regular_guy	
 	2303260725	Play_Slot_Stop			\Default Work Unit\Slots\Play_Slot_Stop	
 	2459562556	Play_Douche			\Default Work Unit\NPCs\Play_Douche	
-	2488303320	Play_FootStepsContainer			\Default Work Unit\NPCs\Play_FootStepsContainer	
+	2488303320	Play_FootStepsContainer			\Default Work Unit\Play_FootStepsContainer	
 	2571661844	Play_keyboard_click			\Default Work Unit\Phone\Play_keyboard_click	
 	2574927968	Play_Idk			\Default Work Unit\NPCs\Play_Idk	
 	2579523620	Play_Slot_machine_sfx_virtual			\Default Work Unit\Slots\Play_Slot_machine_sfx_virtual	
@@ -27,6 +30,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3046872037	Play_Phone_App_open			\Default Work Unit\Phone\Play_Phone_App_open	
 	3510522014	Stop_attract_FourLeafLuckalt			\Default Work Unit\Slots\Attractions\Stop_attract_FourLeafLuckalt	
 	3634297912	Stop_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Stop_attract_SnakeEyes	
+	3721984613	Play_BigBet			\Default Work Unit\Roulette\Play_BigBet	
 	3900699724	Play_phone_notification			\Default Work Unit\Phone\Play_phone_notification	
 	4097516578	Play_attract_SnakeEyes			\Default Work Unit\Slots\Attractions\Play_attract_SnakeEyes	
 	4115026698	Play_Zesty_Rich_Guy			\Default Work Unit\NPCs\Play_Zesty_Rich_Guy	
@@ -35,9 +39,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	4257882499	Play_BigLad			\Default Work Unit\NPCs\Play_BigLad	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	200764838	Chips			\Default Work Unit\Chips	
 	1088209313	Floor			\Default Work Unit\Floor	
 
 Switch	ID	Name	Switch Group			Notes
+	647611021	Big	Chips			
+	1846755610	Small	Chips			
+	2849147824	Medium	Chips			
 	841620460	Concrete	Floor			
 	4248645337	Grass	Floor			
 	4294388576	Generic	Floor			
@@ -49,9 +57,12 @@ State	ID	Name	State Group			Notes
 	748895195	None	Slot_Test_Group			
 
 Effect plug-ins	ID	Name	Type				Notes
+	29232603	New_Parametric_EQ_01	Wwise Parametric EQ			
+	3657550167	New_Parametric_EQ	Wwise Parametric EQ			
 	3935818673	Slot_Paramteric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8090944	BigBet	.cache\A1\{A15BBB1C-A028-6603-F461-ED1F6CB5F3CD}.wem		\Containers\Default Work Unit\GameSFX\Chips\BetChips\BigBet		176496
 	24347595	Slot Machine SFX-009	.cache\25\{25C6299F-7124-B2F9-9C2B-C8B41053FAE4}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-009		44680
 	35805181	Shoe Step Grass Medium E	.cache\FE\{FEC18650-901D-8905-FB6B-95A83BDB7F68}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium E		77676
 	46101133	Shoe Step Grass Medium A	.cache\6D\{6DBA4B58-4267-373E-D785-06D41C451188}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium A		77612
@@ -93,6 +104,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	460994830	Farmer0-29_000	.cache\5A\{5A91CF21-61B8-DB41-E608-B12DED9B9CB2}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-29_000		529296
 	479959301	amb_outside	.cache\2A\{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\amb_outside		9783836
 	480015837	Slot Machine SFX-006	.cache\8E\{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-006		38828
+	578248724	SlotWinVirtual	.cache\72\{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\SlotWinVirtual		617496
 	579006181	Douche0-40_500	.cache\81\{814069C5-DE7F-815B-38A0-BD67637281D3}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-40_500		529296
 	585689114	Slot Machine SFX-007	.cache\10\{10EBBB9A-1521-F033-F959-61988D74A551}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-007		60812
 	586071865	Big Lad1-59_500	.cache\F3\{F3C41A11-4232-8F68-F9E9-A9FB6ADBF21F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Big Lad\BigLad\Big Lad1-59_500		441096
@@ -112,6 +124,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	787751396	Idk1-00_500	.cache\E7\{E76C705E-C844-8B97-73B2-CB05809E3961}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Idk\Idk\Idk1-00_500		352896
 	791351491	Slot Machine SFX-008	.cache\28\{2801ED0F-6DC8-CA55-2D8D-B2499B0BBF8E}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Stop\Slot Machine SFX-008		86888
 	795899879	Farmer0-32_000	.cache\40\{400B55FB-64BA-E41E-CB29-C48876194A2F}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-32_000		441096
+	800627441	Spin	.cache\4F\{4FF7E4F4-BC56-7051-7D59-491DA03E369A}.wem		\Containers\Default Work Unit\GameSFX\Roullette\Spin		704844
+	801455214	SmallBet	.cache\F3\{F3F6659A-D83F-E3E7-1E4F-8B401CAF921B}.wem		\Containers\Default Work Unit\GameSFX\Chips\BetChips\SmallBet		50168
 	807119791	Loser1-21_500	.cache\73\{73339030-78C9-54D0-F0C7-E505AF580DF4}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Loser\Loser\Loser1-21_500		882096
 	809377767	Shoe Step Grass Medium D	.cache\DB\{DB7B0852-DC01-57C6-E9A3-8FF3DAE583ED}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium D		77612
 	813455346	attract_Western	.cache\61\{61B052EB-3ECB-C022-8F47-3C96D1B66B18}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Attractions\attract_Western		6142812

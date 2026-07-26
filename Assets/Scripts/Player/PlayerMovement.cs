@@ -7,7 +7,7 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class PlayerMovement : MonoBehaviour
 {
     // Libby script \\
-    float moveSpeed = 6f; // does not need to be exposed in editor as changing it in editor will do nothing
+    [SerializeField] float moveSpeed = 6f; // does not need to be exposed in editor as changing it in editor will do nothing
     [SerializeField] float walkSpeed = 6f;
     [SerializeField] float sprintSpeed = 12f;
     [SerializeField] float groundDrag = 5f;
@@ -21,7 +21,8 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     bool canJump;
     InputSystem_Actions inputActs;
-    float stepTimer;
+    [SerializeField] float stepTimer;
+    float walkTime, sprintTime;
 
 
     // input system and component gets
@@ -45,6 +46,28 @@ public class PlayerMovement : MonoBehaviour
         PlayerInput();
         GroundCheck();
         ChangeFootSteps();
+        stepTimer += Time.deltaTime;
+        if (rb.linearVelocity != Vector3.zero && isGrounded)
+        {
+            switch (moveSpeed)
+            {
+                case 6:
+                    if (stepTimer >= walkTime)
+                    {
+                        AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                        stepTimer = 0;
+                    }
+                    break;
+                case 12:
+                    if (stepTimer >= sprintTime)
+                    {
+                        AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                        stepTimer = 0;
+                    }
+                    break;
+            }
+        }
+        
     }
     private void FixedUpdate() => MovePlayer();
 
@@ -73,24 +96,6 @@ public class PlayerMovement : MonoBehaviour
             Vector3 limitedVel = flatVal.normalized * moveSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
-        stepTimer += Time.deltaTime;
-        switch (moveSpeed)
-        {
-            case 6:
-                if (stepTimer >= 3)
-                {
-                    AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
-                    stepTimer = 0;
-                }
-                break;
-            case 12:
-                if (stepTimer >= 1)
-                {
-                    AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
-                    stepTimer = 0;
-                }
-                break;
-        }
     }
     void Jump()
     {
@@ -117,12 +122,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 case ("Stone"):
                     AkUnitySoundEngine.SetSwitch("Floor", "Concrete", this.gameObject);
+                    walkTime = 0.3f;
+                    sprintTime = 0.2f;
                     break;
                 case ("Wood"):
-                    AkUnitySoundEngine.SetSwitch("Floor", "Wood", this.gameObject);
+                    AkUnitySoundEngine.SetSwitch("Floor", "Generic", this.gameObject);
+                    walkTime = 0.4f;
+                    sprintTime = 0.3f;
                     break;
                 case ("Grass"):
                     AkUnitySoundEngine.SetSwitch("Floor", "Grass", this.gameObject);
+
                     break;
             }
         }
