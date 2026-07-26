@@ -222,6 +222,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SlotWinVirtual" ID="{9C8E9ADE-DFA0-4A8D-AD07-8AC6B617159D}">
+							<ChildrenList>
+								<Action Name="" ID="{85D57CBC-5C65-4E88-8F73-DE3D0FA5C5BC}" ShortID="602055573">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SlotWinVirtual" ID="{E349069A-471B-4BCB-85BD-061632F85F8F}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{D3D29C0A-4B1F-4EA3-9678-B3C358600B0D}" ShortID="629690953">
@@ -392,17 +403,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_FootStepsContainer" ID="{85F5B3E9-6729-476F-B3D9-8C47646901B8}">
-							<ChildrenList>
-								<Action Name="" ID="{3240A58B-208B-4DF5-9CED-D6103F7754D8}" ShortID="1053644206">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Zesty_Rich_Guy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}">
 							<ChildrenList>
 								<Action Name="" ID="{3CAF3FF4-538E-4E01-8EB5-5166F34E886C}" ShortID="330321291">
@@ -488,6 +488,54 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MainMenuMusic" ID="{AC1EC5AC-FF4C-48FB-BEB8-45D56E87AD06}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FootStepsContainer" ID="{85F5B3E9-6729-476F-B3D9-8C47646901B8}">
+					<ChildrenList>
+						<Action Name="" ID="{3240A58B-208B-4DF5-9CED-D6103F7754D8}" ShortID="1053644206">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Roulette" ID="{73FB2F8E-523B-454D-A5D8-24CEF6EB1FB2}" ShortID="843058986">
+					<ChildrenList>
+						<Event Name="Play_SmallBet" ID="{282939CA-1601-4319-93AB-AEC9F2E125B1}">
+							<ChildrenList>
+								<Action Name="" ID="{2D3EC724-582A-4C40-9B24-67B369DEA8E5}" ShortID="104090558">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SmallBet" ID="{65787BCD-8F00-4C88-BC25-A2068D9863C5}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BigBet" ID="{0E90171F-CF2A-403E-A4B5-00FF4E0359F4}">
+							<ChildrenList>
+								<Action Name="" ID="{DB548F2C-D1C5-42DD-A53F-1C68A8A54CA9}" ShortID="1054178678">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BigBet" ID="{B1B19B80-4DB3-4A55-B598-FF459DC5A064}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Spin" ID="{3E2C3B29-8AD2-4B94-BE83-393A1B096567}">
+					<ChildrenList>
+						<Action Name="" ID="{11D2B9EE-5BEB-49F4-AABE-78D4890F983A}" ShortID="664197045">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spin" ID="{D95BD87F-BBDF-4C28-8CF1-4F9DFD0E8E32}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

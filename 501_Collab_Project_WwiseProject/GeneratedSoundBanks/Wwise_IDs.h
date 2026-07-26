@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_ATTRACT_SNAKEEYES = 4097516578U;
         static const AkUniqueID PLAY_ATTRACT_WESTERN = 917334326U;
         static const AkUniqueID PLAY_ATTRACT_XMARKS = 2702863590U;
+        static const AkUniqueID PLAY_BIGBET = 3721984613U;
         static const AkUniqueID PLAY_BIGLAD = 4257882499U;
         static const AkUniqueID PLAY_DOUCHE = 2459562556U;
         static const AkUniqueID PLAY_FARMER = 545496015U;
@@ -42,7 +43,10 @@ namespace AK
         static const AkUniqueID PLAY_SLOT_SPIN_CONTAINER = 76758945U;
         static const AkUniqueID PLAY_SLOT_STOP = 2303260725U;
         static const AkUniqueID PLAY_SLOT_WIN_BASE = 2932405927U;
+        static const AkUniqueID PLAY_SLOTWINVIRTUAL = 1118907549U;
+        static const AkUniqueID PLAY_SMALLBET = 2126956004U;
         static const AkUniqueID PLAY_SMOKER = 4192618525U;
+        static const AkUniqueID PLAY_SPIN = 301125906U;
         static const AkUniqueID PLAY_SPIN_CYCLE = 2852958513U;
         static const AkUniqueID PLAY_ZESTY_RICH_GUY = 4115026698U;
         static const AkUniqueID STOP = 788884573U;

@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad9b6095cb954144a472d44e65d33e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 6
   walkSpeed: 6
   sprintSpeed: 12
   groundDrag: 5
@@ -213,6 +214,7 @@ MonoBehaviour:
   jumpForce: 5
   jumpCooldown: 0.25
   airMultiplier: 0.8
+  stepTimer: 0
 --- !u!114 &9081872413585323080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,15 +241,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf597df852eb71340bbb087473165908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkBank
-  triggerList: ae8d9d44
+  triggerList: ae8d9d44f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 51b4b3619f45fcc4e887820807f70356, type: 2}
   decodeBank: 0
-  overrideLoadSetting: 0
-  loadAsynchronous: 0
+  overrideLoadSetting: 1
+  loadAsynchronous: 1
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
@@ -407,6 +409,7 @@ GameObject:
   - component: {fileID: 593913052862035888}
   - component: {fileID: 6154912884181887670}
   - component: {fileID: 1000622534098860127}
+  - component: {fileID: 2290340853343288304}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -658,3 +661,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2290340853343288304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462434303199196762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8214e7b63646b90468482f5c7250bd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkSpatialAudioListener

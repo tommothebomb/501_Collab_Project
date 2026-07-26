@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "English(US)",
-    "Hash": "{3A2F3049-FD34-EB27-86BB-81DCF05B2F81}",
+    "Hash": "{CC3A1B43-6B1E-A19E-0FD5-0FE7FA9663D3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "English(US)/Casino.bnk",
     "Media": [
+     {
+      "Id": "8090944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "pokerChips-001.wav",
+      "CachePath": "A1/{A15BBB1C-A028-6603-F461-ED1F6CB5F3CD}.wem"
+     },
      {
       "Id": "24347595",
       "Language": "SFX",
@@ -344,6 +352,14 @@
       "CachePath": "8E/{8E7C13FA-FDF4-73FF-FA4E-A35E5D972174}.wem"
      },
      {
+      "Id": "578248724",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "untitled-005.wav",
+      "CachePath": "72/{720E82B5-673D-B96A-7631-07DB88BAC74F}.wem"
+     },
+     {
       "Id": "579006181",
       "Language": "English(US)",
       "Streaming": "false",
@@ -494,6 +510,22 @@
       "Location": "Memory",
       "ShortName": "NPC Lines-014.wav",
       "CachePath": "40/{400B55FB-64BA-E41E-CB29-C48876194A2F}.wem"
+     },
+     {
+      "Id": "800627441",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "untitled-007.wav",
+      "CachePath": "4F/{4FF7E4F4-BC56-7051-7D59-491DA03E369A}.wem"
+     },
+     {
+      "Id": "801455214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "pokerChips-003.wav",
+      "CachePath": "F3/{F3F6659A-D83F-E3E7-1E4F-8B401CAF921B}.wem"
      },
      {
       "Id": "807119791",
@@ -731,6 +763,22 @@
     "Plugins": {
      "ShareSets": [
       {
+       "Id": "29232603",
+       "Name": "New_Parametric_EQ_01",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ_01",
+       "GUID": "{E8964C26-0BBA-4FAB-B991-2EB8804629B9}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "3657550167",
+       "Name": "New_Parametric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
+       "GUID": "{143A86D4-BC13-4EFA-9C5F-0FDE72E57161}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
        "Id": "3935818673",
        "Name": "Slot_Paramteric_EQ",
        "ObjectPath": "\\Effects\\Default Work Unit\\Slot_Paramteric_EQ",
@@ -856,6 +904,21 @@
       }
      },
      {
+      "Id": "3721984613",
+      "Name": "Play_BigBet",
+      "ObjectPath": "\\Events\\Default Work Unit\\Roulette\\Play_BigBet",
+      "GUID": "{0E90171F-CF2A-403E-A4B5-00FF4E0359F4}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7600502",
+      "DurationMax": "1.0905077",
+      "MediaRefs": [
+       {
+        "Id": "8090944"
+       }
+      ]
+     },
+     {
       "Id": "4257882499",
       "Name": "Play_BigLad",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BigLad",
@@ -936,7 +999,7 @@
      {
       "Id": "2488303320",
       "Name": "Play_FootStepsContainer",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_FootStepsContainer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_FootStepsContainer",
       "GUID": "{85F5B3E9-6729-476F-B3D9-8C47646901B8}",
       "DurationType": "OneShot",
       "DurationMin": "0.2386848",
@@ -1106,6 +1169,7 @@
       "Name": "Play_music_midCasino",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_music_midCasino",
       "GUID": "{9253F4E7-6255-4886-8946-C8382D83B827}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "144",
       "DurationMax": "144",
@@ -1113,7 +1177,14 @@
        {
         "Id": "939568479"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3657550167"
+        }
+       ]
+      }
      },
      {
       "Id": "3046872037",
@@ -1316,6 +1387,36 @@
       ]
      },
      {
+      "Id": "1118907549",
+      "Name": "Play_SlotWinVirtual",
+      "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_SlotWinVirtual",
+      "GUID": "{9C8E9ADE-DFA0-4A8D-AD07-8AC6B617159D}",
+      "MaxAttenuation": "15",
+      "DurationType": "OneShot",
+      "DurationMin": "3.5",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "578248724"
+       }
+      ]
+     },
+     {
+      "Id": "2126956004",
+      "Name": "Play_SmallBet",
+      "ObjectPath": "\\Events\\Default Work Unit\\Roulette\\Play_SmallBet",
+      "GUID": "{282939CA-1601-4319-93AB-AEC9F2E125B1}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22206193",
+      "DurationMax": "0.35250133",
+      "MediaRefs": [
+       {
+        "Id": "801455214"
+       }
+      ]
+     },
+     {
       "Id": "4192618525",
       "Name": "Play_Smoker",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Smoker",
@@ -1346,6 +1447,20 @@
       ]
      },
      {
+      "Id": "301125906",
+      "Name": "Play_Spin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Roulette\\Play_Spin",
+      "GUID": "{3E2C3B29-8AD2-4B94-BE83-393A1B096567}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.99517",
+      "DurationMax": "3.99517",
+      "MediaRefs": [
+       {
+        "Id": "800627441"
+       }
+      ]
+     },
+     {
       "Id": "2852958513",
       "Name": "Play_Spin_Cycle",
       "ObjectPath": "\\Events\\Default Work Unit\\Slots\\Play_Spin_Cycle",
@@ -1356,7 +1471,14 @@
        {
         "Id": "128454229"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "29232603"
+        }
+       ]
+      }
      },
      {
       "Id": "4115026698",
@@ -1448,6 +1570,32 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "200764838",
+      "Name": "Chips",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Chips",
+      "GUID": "{0799AA26-E446-4595-8086-DE435BB350C8}",
+      "Switches": [
+       {
+        "Id": "647611021",
+        "Name": "Big",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Big",
+        "GUID": "{02784F03-C334-4123-9E73-3766773F729C}"
+       },
+       {
+        "Id": "1846755610",
+        "Name": "Small",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Small",
+        "GUID": "{3319DD67-BAB4-438C-82D5-7EE78F094A2B}"
+       },
+       {
+        "Id": "2849147824",
+        "Name": "Medium",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Chips\\Medium",
+        "GUID": "{C1E2F872-1195-49B0-B5A9-EF1875CD834D}"
+       }
+      ]
+     },
+     {
       "Id": "1088209313",
       "Name": "Floor",
       "ObjectPath": "\\Switches\\Default Work Unit\\Floor",
@@ -1476,6 +1624,6 @@
     ]
    }
   ],
-  "FileHash": "{1356566F-B6DA-BF93-2D10-601778D3D705}"
+  "FileHash": "{6824365B-C1AC-B195-AF8F-0C8A09AED9D1}"
  }
 }

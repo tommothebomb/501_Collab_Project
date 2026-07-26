@@ -5803,7 +5803,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: ff155b1d9afc74a4ebc3e9a7e89ffce2, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
-  loadAsynchronous: 0
+  loadAsynchronous: 1
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 

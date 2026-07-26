@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Casino" ID="{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_BigBet" ID="{0E90171F-CF2A-403E-A4B5-00FF4E0359F4}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Regular_guy" ID="{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_attract_SnakeEyes" ID="{E7EC3575-75DB-4083-AAA9-1A5A93025567}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Douche" ID="{0A65232E-2139-40A7-A102-5470A3A631DB}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
@@ -14,6 +15,7 @@
 						<ObjectRef Name="Stop_attract_Western" ID="{9E388745-95BF-4244-B2BB-078A24AC9023}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_amb_midCasino" ID="{C25D5D05-1552-4256-BD41-97EC4F322FF4}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Spin_Cycle" ID="{D479A95D-E68A-429A-A4D9-3180E58C56C6}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SmallBet" ID="{282939CA-1601-4319-93AB-AEC9F2E125B1}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_attract_FourLeafLuckalt" ID="{C52AA46E-E097-43FD-8359-F611D7901693}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_slot_spin_container" ID="{07AB0C95-AAFC-4423-9004-67A44EBBBF94}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Loser" ID="{4347BC7E-AC20-4454-8219-EF6A14797462}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
@@ -33,6 +35,7 @@
 						<ObjectRef Name="Play_phone_down" ID="{7E90BBF4-62B6-4916-9996-57DD27C76552}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Phone_App_open" ID="{7B023896-E17D-4997-A8D7-D8296462D3BF}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Zesty_Rich_Guy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SlotWinVirtual" ID="{9C8E9ADE-DFA0-4A8D-AD07-8AC6B617159D}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Spin_Cycle" ID="{1DCFD598-867D-4B71-B5F0-B7EEAE3972BD}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Slot_Win_Base" ID="{C9D30CE8-02FB-4C70-926D-3715757032F1}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Polka" ID="{25CA863F-654F-4C72-A4AB-CC53C1642155}" WorkUnitID="{EE195E60-B046-4381-95C5-4321113BE421}" Origin="Manual" Filter="7"/>
