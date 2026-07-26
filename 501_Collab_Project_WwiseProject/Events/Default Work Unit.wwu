@@ -528,19 +528,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Spin" ID="{3E2C3B29-8AD2-4B94-BE83-393A1B096567}">
+							<ChildrenList>
+								<Action Name="" ID="{11D2B9EE-5BEB-49F4-AABE-78D4890F983A}" ShortID="664197045">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spin" ID="{D95BD87F-BBDF-4C28-8CF1-4F9DFD0E8E32}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Spin" ID="{3E2C3B29-8AD2-4B94-BE83-393A1B096567}">
-					<ChildrenList>
-						<Action Name="" ID="{11D2B9EE-5BEB-49F4-AABE-78D4890F983A}" ShortID="664197045">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Spin" ID="{D95BD87F-BBDF-4C28-8CF1-4F9DFD0E8E32}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
