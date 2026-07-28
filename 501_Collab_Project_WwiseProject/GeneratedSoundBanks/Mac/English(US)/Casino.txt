@@ -139,7 +139,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	880650506	Smoker1-18_500	.cache\13\{133D6BE8-1758-117D-6918-8980E940ABAA}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Smoker\Smoker\Smoker1-18_500		529296
 	881691880	Shoe Step Grass Medium B	.cache\DC\{DCEC1888-30DD-BF0B-C269-9965010B3B24}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\Footsteps\FootStepsContainer\Grass\Shoe Step Grass Medium B		77612
 	920357531	Polka2-12_000	.cache\70\{70757922-4A53-94C0-F4EE-D10143793862}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Polka\Polka\Polka2-12_000		176496
-	939568479	music_midCasino	.cache\D4\{D488ABD1-3D3F-C21E-6CCA-04396496F22A}.wem		\Containers\Default Work Unit\Music\music_midCasino		27648144
+	939568479	music_midCasino	.cache\4B\{4B737D3C-A727-B657-F228-7560E7B00A71}.wem		\Containers\Default Work Unit\Music\music_midCasino		27648144
 	939967480	Slot Win Base	.cache\3B\{3BB19C7B-AC06-65A6-7935-6C3576950DF5}.wem		\Containers\Default Work Unit\GameSFX\Slot Machine\Slot Win Base		970296
 	953007744	Farmer0-34_500	.cache\2D\{2D6848A7-8163-A6C0-011A-137FCCB52992}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Farmer\Farmer\Farmer0-34_500		705696
 	972246811	Douche0-43_500	.cache\89\{89BC796E-556D-95CA-64DF-0D828CC08478}.wem		\Containers\Default Work Unit\Voice Lines\NPC's\Random People\Douche\Douche\Douche0-43_500		441096
