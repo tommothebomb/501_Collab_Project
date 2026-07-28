@@ -64186,7 +64186,7 @@ GameObject:
   - component: {fileID: 1926349945}
   - component: {fileID: 1926349944}
   m_Layer: 0
-  m_Name: BitchCube
+  m_Name: BCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
