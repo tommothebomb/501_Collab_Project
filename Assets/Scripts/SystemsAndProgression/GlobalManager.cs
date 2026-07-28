@@ -4,7 +4,7 @@ using UnityEngine;
 public class GlobalManager : MonoBehaviour
 {
     public static GlobalManager instance;
-    [SerializeField] TMP_Text Text;
+    [SerializeField] TMP_Text balanceText;
     //public float money;
 
 
@@ -22,7 +22,7 @@ public class GlobalManager : MonoBehaviour
 
     private void UpdateText(float NewValue)
     {
-        Text.text = $"Money : {_money}";
+        balanceText.text = $"Balance : {_money}";
     }
 
     private void Awake()
