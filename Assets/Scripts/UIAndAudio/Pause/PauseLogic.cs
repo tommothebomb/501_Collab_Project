@@ -20,6 +20,7 @@ public class PauseLogic : MonoBehaviour
     [SerializeField] GameObject messagesApp;
     [SerializeField] GameObject clockApp;
     [SerializeField] GameObject readingApp;
+    [SerializeField] GameObject cornApp;
 
 
 
@@ -109,6 +110,13 @@ public class PauseLogic : MonoBehaviour
         bgImg.color = new Color(0.9f, 0.5f, 0.3f);
     }
 
+    public void OpenCornPub()
+    {
+        OpenApp();
+        cornApp.SetActive(true);
+        bgImg.color = new Color(0f, 0f, 0f);
+    }
+
     void OpenApp()
     {
         appButtons.SetActive(false);
@@ -129,6 +137,7 @@ public class PauseLogic : MonoBehaviour
         settingsApp.SetActive(false);
         clockApp.SetActive(false);
         readingApp.SetActive(false);
+        cornApp.SetActive(false);
         appOpen = false;
         bgImg.color = new Color(0.75f, 0.75f, 0.75f);
     }
