@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "NPCRoaming", menuName = "State Machine/Roaming/NPC Roaming")]
 public class NPCRoamingState : RoamingStateSOBase
@@ -16,7 +17,7 @@ public class NPCRoamingState : RoamingStateSOBase
     Transform thisNPC;
     HumanoidBase thisBase;
     NavMeshAgent agent;
-    Bounds navmeshBounds;
+    List<Bounds> navmeshBounds = new List<Bounds>();
     bool loitring = false;
 
     public override void Initialize(GameObject gameObject, HumanoidBase humanoid)
@@ -25,7 +26,17 @@ public class NPCRoamingState : RoamingStateSOBase
         thisNPC = gameObject.transform;
         thisBase = thisNPC.GetComponent<HumanoidBase>();
         agent = thisNPC.GetComponent<NavMeshAgent>();
-        navmeshBounds = GameObject.Find("Floor").GetComponent<Renderer>().bounds;
+        // navmeshBounds = GameObject.Find("Floor").GetComponent<Renderer>().bounds;
+        GameObject[] woodContainer = GameObject.FindGameObjectsWithTag("Wood");
+        GameObject[] stoneContainer = GameObject.FindGameObjectsWithTag("Stone");
+        foreach (GameObject go in woodContainer)
+        {
+            navmeshBounds.Add(go.GetComponent<Renderer>().bounds);
+        }
+        foreach (GameObject go in stoneContainer)
+        {
+            navmeshBounds.Add(go.GetComponent<Renderer>().bounds);
+        }
     }
 
     public override void DoEnterLogic()
@@ -66,8 +77,9 @@ public class NPCRoamingState : RoamingStateSOBase
     }
     void PickRandomPoint()
     {
-        float rx = Random.Range(navmeshBounds.min.x, navmeshBounds.max.x);
-        float rz = Random.Range(navmeshBounds.min.z, navmeshBounds.max.z);
+        Bounds randomSurface = navmeshBounds[Random.Range(0, navmeshBounds.Count)];
+        float rx = Random.Range(randomSurface.min.x, randomSurface.max.x);
+        float rz = Random.Range(randomSurface.min.z, randomSurface.max.z);
         randomPoint = new Vector3(rx, thisNPC.position.y, rz);
         agent.SetDestination(randomPoint);
     }
