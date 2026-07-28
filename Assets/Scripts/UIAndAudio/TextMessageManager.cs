@@ -3,8 +3,8 @@ using TMPro;
 
 public class TextMessageManager : MonoBehaviour
 {
-    public float currentMoney;
-    public float previousMoney;
+    private float currentMoney;
+    private float previousMoney;
     [SerializeField] GameObject messageNotification;
     [SerializeField] TMP_Text replaceableText;
     [SerializeField] TMP_Text replaceableNameText;
