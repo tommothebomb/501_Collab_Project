@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{12074D06-A386-484E-856D-CE3058AADA20}",
     "Language": "SFX",
-    "Hash": "{F41947DF-54C3-927E-7A9A-4F7313051E09}",
+    "Hash": "{8EA229F1-C9C0-0AE7-3C82-A5B284F423BD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Menu",
     "ShortName": "Main_Menu",
     "Path": "Main_Menu.bnk",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MainMenuMusic.wav",
-      "CachePath": "B0/{B083A3C8-9477-77CA-B2C7-372BBFB0F851}.wem"
+      "CachePath": "74/{7447AD6E-90B3-62E5-35E4-7334E0F8EA96}.wem"
      }
     ],
     "Events": [
@@ -54,9 +54,7 @@
       "Name": "Play_MainMenuMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMenuMusic",
       "GUID": "{BCE30A2F-1E1B-47EA-9B05-CA3FB5AF3EA5}",
-      "DurationType": "OneShot",
-      "DurationMin": "53.35297",
-      "DurationMax": "53.35297",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "1032106481"
@@ -108,6 +106,6 @@
     ]
    }
   ],
-  "FileHash": "{6E95A546-753B-28B4-078B-EAC2097CF769}"
+  "FileHash": "{DEAFB2EA-BCA9-25C9-1D50-C46C1F7A40C9}"
  }
 }

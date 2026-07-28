@@ -8,5 +8,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	309629099	sfx_back	.cache\C7\{C7437194-0C08-21BC-AF6A-7305685716A4}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_back		96144
 	511212044	sfx_forward	.cache\BB\{BB638587-CC09-D7D2-F61A-502652D7600B}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_forward		70296
 	629613821	sfx_select	.cache\99\{99DF7592-392A-9582-6CAB-822C6A949BAF}.wem		\Containers\Default Work Unit\GameSFX\Environment SFX\UI\sfx_select		58296
-	1032106481	MainMenuMusic	.cache\B0\{B083A3C8-9477-77CA-B2C7-372BBFB0F851}.wem		\Containers\Default Work Unit\Music\MainMenuMusic		9411560
+	1032106481	MainMenuMusic	.cache\74\{7447AD6E-90B3-62E5-35E4-7334E0F8EA96}.wem		\Containers\Default Work Unit\Music\MainMenuMusic		9411560
 

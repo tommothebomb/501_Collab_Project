@@ -46,25 +46,30 @@ public class PlayerMovement : MonoBehaviour
         GroundCheck();
         ChangeFootSteps();
         stepTimer += Time.deltaTime;
-        if (rb.linearVelocity != Vector3.zero && isGrounded)
+        if (rb.linearVelocity.x > 0.01f || rb.linearVelocity.z > 0.01f)
         {
-            switch (moveSpeed)
+            if (isGrounded)
             {
-                case 6:
-                    if (stepTimer >= walkTime)
-                    {
-                        AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
-                        stepTimer = 0;
-                    }
-                    break;
-                case 12:
-                    if (stepTimer >= sprintTime)
-                    {
-                        AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
-                        stepTimer = 0;
-                    }
-                    break;
+                Debug.Log(rb.linearVelocity);
+                switch (moveSpeed)
+                {
+                    case 6:
+                        if (stepTimer >= walkTime)
+                        {
+                            AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                            stepTimer = 0;
+                        }
+                        break;
+                    case 12:
+                        if (stepTimer >= sprintTime)
+                        {
+                            AkUnitySoundEngine.PostEvent("Play_FootStepsContainer", this.gameObject);
+                            stepTimer = 0;
+                        }
+                        break;
+                }
             }
+            
         }
         
     }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "English(US)",
-    "Hash": "{71D18277-F80B-7D02-A414-953CB63C689B}",
+    "Hash": "{FABA8F32-B177-1114-F0B7-404C497466B8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "English(US)/Casino.bnk",
@@ -637,7 +637,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "music_midCasino(1).wav",
-      "CachePath": "D4/{D488ABD1-3D3F-C21E-6CCA-04396496F22A}.wem"
+      "CachePath": "4B/{4B737D3C-A727-B657-F228-7560E7B00A71}.wem"
      },
      {
       "Id": "939967480",
@@ -1170,9 +1170,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_music_midCasino",
       "GUID": "{9253F4E7-6255-4886-8946-C8382D83B827}",
       "MaxAttenuation": "30",
-      "DurationType": "OneShot",
-      "DurationMin": "144",
-      "DurationMax": "144",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "939568479"
@@ -1624,6 +1622,6 @@
     ]
    }
   ],
-  "FileHash": "{4705EF75-E644-090F-7E76-B509A4C6E1B4}"
+  "FileHash": "{0A33EE34-3A38-3C33-9975-2BCCE0C80301}"
  }
 }
