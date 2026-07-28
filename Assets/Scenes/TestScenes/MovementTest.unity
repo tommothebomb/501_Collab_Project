@@ -512,8 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 92770091}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!1001 &93039537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,8 +1353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 482630625}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &482630627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1723,8 +1723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 584552250}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &584552252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1974,8 +1974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 728725763}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &728725765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2285,7 +2285,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1058258659}
   - component: {fileID: 1058258660}
-  - component: {fileID: 1058258661}
   m_Layer: 0
   m_Name: -GameStandPoints-
   m_TagString: Untagged
@@ -2330,26 +2329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StandPointLogic
   emptyStandPoints: []
---- !u!114 &1058258661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058258658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ff4c714bc03194cba60cde3c280cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCVoicelineStorage
-  generalVoicelines:
-  - {fileID: 8300000, guid: 2a68b9066b64c604faeb4c15e1d2f7d0, type: 3}
-  - {fileID: 8300000, guid: 1fb61f5c440609947aeb23a133eb4f14, type: 3}
-  - {fileID: 8300000, guid: 3e195a1b9415f2b47876322f587af1f8, type: 3}
-  gamblingVoicelines:
-  - {fileID: 8300000, guid: cc59e40ae7c982845b16b802b335ae75, type: 3}
-  - {fileID: 8300000, guid: ac7240694ab419d4c8da379b496b91a9, type: 3}
-  - {fileID: 8300000, guid: ab40ef04d846090478b344fa8663cf70, type: 3}
 --- !u!1 &1115035848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,8 +4173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 1742669214}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &1742669216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6926,8 +6905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 998072465584721704}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &7322068931463641579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6961,8 +6940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 998072466175326703}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &7322068931610519836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6996,8 +6975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 998072466322204952}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!65 &7322068932766930718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7031,8 +7010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d91584aa69f9b48aa4b67f883a40d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInterractions
-  uiTooltipObj: {fileID: 548100322}
-  spawnPos: {fileID: 998072467288561434}
+  doorOpenCloseLeft: {fileID: 0}
+  doorOpenCloseRight: {fileID: 0}
 --- !u!23 &7459022284443676346
 MeshRenderer:
   m_ObjectHideFlags: 0
