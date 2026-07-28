@@ -13191,9 +13191,9 @@ GameObject:
   - component: {fileID: 470832854}
   - component: {fileID: 470832853}
   - component: {fileID: 470832852}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs (2)
-  m_TagString: Wood
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16025,7 +16025,7 @@ GameObject:
   - component: {fileID: 531750156}
   - component: {fileID: 531750155}
   - component: {fileID: 531750154}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bar Floor
   m_TagString: Wood
   m_Icon: {fileID: 0}
@@ -18499,7 +18499,7 @@ GameObject:
   - component: {fileID: 640846538}
   - component: {fileID: 640846537}
   - component: {fileID: 640846536}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs (1)
   m_TagString: Stone
   m_Icon: {fileID: 0}
@@ -20751,7 +20751,7 @@ GameObject:
   - component: {fileID: 685777681}
   - component: {fileID: 685777680}
   - component: {fileID: 685777679}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs
   m_TagString: Stone
   m_Icon: {fileID: 0}
