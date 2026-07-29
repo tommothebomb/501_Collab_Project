@@ -36,6 +36,7 @@ public class NPCInteractingState : MenuStateSOBase
     async void ReturnToRoaming()
     {
         Debug.Log("dialogue play");
+        thisBase.PlayVoice();
         await Task.Delay(3000);
         thisBase.stateMachine.ChangeState(thisBase.roamingState);
     }

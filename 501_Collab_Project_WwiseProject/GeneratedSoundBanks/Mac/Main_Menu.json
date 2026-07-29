@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{12074D06-A386-484E-856D-CE3058AADA20}",
     "Language": "SFX",
-    "Hash": "{8EA229F1-C9C0-0AE7-3C82-A5B284F423BD}",
+    "Hash": "{16104666-DE04-172D-19B8-2ED47C577775}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Menu",
     "ShortName": "Main_Menu",
     "Path": "Main_Menu.bnk",
@@ -53,7 +53,7 @@
       "Id": "667425441",
       "Name": "Play_MainMenuMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMenuMusic",
-      "GUID": "{BCE30A2F-1E1B-47EA-9B05-CA3FB5AF3EA5}",
+      "GUID": "{DD419D22-84BF-49C8-BE13-219CA33E98E9}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -106,6 +106,6 @@
     ]
    }
   ],
-  "FileHash": "{F53F12E2-B2ED-6E06-9045-4F75635A3083}"
+  "FileHash": "{05A44B0F-5923-7667-97D3-AB81561A07B4}"
  }
 }

@@ -35,7 +35,7 @@ namespace AK
         static const AkUniqueID PLAY_PHONE_NOTIFICATION = 3900699724U;
         static const AkUniqueID PLAY_PHONE_UP = 554652250U;
         static const AkUniqueID PLAY_POLKA = 1316105455U;
-        static const AkUniqueID PLAY_REGULAR_GUY = 2212624710U;
+        static const AkUniqueID PLAY_REGULARGUY = 3475930679U;
         static const AkUniqueID PLAY_SFX_BACK = 1780698603U;
         static const AkUniqueID PLAY_SFX_FORWARD = 3978225973U;
         static const AkUniqueID PLAY_SFX_SELECT = 325086926U;
@@ -48,7 +48,7 @@ namespace AK
         static const AkUniqueID PLAY_SMOKER = 4192618525U;
         static const AkUniqueID PLAY_SPIN = 301125906U;
         static const AkUniqueID PLAY_SPIN_CYCLE = 2852958513U;
-        static const AkUniqueID PLAY_ZESTY_RICH_GUY = 4115026698U;
+        static const AkUniqueID PLAY_ZESTYRICHGUY = 1327114964U;
         static const AkUniqueID STOP = 788884573U;
         static const AkUniqueID STOP_ATTRACT_FOURLEAFLUCKALT = 3510522014U;
         static const AkUniqueID STOP_ATTRACT_SNAKEEYES = 3634297912U;
