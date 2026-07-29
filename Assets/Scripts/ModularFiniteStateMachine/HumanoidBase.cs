@@ -23,6 +23,8 @@ public class HumanoidBase : MonoBehaviour
     public GamblingStateSOBase gamblingBaseInstance { get; set; }
     public MenuStateSOBase menuBaseInstance { get; set; }
 
+    [SerializeField] NPCVoicelineStorage npcLines;
+    public int npcLineType;
 
     // initialize all state classes
     private void Awake()
@@ -35,6 +37,7 @@ public class HumanoidBase : MonoBehaviour
         roamingState = new RoamingState(this, stateMachine);
         gameState = new PlayingGameState(this, stateMachine);
         menuState = new InMenuState(this, stateMachine);
+        npcLines = new NPCVoicelineStorage();
     }
     private void Start()
     {
@@ -43,6 +46,8 @@ public class HumanoidBase : MonoBehaviour
         menuBaseInstance.Initialize(gameObject, this);
 
         stateMachine.Initialize(roamingState);
+        npcLines.thisNPC = (NPCVoicelineStorage.npcType)npcLineType;
+
     }
 
     private void Update()
@@ -54,5 +59,10 @@ public class HumanoidBase : MonoBehaviour
     {
         // will be useable from the animator
         stateMachine.currentState.AnimationTriggerEvent(trigger);
+    }
+    public void PlayVoice()
+    {
+        npcLines.PlayVoiceLine(this.gameObject);
+        npcLines.playedLine = false;
     }
 }

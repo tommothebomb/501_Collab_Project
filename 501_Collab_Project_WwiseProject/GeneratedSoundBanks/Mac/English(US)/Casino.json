@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2ED90D59-2CB4-4F8E-A388-CEA8C8A16D4B}",
     "Language": "English(US)",
-    "Hash": "{FABA8F32-B177-1114-F0B7-404C497466B8}",
+    "Hash": "{2AED5CB8-7624-A52D-51E9-40B97C079713}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Casino",
     "ShortName": "Casino",
     "Path": "English(US)/Casino.bnk",
@@ -240,14 +240,6 @@
       "CachePath": "08/{08AC559D-C80F-18D0-D008-42C132C438BB}.wem"
      },
      {
-      "Id": "360136687",
-      "Language": "English(US)",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "FuckShitCunt-001.wav",
-      "CachePath": "0C/{0C82BDF9-4844-D6F9-7B32-F81E2BBCBB3A}.wem"
-     },
-     {
       "Id": "366238829",
       "Language": "SFX",
       "Streaming": "false",
@@ -338,10 +330,13 @@
      {
       "Id": "479959301",
       "Language": "SFX",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Memory",
       "ShortName": "Environment SFX\\amb_outside.wav",
-      "CachePath": "2A/{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem"
+      "Path": "Media/479959301.wem",
+      "CachePath": "2A/{2A9F95F5-F5A4-426D-DE4E-12879A632B53}.wem",
+      "PrefetchSize": "19344",
+      "ContainsPrefetch": "true"
      },
      {
       "Id": "480015837",
@@ -573,7 +568,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "NPC Lines-038.wav",
-      "CachePath": "B4/{B47AA634-F77B-B5B6-D751-CB0155E32A2E}.wem"
+      "CachePath": "FC/{FC18AA28-0D2E-3475-1C19-23E8608233AE}.wem"
      },
      {
       "Id": "837680767",
@@ -634,10 +629,13 @@
      {
       "Id": "939568479",
       "Language": "SFX",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Memory",
       "ShortName": "music_midCasino(1).wav",
-      "CachePath": "4B/{4B737D3C-A727-B657-F228-7560E7B00A71}.wem"
+      "Path": "Media/939568479.wem",
+      "CachePath": "4B/{4B737D3C-A727-B657-F228-7560E7B00A71}.wem",
+      "PrefetchSize": "19344",
+      "ContainsPrefetch": "true"
      },
      {
       "Id": "939967480",
@@ -698,10 +696,13 @@
      {
       "Id": "1011870256",
       "Language": "SFX",
-      "Streaming": "false",
+      "Streaming": "true",
       "Location": "Memory",
       "ShortName": "Environment SFX\\amb_midCasino.wav",
-      "CachePath": "61/{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem"
+      "Path": "Media/1011870256.wem",
+      "CachePath": "61/{616CCCA2-7A01-4FEB-0262-126D5BD84547}.wem",
+      "PrefetchSize": "19344",
+      "ContainsPrefetch": "true"
      },
      {
       "Id": "1025526754",
@@ -923,6 +924,7 @@
       "Name": "Play_BigLad",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BigLad",
       "GUID": "{8C8C722D-2061-4664-94EE-74797B9B81C9}",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "2",
       "DurationMax": "3.5",
@@ -949,6 +951,7 @@
       "Name": "Play_Douche",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Douche",
       "GUID": "{0A65232E-2139-40A7-A102-5470A3A631DB}",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "3.5",
@@ -975,6 +978,7 @@
       "Name": "Play_Farmer",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Farmer",
       "GUID": "{0F409CB4-10C0-464F-8C44-88DD1FAC9761}",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "2",
       "DurationMax": "4",
@@ -1000,7 +1004,7 @@
       "Id": "2488303320",
       "Name": "Play_FootStepsContainer",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_FootStepsContainer",
-      "GUID": "{85F5B3E9-6729-476F-B3D9-8C47646901B8}",
+      "GUID": "{3A3C9ED6-2AB6-4C8D-99A7-95DE2ADACC52}",
       "DurationType": "OneShot",
       "DurationMin": "0.2386848",
       "DurationMax": "0.5673125",
@@ -1082,6 +1086,7 @@
       "Name": "Play_Geezer",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Geezer",
       "GUID": "{5AC2A201-4330-4672-819D-F7523D4C5989}",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "2",
@@ -1108,6 +1113,7 @@
       "Name": "Play_Idk",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Idk",
       "GUID": "{65EEDC5A-4B06-4568-810D-A159181E423E}",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "2",
       "DurationMax": "4.5",
@@ -1142,7 +1148,7 @@
       "Name": "Play_Loser",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Loser",
       "GUID": "{4347BC7E-AC20-4454-8219-EF6A14797462}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "3",
       "DurationMax": "6",
@@ -1168,7 +1174,7 @@
       "Id": "2184809433",
       "Name": "Play_music_midCasino",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_music_midCasino",
-      "GUID": "{9253F4E7-6255-4886-8946-C8382D83B827}",
+      "GUID": "{B3AECD63-78EC-4EE4-9379-793D3590839C}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -1245,7 +1251,7 @@
       "Name": "Play_Polka",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Polka",
       "GUID": "{25CA863F-654F-4C72-A4AB-CC53C1642155}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "2.7799773",
@@ -1265,20 +1271,17 @@
       ]
      },
      {
-      "Id": "2212624710",
-      "Name": "Play_Regular_guy",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Regular_guy",
+      "Id": "3475930679",
+      "Name": "Play_RegularGuy",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_RegularGuy",
       "GUID": "{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
-      "DurationMin": "1.2717007",
+      "DurationMin": "1.5",
       "DurationMax": "2.5",
       "MediaRefs": [
        {
         "Id": "149566734"
-       },
-       {
-        "Id": "360136687"
        },
        {
         "Id": "383890732"
@@ -1419,7 +1422,7 @@
       "Name": "Play_Smoker",
       "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Smoker",
       "GUID": "{C006D2C8-EBEC-47CA-AD85-4C83B53A3977}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "1.5",
       "DurationMax": "4",
@@ -1479,11 +1482,11 @@
       }
      },
      {
-      "Id": "4115026698",
-      "Name": "Play_Zesty_Rich_Guy",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Zesty_Rich_Guy",
+      "Id": "1327114964",
+      "Name": "Play_ZestyRichGuy",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_ZestyRichGuy",
       "GUID": "{F51E99BA-4E20-49E7-B333-8D91B25AC12B}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "OneShot",
       "DurationMin": "2",
       "DurationMax": "3.5",
@@ -1622,6 +1625,6 @@
     ]
    }
   ],
-  "FileHash": "{96327E30-223B-03C3-735D-D0D24374BBAB}"
+  "FileHash": "{67879954-A3D5-9368-A797-34A5BED16CA3}"
  }
 }

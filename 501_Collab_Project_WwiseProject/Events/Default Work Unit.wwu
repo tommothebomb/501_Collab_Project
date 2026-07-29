@@ -403,12 +403,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Zesty_Rich_Guy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}">
+						<Event Name="Play_ZestyRichGuy" ID="{F51E99BA-4E20-49E7-B333-8D91B25AC12B}">
 							<ChildrenList>
 								<Action Name="" ID="{3CAF3FF4-538E-4E01-8EB5-5166F34E886C}" ShortID="330321291">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Zesty Rich Guy" ID="{82D1BB86-2F2C-4C8F-B39A-4D4B48B52A66}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+											<ObjectRef Name="ZestyRichGuy" ID="{82D1BB86-2F2C-4C8F-B39A-4D4B48B52A66}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -458,12 +458,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Regular_guy" ID="{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}">
+						<Event Name="Play_RegularGuy" ID="{2ECC7831-ADE8-4068-9FF1-C865DE55F7D5}">
 							<ChildrenList>
 								<Action Name="" ID="{18BA74D1-4C26-4319-9326-6C2219FD3F14}" ShortID="82953848">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Regular guy" ID="{BBAE34EF-F5D5-4969-83DD-CBEA38F8E663}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+											<ObjectRef Name="Regularguy" ID="{BBAE34EF-F5D5-4969-83DD-CBEA38F8E663}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -471,39 +471,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_music_midCasino" ID="{9253F4E7-6255-4886-8946-C8382D83B827}">
-					<ChildrenList>
-						<Action Name="" ID="{ED3ACC62-6F84-4D1B-AABA-B061BDC34AA6}" ShortID="764576647">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="music_midCasino" ID="{E4DE3B95-53A9-47CD-8238-112ED6FF3073}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_MainMenuMusic" ID="{BCE30A2F-1E1B-47EA-9B05-CA3FB5AF3EA5}">
-					<ChildrenList>
-						<Action Name="" ID="{21F54955-98FB-4965-962F-DC1327FA2D53}" ShortID="994318844">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MainMenuMusic" ID="{AC1EC5AC-FF4C-48FB-BEB8-45D56E87AD06}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_FootStepsContainer" ID="{85F5B3E9-6729-476F-B3D9-8C47646901B8}">
-					<ChildrenList>
-						<Action Name="" ID="{3240A58B-208B-4DF5-9CED-D6103F7754D8}" ShortID="1053644206">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Roulette" ID="{73FB2F8E-523B-454D-A5D8-24CEF6EB1FB2}" ShortID="843058986">
 					<ChildrenList>
 						<Event Name="Play_SmallBet" ID="{282939CA-1601-4319-93AB-AEC9F2E125B1}">
@@ -541,6 +508,39 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_MainMenuMusic" ID="{DD419D22-84BF-49C8-BE13-219CA33E98E9}">
+					<ChildrenList>
+						<Action Name="" ID="{2EFD1537-BD3B-460B-BDEB-CEA6A210D988}" ShortID="457692448">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{AC1EC5AC-FF4C-48FB-BEB8-45D56E87AD06}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_music_midCasino" ID="{B3AECD63-78EC-4EE4-9379-793D3590839C}">
+					<ChildrenList>
+						<Action Name="" ID="{36BB4526-798A-4EBE-9EEE-E811C777AB93}" ShortID="380586409">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music_midCasino" ID="{E4DE3B95-53A9-47CD-8238-112ED6FF3073}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FootStepsContainer" ID="{3A3C9ED6-2AB6-4C8D-99A7-95DE2ADACC52}">
+					<ChildrenList>
+						<Action Name="" ID="{1A5061D1-3C52-4031-B425-EDFC1A30F8E9}" ShortID="401031950">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootStepsContainer" ID="{7DE0173F-5521-42C4-A11E-87AA178E84D4}" WorkUnitID="{8B3CB7CF-C802-4D1E-B1C9-19E56A4E97AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
