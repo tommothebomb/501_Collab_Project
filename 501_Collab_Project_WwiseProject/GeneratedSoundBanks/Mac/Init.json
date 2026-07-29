@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{05682CA4-8076-AD4A-13E5-8395367F49AB}",
+    "Hash": "{5D81F49D-8961-630F-5CF6-B27E309E851E}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -79,7 +79,7 @@
      {
       "Id": "2292057722",
       "Name": "VoiceLines",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\VoiceLines",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\VoiceLines",
       "GUID": "{6498C1BF-1B9C-4DC9-BCCF-866D163A5D5E}"
      },
      {
@@ -255,6 +255,6 @@
     ]
    }
   ],
-  "FileHash": "{E78C53B5-F8F1-DCB0-0895-F6CD63A4883A}"
+  "FileHash": "{07110B26-64E0-96AD-A4DA-792AA08C5BE3}"
  }
 }
