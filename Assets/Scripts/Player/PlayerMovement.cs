@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded)
             {
-                Debug.Log(rb.linearVelocity);
+                //Debug.Log(rb.linearVelocity);
                 switch (moveSpeed)
                 {
                     case 6:

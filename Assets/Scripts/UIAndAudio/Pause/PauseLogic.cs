@@ -31,6 +31,7 @@ public class PauseLogic : MonoBehaviour
         inputActs.Player.Enable();
 
         inputActs.Player.Menu.performed += ctx => OpenPauseMenu();
+        inputActs.UI.Cancel.performed += ctx => UnPause();
     }
     private void OnDisable() => inputActs.Player.Disable();
     #endregion
@@ -45,6 +46,7 @@ public class PauseLogic : MonoBehaviour
     {
         phoneAnimator.SetBool("isPaused", true);
         playerState.stateMachine.ChangeState(playerState.menuState);
+        inputActs.UI.Enable();
         if (!phoneUpPlayed)
         {
             AkUnitySoundEngine.PostEvent("Play_phone_up", Camera.main.gameObject);
@@ -73,6 +75,7 @@ public class PauseLogic : MonoBehaviour
     {
         phoneAnimator.SetBool("isPaused", false);
         playerState.stateMachine.ChangeState(playerState.roamingState);
+        inputActs.UI.Disable();
         CloseApp();
         if (!phoneDownPlayed)
         {
