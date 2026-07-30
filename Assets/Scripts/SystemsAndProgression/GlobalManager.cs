@@ -8,7 +8,7 @@ public class GlobalManager : MonoBehaviour
     //public float money;
 
 
-    private float _money = 1000;
+    private float _money = 10000;
     public float Money
     {
         get { return _money; }
