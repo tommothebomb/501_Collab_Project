@@ -64670,11 +64670,11 @@ MonoBehaviour:
     a rich one.
   - Everyone is soft from your leadership and weakness, but I will cure this place.
   names:
-  - Dylan (Grandson)
-  - Diamond (Granddaughter)
-  - Stan (Son)
-  - Karen (Daughter-in-law)
-  - Burt (Grandson)
+  - Dylan
+  - Diamond
+  - Stan
+  - Karen
+  - Burt
 --- !u!1001 &1890020743
 PrefabInstance:
   m_ObjectHideFlags: 0
