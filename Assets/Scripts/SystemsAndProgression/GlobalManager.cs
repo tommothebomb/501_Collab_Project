@@ -16,7 +16,7 @@ public class GlobalManager : MonoBehaviour
         {
             _money = value;
             UpdateText(value);
-
+            TestMessageManager.Instance.CheckMessage(_money);
         }
     } 
 

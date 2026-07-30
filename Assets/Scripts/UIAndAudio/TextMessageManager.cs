@@ -19,44 +19,54 @@ public class TextMessageManager : MonoBehaviour
     private bool shown300Message = false;
     private bool shown100Message = false;
 
+    float startingCash;
+    public static TextMessageManager instance;
+
+    void Start()
+    {
+        startingCash = GlobalManager.instance.Money;
+        instance = this;
+    }
+
+
     private void Update()
     {
-        currentMoney = GlobalManager.instance.Money; // get value from manager
+        /*currentMoney = GlobalManager.instance.Money; // get value from manager
 
         if (currentMoney != previousMoney)
         {
             CheckMessages();
             previousMoney = currentMoney;
-        }
+        }*/
     }
 
-    void CheckMessages()
+    public void CheckMessages(float Money)
     {
-        if (currentMoney <= 900 && !shown900Message)
+        if (Money <= startingCash * 0.9f && !shown900Message)
         {
             ShowTextMessage(messages[0], names[0]);
             AkUnitySoundEngine.PostEvent("Play_phone_notification",Camera.main.gameObject);
             shown900Message = true;
         }
-        if (currentMoney <= 700 && !shown700Message)
+        if (Money <= startingCash * 0.7f && !shown700Message)
         {
             ShowTextMessage(messages[1], names[1]);
             AkUnitySoundEngine.PostEvent("Play_phone_notification", Camera.main.gameObject);
             shown700Message = true;
         }
-        if (currentMoney <= 500 && !shown500Message)
+        if (Money <= startingCash * 0.5f && !shown500Message)
         {
             ShowTextMessage(messages[2], names[2]);
             AkUnitySoundEngine.PostEvent("Play_phone_notification", Camera.main.gameObject);
             shown500Message = true;
         }
-        if (currentMoney <= 300 && !shown300Message)
+        if (Money <= startingCash * 0.3f && !shown300Message)
         {
             ShowTextMessage(messages[3], names[3]);
             AkUnitySoundEngine.PostEvent("Play_phone_notification", Camera.main.gameObject);
             shown300Message = true;
         }
-        if (currentMoney <= 100 && !shown100Message)
+        if (Money <= startingCash * 0.2f && !shown100Message)
         {
             ShowTextMessage(messages[4], names[4]);
             AkUnitySoundEngine.PostEvent("Play_phone_notification", Camera.main.gameObject);
